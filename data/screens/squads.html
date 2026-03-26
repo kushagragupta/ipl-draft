@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Squads &amp; Player Directory | DRAFT ARENA</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700;900&amp;family=Manrope:wght@300;400;500;600;700;800&amp;family=Lexend:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-surface-variant": "#aaabb0",
+              "on-secondary-fixed": "#00326f",
+              "on-primary-fixed": "#453900",
+              "secondary-fixed": "#bed2ff",
+              "secondary-dim": "#6d9df7",
+              "on-secondary-fixed-variant": "#084ea3",
+              "on-primary-container": "#5b4b00",
+              "surface-container-lowest": "#000000",
+              "surface-tint": "#ffe792",
+              "tertiary-container": "#f6322d",
+              "on-tertiary-container": "#000000",
+              "outline-variant": "#46484d",
+              "on-primary-fixed-variant": "#665500",
+              "on-primary": "#655400",
+              "inverse-primary": "#705e00",
+              "secondary": "#72a2fd",
+              "primary-container": "#ffd709",
+              "background": "#0c0e12",
+              "surface-variant": "#23262c",
+              "on-tertiary-fixed": "#3a0001",
+              "error": "#ff7351",
+              "surface-container-high": "#1d2025",
+              "on-secondary": "#002453",
+              "surface-dim": "#0c0e12",
+              "secondary-container": "#004ba0",
+              "on-background": "#f6f6fc",
+              "surface-container-highest": "#23262c",
+              "tertiary-fixed": "#ff9286",
+              "secondary-fixed-dim": "#a8c4ff",
+              "surface": "#0c0e12",
+              "on-surface": "#f6f6fc",
+              "on-error-container": "#ffd2c8",
+              "tertiary-dim": "#e32322",
+              "inverse-on-surface": "#53555a",
+              "surface-container": "#171a1f",
+              "on-error": "#450900",
+              "error-container": "#b92902",
+              "primary-fixed-dim": "#efc900",
+              "tertiary-fixed-dim": "#ff7b6e",
+              "surface-container-low": "#111318",
+              "primary-dim": "#efc900",
+              "primary": "#ffe792",
+              "outline": "#74757a",
+              "error-dim": "#d53d18",
+              "surface-bright": "#292c32",
+              "on-tertiary": "#4a0002",
+              "inverse-surface": "#f9f9ff",
+              "on-secondary-container": "#cddbff",
+              "on-tertiary-fixed-variant": "#7a0006",
+              "primary-fixed": "#ffd709",
+              "tertiary": "#ff7163"
+            },
+            fontFamily: {
+              "headline": ["Space Grotesk"],
+              "body": ["Manrope"],
+              "label": ["Lexend"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .hide-scrollbar::-webkit-scrollbar { display: none; }
+        .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body selection:bg-primary selection:text-on-primary">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 flex justify-between items-center px-6 h-20 bg-[#0c0e12] shadow-[0_8px_32px_rgba(0,0,0,0.5)]">
+<div class="flex items-center gap-8">
+<span class="text-2xl font-black text-[#ffe792] italic font-headline uppercase tracking-tight">DRAFT ARENA</span>
+<nav class="hidden md:flex items-center gap-6">
+<a class="text-gray-400 hover:text-white transition-colors font-headline font-bold uppercase tracking-tight" href="#">Draft Room</a>
+<a class="text-[#ffe792] border-b-4 border-[#ffe792] pb-1 font-headline font-bold uppercase tracking-tight" href="#">Squads</a>
+<a class="text-gray-400 hover:text-white transition-colors font-headline font-bold uppercase tracking-tight" href="#">Leaderboard</a>
+<a class="text-gray-400 hover:text-white transition-colors font-headline font-bold uppercase tracking-tight" href="#">My Team</a>
+</nav>
+</div>
+<div class="flex items-center gap-4">
+<div class="hidden lg:flex items-center bg-[#1d2025] px-4 py-2 rounded-lg">
+<span class="material-symbols-outlined text-gray-400 mr-2" data-icon="search">search</span>
+<input class="bg-transparent border-none focus:ring-0 text-sm w-48 text-on-surface" placeholder="Search players..." type="text"/>
+</div>
+<button class="p-2 hover:bg-[#1d2025] transition-all duration-300 rounded-full scale-95 active:scale-90">
+<span class="material-symbols-outlined text-[#ffe792]" data-icon="notifications">notifications</span>
+</button>
+<button class="p-2 hover:bg-[#1d2025] transition-all duration-300 rounded-full scale-95 active:scale-90">
+<span class="material-symbols-outlined text-[#ffe792]" data-icon="account_circle">account_circle</span>
+</button>
+</div>
+</header>
+<!-- SideNavBar -->
+<aside class="hidden lg:flex flex-col py-8 h-screen w-64 fixed left-0 top-0 bg-[#111318] shadow-2xl z-40 mt-20">
+<div class="px-6 mb-8">
+<div class="flex items-center gap-3 mb-4">
+<div class="w-12 h-12 rounded-lg bg-secondary-container flex items-center justify-center overflow-hidden">
+<img alt="Mumbai Mavericks" class="w-10 h-10 object-contain" data-alt="Stylized cricket team logo with a hawk and cricket bat, professional sports aesthetic, blue and gold colors" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBHhkVIfqU3yxRLRQSYkv5Owie9F4NxRyJqJ3a_6mrc9nP9So0gfSsKZURG1Ywdo-y5Orrln93mzB46piK-I8kHKH649Svn4WPwWoitMVrFyyM4Qp1BxJHJxW7ywos22xymN8DxG2Nse4TPEKkOX3c70cwU6VzE6JKF9h7vC_wEqzIFaMukgnYxslsJzNUmpWF2fYWsWObLxWusWK8OuiMzbvLplmHiwL2uZHTsn7Capz3MW7ofXAe_p339jvWGZCfBTB4n3pPWIAY"/>
+</div>
+<div>
+<h3 class="text-white font-headline font-bold">Mumbai Mavericks</h3>
+<p class="text-xs text-gray-500 font-label uppercase">Pick #4 | 1,240 pts</p>
+</div>
+</div>
+<button class="w-full bg-primary-container text-on-primary-container py-3 rounded-md font-body font-semibold text-sm hover:translate-x-1 transition-transform">
+                View Live Draft
+            </button>
+</div>
+<nav class="flex-1 px-4 space-y-2">
+<a class="flex items-center gap-4 px-4 py-3 text-gray-500 hover:bg-[#1d2025] font-body font-semibold transition-transform hover:translate-x-1" href="#">
+<span class="material-symbols-outlined" data-icon="gavel">gavel</span>
+<span>Draft Room</span>
+</a>
+<a class="flex items-center gap-4 px-4 py-3 bg-[#23262c] text-[#ffe792] rounded-r-lg border-l-4 border-[#ffe792] font-body font-semibold" href="#">
+<span class="material-symbols-outlined" data-icon="groups">groups</span>
+<span>Squads</span>
+</a>
+<a class="flex items-center gap-4 px-4 py-3 text-gray-500 hover:bg-[#1d2025] font-body font-semibold transition-transform hover:translate-x-1" href="#">
+<span class="material-symbols-outlined" data-icon="leaderboard">leaderboard</span>
+<span>Leaderboard</span>
+</a>
+<a class="flex items-center gap-4 px-4 py-3 text-gray-500 hover:bg-[#1d2025] font-body font-semibold transition-transform hover:translate-x-1" href="#">
+<span class="material-symbols-outlined" data-icon="person">person</span>
+<span>My Team</span>
+</a>
+</nav>
+<div class="px-4 mt-auto space-y-2">
+<a class="flex items-center gap-4 px-4 py-2 text-gray-500 hover:bg-[#1d2025] text-sm" href="#">
+<span class="material-symbols-outlined text-xl" data-icon="settings">settings</span>
+<span>Settings</span>
+</a>
+<a class="flex items-center gap-4 px-4 py-2 text-gray-500 hover:bg-[#1d2025] text-sm" href="#">
+<span class="material-symbols-outlined text-xl" data-icon="help">help</span>
+<span>Support</span>
+</a>
+</div>
+</aside>
+<!-- Main Content Area -->
+<main class="lg:ml-64 pt-24 pb-32 px-6">
+<!-- Dashboard Header -->
+<section class="mb-12">
+<h1 class="font-headline text-5xl font-black italic tracking-tighter mb-4 text-on-background">TEAM SQUADS <span class="text-primary">2024</span></h1>
+<p class="text-on-surface-variant max-w-2xl font-body">Browse official IPL rosters, analyze player performance metrics, and track overseas quotas for the upcoming draft season.</p>
+</section>
+<!-- Dynamic Filter Bar -->
+<section class="mb-10 flex flex-wrap items-center gap-4 p-4 bg-surface-container-low rounded-xl">
+<div class="flex items-center gap-2 px-4 py-2 bg-surface-container-highest rounded-lg">
+<span class="material-symbols-outlined text-primary text-sm" data-icon="filter_list">filter_list</span>
+<span class="font-label text-xs font-bold uppercase tracking-wider">Filter By:</span>
+</div>
+<!-- Team Filter (Horizontal Scroll) -->
+<div class="flex gap-2 overflow-x-auto hide-scrollbar flex-1 pb-1">
+<button class="whitespace-nowrap px-4 py-2 rounded-full bg-primary text-on-primary text-xs font-label font-bold uppercase">All Teams</button>
+<button class="whitespace-nowrap px-4 py-2 rounded-full border border-outline-variant text-on-surface-variant hover:bg-surface-container-highest text-xs font-label font-bold uppercase transition-colors">Mumbai Indians</button>
+<button class="whitespace-nowrap px-4 py-2 rounded-full border border-outline-variant text-on-surface-variant hover:bg-surface-container-highest text-xs font-label font-bold uppercase transition-colors">CSK</button>
+<button class="whitespace-nowrap px-4 py-2 rounded-full border border-outline-variant text-on-surface-variant hover:bg-surface-container-highest text-xs font-label font-bold uppercase transition-colors">RCB</button>
+<button class="whitespace-nowrap px-4 py-2 rounded-full border border-outline-variant text-on-surface-variant hover:bg-surface-container-highest text-xs font-label font-bold uppercase transition-colors">Kolkata Knight Riders</button>
+<button class="whitespace-nowrap px-4 py-2 rounded-full border border-outline-variant text-on-surface-variant hover:bg-surface-container-highest text-xs font-label font-bold uppercase transition-colors">Gujarat Titans</button>
+</div>
+<div class="h-8 w-[1px] bg-outline-variant/30 hidden md:block"></div>
+<!-- Role Filter -->
+<select class="bg-surface-container-highest border-none rounded-lg font-label text-xs font-bold uppercase tracking-wider focus:ring-2 focus:ring-primary py-2 px-4 pr-10 text-on-surface">
+<option>All Roles</option>
+<option>Batsman</option>
+<option>Bowler</option>
+<option>All-rounder</option>
+<option>Wicketkeeper</option>
+</select>
+</section>
+<!-- Player Directory Grid -->
+<div class="space-y-16">
+<!-- Team Section: Mumbai Indians -->
+<div>
+<div class="flex items-center gap-4 mb-8">
+<div class="h-1 w-24 bg-secondary"></div>
+<h2 class="font-headline text-3xl font-bold uppercase tracking-tight">Mumbai Indians</h2>
+<span class="text-on-surface-variant font-label text-sm uppercase">25 Players</span>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-8">
+<!-- Player Card 1 (MI - Captain) -->
+<div class="relative bg-surface-container-low group overflow-visible pt-10 px-6 pb-6 shadow-xl rounded-md transition-all hover:bg-surface-container-high">
+<div class="absolute top-0 left-0 w-1 h-full bg-secondary"></div>
+<div class="absolute -top-12 right-4 w-32 h-40 z-10">
+<img alt="Rohit Sharma" class="w-full h-full object-contain filter drop-shadow-[0_10px_10px_rgba(0,0,0,0.5)] group-hover:scale-105 transition-transform" data-alt="Professional portrait of a famous Indian cricket player, intense look, wearing a blue team jersey, studio lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCcR2V7Jd9vsTDytdJyx1O6PgXPHzn7lKjF-UYYlM_0S_TsmnDaGR2ee7ARIOsC69IZ7OZ-NY_BoDf8sxyCvRus_Clqa5D4WcxIc231d8Dgr2WJB9ExNLRFZBJXw8oh5wsqeCNocei_vvwEgHLXI-q712SQ28Vq7MLTIuBibyeTaohfF77kKTjq7PRy28VOvaQ-Jk4k4CwuZjZvcA08qjQA9syenR_suLzyKWEbsB4qqV91xZ1t9p5gtRnRFJSvFe-E-6P8Y-XLWB4"/>
+</div>
+<div class="relative z-20">
+<span class="font-label text-[10px] font-extrabold text-secondary uppercase tracking-[0.2em]">Captain</span>
+<h3 class="font-headline text-2xl font-black mt-1 uppercase leading-tight">Rohit Sharma</h3>
+<div class="flex flex-wrap gap-2 mt-3">
+<span class="px-2 py-0.5 rounded-full bg-surface-container-highest text-on-surface-variant text-[9px] font-label font-bold uppercase">Batsman</span>
+<span class="px-2 py-0.5 rounded-full bg-tertiary-container text-on-tertiary-container text-[9px] font-label font-bold uppercase">Top 20</span>
+</div>
+<div class="mt-6 flex justify-between items-end border-t border-outline-variant/20 pt-4">
+<div>
+<p class="text-[10px] text-on-surface-variant font-label uppercase">IPL Points</p>
+<p class="text-xl font-headline font-bold text-white">1,542</p>
+</div>
+<button class="p-2 bg-secondary/10 rounded-lg hover:bg-secondary/20 transition-colors">
+<span class="material-symbols-outlined text-secondary" data-icon="add_chart">add_chart</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Player Card 2 (MI - Overseas) -->
+<div class="relative bg-surface-container-low group overflow-visible pt-10 px-6 pb-6 shadow-xl rounded-md transition-all hover:bg-surface-container-high">
+<div class="absolute top-0 left-0 w-1 h-full bg-secondary"></div>
+<div class="absolute -top-12 right-4 w-32 h-40 z-10">
+<img alt="Tim David" class="w-full h-full object-contain filter drop-shadow-[0_10px_10px_rgba(0,0,0,0.5)] group-hover:scale-105 transition-transform" data-alt="Athletic cricket player with determined expression, Australian nationality, wearing Mumbai blue kit, dramatic stadium side lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB1e5rLi7t5v5DqRCDULwTeOxY6O-g0nAwScfANPw4yaBX9B5bg09kO3gh8tnrCW1-VCGZgP68rAPPIKXJAGbPsuZqla-83E0cSF3d9q_VnKn6JqAz8NoZDey-lksNAfHdxYkYFpE8td8zA4wCkb_LXjb_lcOId2MXz_uGU7B0gNs5Qx3fjBGpv53V05nXnc55EUM6P1ramsVopN-ghdzzfQHmU_zs_Q0kELw7Ocq0IZ9kGUiDq6Y65IBSruR7dU9c2uYVgE0KCSCI"/>
+</div>
+<div class="relative z-20">
+<span class="font-label text-[10px] font-extrabold text-secondary-dim uppercase tracking-[0.2em]">Finisher</span>
+<h3 class="font-headline text-2xl font-black mt-1 uppercase leading-tight">Tim David</h3>
+<div class="flex flex-wrap gap-2 mt-3">
+<span class="px-2 py-0.5 rounded-full bg-surface-container-highest text-on-surface-variant text-[9px] font-label font-bold uppercase">All-rounder</span>
+<span class="px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container text-[9px] font-label font-bold uppercase">Overseas</span>
+</div>
+<div class="mt-6 flex justify-between items-end border-t border-outline-variant/20 pt-4">
+<div>
+<p class="text-[10px] text-on-surface-variant font-label uppercase">IPL Points</p>
+<p class="text-xl font-headline font-bold text-white">982</p>
+</div>
+<button class="p-2 bg-secondary/10 rounded-lg hover:bg-secondary/20 transition-colors">
+<span class="material-symbols-outlined text-secondary" data-icon="add_chart">add_chart</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Player Card 3 (MI - Bowler) -->
+<div class="relative bg-surface-container-low group overflow-visible pt-10 px-6 pb-6 shadow-xl rounded-md transition-all hover:bg-surface-container-high">
+<div class="absolute top-0 left-0 w-1 h-full bg-secondary"></div>
+<div class="absolute -top-12 right-4 w-32 h-40 z-10">
+<img alt="Jasprit Bumrah" class="w-full h-full object-contain filter drop-shadow-[0_10px_10px_rgba(0,0,0,0.5)] group-hover:scale-105 transition-transform" data-alt="Fast bowler in bowling action stance, focus in eyes, wearing blue jersey, sharp focus, cinematic lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDpbkE8QcIP2JVbcj3nZnGI8QsITFwBcE1ACBlAg97fOqpKy63qr4gB_pnFH5QyUK-cKd88ofM6ONXLN4LPW9tTl3VUpS2yKYgfYjPZAtNxMPKeTJ-n_UWnXeR3q9t1jGqPcCtLYUQGcR7oWXS1QCssZFHROTdhCZnHoRugPrPGYk2_J00a1b0u6UyWi3MLiIhmBfZnshTmco7EDpSIXQ0XAR-wuPj8CFyEpM_q5TU7QZmwx4vsutnWj1-L9Si1R0FFk5sgQoC1C2w"/>
+</div>
+<div class="relative z-20">
+<span class="font-label text-[10px] font-extrabold text-secondary uppercase tracking-[0.2em]">Pacer</span>
+<h3 class="font-headline text-2xl font-black mt-1 uppercase leading-tight">Jasprit Bumrah</h3>
+<div class="flex flex-wrap gap-2 mt-3">
+<span class="px-2 py-0.5 rounded-full bg-surface-container-highest text-on-surface-variant text-[9px] font-label font-bold uppercase">Bowler</span>
+<span class="px-2 py-0.5 rounded-full bg-tertiary-container text-on-tertiary-container text-[9px] font-label font-bold uppercase">Top 20</span>
+</div>
+<div class="mt-6 flex justify-between items-end border-t border-outline-variant/20 pt-4">
+<div>
+<p class="text-[10px] text-on-surface-variant font-label uppercase">IPL Points</p>
+<p class="text-xl font-headline font-bold text-white">1,820</p>
+</div>
+<button class="p-2 bg-secondary/10 rounded-lg hover:bg-secondary/20 transition-colors">
+<span class="material-symbols-outlined text-secondary" data-icon="add_chart">add_chart</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Player Card 4 (MI - Keeper) -->
+<div class="relative bg-surface-container-low group overflow-visible pt-10 px-6 pb-6 shadow-xl rounded-md transition-all hover:bg-surface-container-high">
+<div class="absolute top-0 left-0 w-1 h-full bg-secondary"></div>
+<div class="absolute -top-12 right-4 w-32 h-40 z-10">
+<img alt="Ishan Kishan" class="w-full h-full object-contain filter drop-shadow-[0_10px_10px_rgba(0,0,0,0.5)] group-hover:scale-105 transition-transform" data-alt="Young cricket player smiling, wicketkeeping gloves visible, blue kit, studio portrait with blue neon backlighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDNuL7ESFnwG9Ul527DLUcaCe-eIKe3w77Dnj9JQrjXchnapS22IyNg9sljNQgd06JdAHZZ_yJ_k8dLsHgpVwsrUjKQeffIhoCrOW22glVn61UiAbf5EC9OKEWpa7YLMZyXQDw3FMAOQSeKr-MVVKTmOiDhlksXbdV5Ds7qGkyRuYed6WoNlOlFj4sdYP_om_eZMQ1FsLsYfs1YrHxuRm-mU9aQuJ6-uZrWjDvSmWX6Uy3uaEBd5wd2mWQutS5ke28meubrL505x4Q"/>
+</div>
+<div class="relative z-20">
+<span class="font-label text-[10px] font-extrabold text-secondary uppercase tracking-[0.2em]">Opener</span>
+<h3 class="font-headline text-2xl font-black mt-1 uppercase leading-tight">Ishan Kishan</h3>
+<div class="flex flex-wrap gap-2 mt-3">
+<span class="px-2 py-0.5 rounded-full bg-surface-container-highest text-on-surface-variant text-[9px] font-label font-bold uppercase">Wicketkeeper</span>
+</div>
+<div class="mt-6 flex justify-between items-end border-t border-outline-variant/20 pt-4">
+<div>
+<p class="text-[10px] text-on-surface-variant font-label uppercase">IPL Points</p>
+<p class="text-xl font-headline font-bold text-white">1,120</p>
+</div>
+<button class="p-2 bg-secondary/10 rounded-lg hover:bg-secondary/20 transition-colors">
+<span class="material-symbols-outlined text-secondary" data-icon="add_chart">add_chart</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Team Section: Chennai Super Kings -->
+<div>
+<div class="flex items-center gap-4 mb-8">
+<div class="h-1 w-24 bg-primary"></div>
+<h2 class="font-headline text-3xl font-bold uppercase tracking-tight">Chennai Super Kings</h2>
+<span class="text-on-surface-variant font-label text-sm uppercase">23 Players</span>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-8">
+<!-- Player Card 5 (CSK - Legend) -->
+<div class="relative bg-surface-container-low group overflow-visible pt-10 px-6 pb-6 shadow-xl rounded-md transition-all hover:bg-surface-container-high">
+<div class="absolute top-0 left-0 w-1 h-full bg-primary"></div>
+<div class="absolute -top-12 right-4 w-32 h-40 z-10">
+<img alt="MS Dhoni" class="w-full h-full object-contain filter drop-shadow-[0_10px_10px_rgba(0,0,0,0.5)] group-hover:scale-105 transition-transform" data-alt="Legendary cricket player portrait, stoic expression, wearing yellow team jersey, cinematic gold lighting, high contrast" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDwVduEjYnlwTjWd9T-z-aJ2KxLQ4b0wrTu9Ugyauqht0fLV_muFue8Zakpmz5hmuYmh95l1eir_VdBnR6cPbCOJZWG6ZGqFeng6aQ2uwyaDnyDZmwtYxnHLz8BwR7mU1u9IR63RU2kSLFSGVC_JtV3uOrWRZBFxPrM9oga__SRmbAThxlY9AUuAWrspzfmzvLhmieTSDMGJjAEMW4qGsdX87zIlSe4zkwv7OuAq_xqe24cXcSr8W0tyTFsWP2RDJCeDv6_21QmJqs"/>
+</div>
+<div class="relative z-20">
+<span class="font-label text-[10px] font-extrabold text-primary uppercase tracking-[0.2em]">Icon</span>
+<h3 class="font-headline text-2xl font-black mt-1 uppercase leading-tight">MS Dhoni</h3>
+<div class="flex flex-wrap gap-2 mt-3">
+<span class="px-2 py-0.5 rounded-full bg-surface-container-highest text-on-surface-variant text-[9px] font-label font-bold uppercase">Wicketkeeper</span>
+<span class="px-2 py-0.5 rounded-full bg-tertiary-container text-on-tertiary-container text-[9px] font-label font-bold uppercase">Top 20</span>
+</div>
+<div class="mt-6 flex justify-between items-end border-t border-outline-variant/20 pt-4">
+<div>
+<p class="text-[10px] text-on-surface-variant font-label uppercase">IPL Points</p>
+<p class="text-xl font-headline font-bold text-white">1,340</p>
+</div>
+<button class="p-2 bg-primary/10 rounded-lg hover:bg-primary/20 transition-colors">
+<span class="material-symbols-outlined text-primary" data-icon="add_chart">add_chart</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Player Card 6 (CSK - Overseas) -->
+<div class="relative bg-surface-container-low group overflow-visible pt-10 px-6 pb-6 shadow-xl rounded-md transition-all hover:bg-surface-container-high">
+<div class="absolute top-0 left-0 w-1 h-full bg-primary"></div>
+<div class="absolute -top-12 right-4 w-32 h-40 z-10">
+<img alt="Devon Conway" class="w-full h-full object-contain filter drop-shadow-[0_10px_10px_rgba(0,0,0,0.5)] group-hover:scale-105 transition-transform" data-alt="Professional cricket batsman from New Zealand, focused gaze, yellow CSK jersey, sharp bokeh background of stadium" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD7JIoEMe7r07LJv-tx2mhgy-0SY1GShDZS0R2883Z5dQ3jhehVdjx5neBo51bJ9cfOO2JHU1yV_Sdq0qEYbszTQaSe07w-iygoAHjO_MfSWdmz6CsqOb-A2vWjU_HI9uszseqWj_e5xwBWZIwJ78_-eKI4p7_unumwGxPtFgfgGSpa6v8WhuDqh6qwmsK5aW1ONcQBlRGfjMHE8Vj9PM8chM8mFWWKEgqH9-tEBupTV7B-FwDMDwnI3SagldMFhNzGDeiRpMl13ro"/>
+</div>
+<div class="relative z-20">
+<span class="font-label text-[10px] font-extrabold text-primary uppercase tracking-[0.2em]">Opener</span>
+<h3 class="font-headline text-2xl font-black mt-1 uppercase leading-tight">Devon Conway</h3>
+<div class="flex flex-wrap gap-2 mt-3">
+<span class="px-2 py-0.5 rounded-full bg-surface-container-highest text-on-surface-variant text-[9px] font-label font-bold uppercase">Batsman</span>
+<span class="px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container text-[9px] font-label font-bold uppercase">Overseas</span>
+</div>
+<div class="mt-6 flex justify-between items-end border-t border-outline-variant/20 pt-4">
+<div>
+<p class="text-[10px] text-on-surface-variant font-label uppercase">IPL Points</p>
+<p class="text-xl font-headline font-bold text-white">1,620</p>
+</div>
+<button class="p-2 bg-primary/10 rounded-lg hover:bg-primary/20 transition-colors">
+<span class="material-symbols-outlined text-primary" data-icon="add_chart">add_chart</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Player Card 7 (CSK - All Rounder) -->
+<div class="relative bg-surface-container-low group overflow-visible pt-10 px-6 pb-6 shadow-xl rounded-md transition-all hover:bg-surface-container-high">
+<div class="absolute top-0 left-0 w-1 h-full bg-primary"></div>
+<div class="absolute -top-12 right-4 w-32 h-40 z-10">
+<img alt="Ravindra Jadeja" class="w-full h-full object-contain filter drop-shadow-[0_10px_10px_rgba(0,0,0,0.5)] group-hover:scale-105 transition-transform" data-alt="Versatile cricket player, aggressive pose, yellow kit, vibrant lighting with yellow accents, sports editorial style" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA5l4Zaa6s6BsD16BVlvSQdDV3yEuU28KW15ZJbA5rMltFNxkt6uRsQIQyp48S6Gvw9GlaOi8MUmkWY5IDZ3Kde8kmfjtIxL2QmgKyDXcYIvOJwv7J0Ti4s0M0Djwyv62sZyd7LuHa6vLK3ONXhAIMhm7g3p20_QJKzuDxHHwPp8Z_-75rBcXBCzfIRjM_6ZKsUbCMxjnAHTLC7NRGkQSZnEEa2Nijyuf3O5aIjxmbV87s0DCgddP291e5k40MzUs7xtOYg09UTGws"/>
+</div>
+<div class="relative z-20">
+<span class="font-label text-[10px] font-extrabold text-primary uppercase tracking-[0.2em]">All-Rounder</span>
+<h3 class="font-headline text-2xl font-black mt-1 uppercase leading-tight">R. Jadeja</h3>
+<div class="flex flex-wrap gap-2 mt-3">
+<span class="px-2 py-0.5 rounded-full bg-surface-container-highest text-on-surface-variant text-[9px] font-label font-bold uppercase">All-rounder</span>
+<span class="px-2 py-0.5 rounded-full bg-tertiary-container text-on-tertiary-container text-[9px] font-label font-bold uppercase">Top 20</span>
+</div>
+<div class="mt-6 flex justify-between items-end border-t border-outline-variant/20 pt-4">
+<div>
+<p class="text-[10px] text-on-surface-variant font-label uppercase">IPL Points</p>
+<p class="text-xl font-headline font-bold text-white">1,780</p>
+</div>
+<button class="p-2 bg-primary/10 rounded-lg hover:bg-primary/20 transition-colors">
+<span class="material-symbols-outlined text-primary" data-icon="add_chart">add_chart</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Floating Action Button -->
+<button class="fixed right-8 bottom-24 lg:bottom-8 z-50 w-16 h-16 bg-primary text-on-primary rounded-full shadow-[0_10px_40px_rgba(255,231,146,0.4)] flex items-center justify-center transition-transform active:scale-90 hover:scale-110">
+<span class="material-symbols-outlined text-3xl" data-icon="gavel" style="font-variation-settings: 'FILL' 1;">gavel</span>
+</button>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 pb-6 pt-3 lg:hidden bg-[#0c0e12]/95 backdrop-blur-xl border-t border-[#46484d]/20 shadow-[0_-10px_40px_rgba(0,0,0,0.8)]">
+<a class="flex flex-col items-center justify-center text-gray-500 active:bg-[#1d2025] transition-transform active:scale-110" href="#">
+<span class="material-symbols-outlined" data-icon="gavel">gavel</span>
+<span class="font-label text-[10px] uppercase font-bold mt-1">Draft</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#ffe792] bg-[#ffe792]/10 rounded-xl py-1 px-3 transition-transform active:scale-110" href="#">
+<span class="material-symbols-outlined" data-icon="sports_cricket" style="font-variation-settings: 'FILL' 1;">sports_cricket</span>
+<span class="font-label text-[10px] uppercase font-bold mt-1">Squads</span>
+</a>
+<a class="flex flex-col items-center justify-center text-gray-500 active:bg-[#1d2025] transition-transform active:scale-110" href="#">
+<span class="material-symbols-outlined" data-icon="equalizer">equalizer</span>
+<span class="font-label text-[10px] uppercase font-bold mt-1">Board</span>
+</a>
+<a class="flex flex-col items-center justify-center text-gray-500 active:bg-[#1d2025] transition-transform active:scale-110" href="#">
+<span class="material-symbols-outlined" data-icon="shield">shield</span>
+<span class="font-label text-[10px] uppercase font-bold mt-1">Team</span>
+</a>
+</nav>
+</body></html>

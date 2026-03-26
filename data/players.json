@@ -1,0 +1,2572 @@
+[
+  {
+    "id": "p1",
+    "name": "Akeal Hosein",
+    "team": "CSK",
+    "role": "All-rounder",
+    "country": "West Indies",
+    "overseas": true,
+    "points2025": 0,
+    "imageUrl": ""
+  },
+  {
+    "id": "p2",
+    "name": "Aman Khan",
+    "team": "CSK",
+    "role": "All-rounder",
+    "country": "India",
+    "overseas": false,
+    "points2025": 0,
+    "imageUrl": "https://celebs.infoseemedia.com/wp-content/uploads/2026/03/Aman-Hakim-Khan.jpg"
+  },
+  {
+    "id": "p3",
+    "name": "Anshul Kamboj",
+    "team": "CSK",
+    "role": "All-rounder",
+    "country": "India",
+    "overseas": false,
+    "points2025": 0,
+    "imageUrl": "https://documents.iplt20.com/ipl/IPLHeadshot2025/3106.png"
+  },
+  {
+    "id": "p4",
+    "name": "Ayush Mhatre",
+    "team": "CSK",
+    "role": "Batsman",
+    "country": "India",
+    "overseas": false,
+    "points2025": 0,
+    "imageUrl": "https://documents.iplt20.com/ipl/IPLHeadshot2025/3497.png"
+  },
+  {
+    "id": "p5",
+    "name": "Dewald Brevis",
+    "team": "CSK",
+    "role": "Batsman",
+    "country": "South Africa",
+    "overseas": true,
+    "points2025": 0,
+    "imageUrl": "https://documents.iplt20.com/ipl/IPLHeadshot2025/797.png"
+  },
+  {
+    "id": "p6",
+    "name": "Gurjapneet Singh",
+    "team": "CSK",
+    "role": "Bowler",
+    "country": "India",
+    "overseas": false,
+    "points2025": 0,
+    "imageUrl": "https://documents.iplt20.com/ipl/IPLHeadshot2025/2256.png"
+  },
+  {
+    "id": "p7",
+    "name": "Jamie Overton",
+    "team": "CSK",
+    "role": "All-rounder",
+    "country": "England",
+    "overseas": true,
+    "points2025": 0,
+    "imageUrl": "https://documents.iplt20.com/ipl/IPLHeadshot2025/1216.png"
+  },
+  {
+    "id": "p8",
+    "name": "Kartik Sharma",
+    "team": "CSK",
+    "role": "Wicketkeeper",
+    "country": "India",
+    "overseas": false,
+    "points2025": 0,
+    "imageUrl": "https://img.ipl.com/upload/20251219/bb7ece32c4f99ad75f90d75898f555d1.jpg"
+  },
+  {
+    "id": "p9",
+    "name": "Khaleel Ahmed",
+    "team": "CSK",
+    "role": "Bowler",
+    "country": "India",
+    "overseas": false,
+    "points2025": 0,
+    "imageUrl": "https://documents.iplt20.com/ipl/IPLHeadshot2025/8.png"
+  },
+  {
+    "id": "p10",
+    "name": "MS Dhoni",
+    "team": "CSK",
+    "role": "Wicketkeeper",
+    "country": "India",
+    "overseas": false,
+    "points2025": 0,
+    "imageUrl": "https://documents.iplt20.com/ipl/IPLHeadshot2025/57.png"
+  },
+  {
+    "id": "p11",
+    "name": "Matt Henry",
+    "team": "CSK",
+    "role": "Bowler",
+    "country": "New Zealand",
+    "overseas": true,
+    "points2025": 0,
+    "imageUrl": "https://images.icc-cricket.com/image/upload/t_player-headshot-portrait-lg-webp/prd/assets/players/generic/colored/60544.png"
+  },
+  {
+    "id": "p12",
+    "name": "Matthew Short",
+    "team": "CSK",
+    "role": "All-rounder",
+    "country": "Australia",
+    "overseas": true,
+    "points2025": 0,
+    "imageUrl": "https://images.icc-cricket.com/image/upload/t_player-headshot-portrait-lg-webp/prd/assets/players/generic/colored/63846.png"
+  },
+  {
+    "id": "p13",
+    "name": "Mukesh Choudhary",
+    "team": "CSK",
+    "role": "Bowler",
+    "country": "India",
+    "overseas": false,
+    "points2025": 0,
+    "imageUrl": "https://documents.iplt20.com/ipl/IPLHeadshot2025/970.png"
+  },
+  {
+    "id": "p14",
+    "name": "Noor Ahmad",
+    "team": "CSK",
+    "role": "Bowler",
+    "country": "Afghanistan",
+    "overseas": true,
+    "points2025": 0,
+    "imageUrl": "https://documents.iplt20.com/ipl/IPLHeadshot2025/975.png"
+  },
+  {
+    "id": "p15",
+    "name": "Prashant Veer",
+    "team": "CSK",
+    "role": "All-rounder",
+    "country": "India",
+    "overseas": false,
+    "points2025": 0,
+    "imageUrl": "https://resize.indiatvnews.com/en/resize/newbucket/1200_-/2025/12/befunky-collage-2-1765884737.webp"
+  },
+  {
+    "id": "p16",
+    "name": "Rahul Chahar",
+    "team": "CSK",
+    "role": "Bowler",
+    "country": "India",
+    "overseas": false,
+    "points2025": 0,
+    "imageUrl": "https://documents.iplt20.com/ipl/IPLHeadshot2025/102.png"
+  },
+  {
+    "id": "p17",
+    "name": "Ramakrishna Ghosh",
+    "team": "CSK",
+    "role": "All-rounder",
+    "country": "India",
+    "overseas": false,
+    "points2025": 0,
+    "imageUrl": "https://documents.iplt20.com/ipl/IPLHeadshot2025/3559.png"
+  },
+  {
+    "id": "p18",
+    "name": "Ruturaj Gaikwad",
+    "team": "CSK",
+    "role": "Batsman",
+    "country": "India",
+    "overseas": false,
+    "points2025": 0,
+    "imageUrl": "https://documents.iplt20.com/ipl/IPLHeadshot2025/102.png"
+  },
+  {
+    "id": "p19",
+    "name": "Sanju Samson",
+    "team": "CSK",
+    "role": "Wicketkeeper",
+    "country": "India",
+    "overseas": false,
+    "points2025": 0,
+    "imageUrl": "https://images.icc-cricket.com/image/upload/t_player-headshot-portrait-lg-webp/prd/assets/players/generic/colored/61837.png"
+  },
+  {
+    "id": "p20",
+    "name": "Sarfaraz Khan",
+    "team": "CSK",
+    "role": "Batsman",
+    "country": "India",
+    "overseas": false,
+    "points2025": 0,
+    "imageUrl": "https://images.icc-cricket.com/image/upload/t_player-headshot-portrait-lg-webp/prd/assets/players/generic/colored/63962.png"
+  },
+  {
+    "id": "p21",
+    "name": "Shivam Dube",
+    "team": "CSK",
+    "role": "All-rounder",
+    "country": "India",
+    "overseas": false,
+    "points2025": 0,
+    "imageUrl": "https://documents.iplt20.com/ipl/IPLHeadshot2025/211.png"
+  },
+  {
+    "id": "p22",
+    "name": "Shreyas Gopal",
+    "team": "CSK",
+    "role": "Bowler",
+    "country": "India",
+    "overseas": false,
+    "points2025": 0,
+    "imageUrl": "https://documents.iplt20.com/ipl/IPLHeadshot2025/192.png"
+  },
+  {
+    "id": "p23",
+    "name": "Urvil Patel",
+    "team": "CSK",
+    "role": "Wicketkeeper",
+    "country": "India",
+    "overseas": false,
+    "points2025": 0,
+    "imageUrl": "https://documents.iplt20.com/ipl/IPLHeadshot2025/1486.png"
+  },
+  {
+    "id": "p24",
+    "name": "Zak Foulkes",
+    "team": "CSK",
+    "role": "Bowler",
+    "country": "Australia",
+    "overseas": true,
+    "points2025": 0,
+    "imageUrl": "https://images.icc-cricket.com/image/upload/t_player-headshot-portrait-lg-webp/prd/assets/players/generic/colored/90571.png"
+  },
+  {
+    "id": "p25",
+    "name": "Nathan Ellis",
+    "team": "CSK",
+    "role": "Bowler",
+    "country": "Australia",
+    "overseas": true,
+    "points2025": 0,
+    "imageUrl": "https://documents.iplt20.com/ipl/IPLHeadshot2025/633.png"
+  },
+  {
+    "id": "p26",
+    "name": "Spencer Johnson",
+    "team": "CSK",
+    "role": "Bowler",
+    "country": "Australia",
+    "overseas": true,
+    "points2025": 0,
+    "imageUrl": ""
+  },
+  {
+    "id": "p27",
+    "name": "Abhishek Porel",
+    "team": "DC",
+    "role": "Wicketkeeper",
+    "country": "India",
+    "overseas": false,
+    "points2025": 0,
+    "imageUrl": "https://documents.iplt20.com/ipl/IPLHeadshot2025/1580.png"
+  },
+  {
+    "id": "p28",
+    "name": "Ajay Mandal",
+    "team": "DC",
+    "role": "All-rounder",
+    "country": "India",
+    "overseas": false,
+    "points2025": 0,
+    "imageUrl": "https://documents.iplt20.com/ipl/IPLHeadshot2025/1931.png"
+  },
+  {
+    "id": "p29",
+    "name": "Ashutosh Sharma",
+    "team": "DC",
+    "role": "All-rounder",
+    "country": "India",
+    "overseas": false,
+    "points2025": 0,
+    "imageUrl": "https://documents.iplt20.com/ipl/IPLHeadshot2025/3109.png"
+  },
+  {
+    "id": "p30",
+    "name": "Auqib Dar",
+    "team": "DC",
+    "role": "Bowler",
+    "country": "India",
+    "overseas": false,
+    "points2025": 0,
+    "imageUrl": "https://img.ipl.com/upload/20251222/b1ae265576e31748f8e3d93c8de2a581.jpg"
+  },
+  {
+    "id": "p31",
+    "name": "Axar Patel",
+    "team": "DC",
+    "role": "All-rounder",
+    "country": "India",
+    "overseas": false,
+    "points2025": 0,
+    "imageUrl": "https://documents.iplt20.com/ipl/IPLHeadshot2025/110.png"
+  },
+  {
+    "id": "p32",
+    "name": "David Miller",
+    "team": "DC",
+    "role": "Batsman",
+    "country": "South Africa",
+    "overseas": true,
+    "points2025": 0,
+    "imageUrl": "https://static.cricketaddictor.com/images/team/david-miller.png?q=80"
+  },
+  {
+    "id": "p33",
+    "name": "Dushmantha Chameera",
+    "team": "DC",
+    "role": "Bowler",
+    "country": "Sri Lanka",
+    "overseas": true,
+    "points2025": 0,
+    "imageUrl": "https://documents.iplt20.com/ipl/IPLHeadshot2025/608.png"
+  },
+  {
+    "id": "p34",
+    "name": "KL Rahul",
+    "team": "DC",
+    "role": "Wicketkeeper",
+    "country": "India",
+    "overseas": false,
+    "points2025": 0,
+    "imageUrl": "https://documents.iplt20.com/ipl/IPLHeadshot2025/19.png"
+  },
+  {
+    "id": "p35",
+    "name": "Karun Nair",
+    "team": "DC",
+    "role": "Batsman",
+    "country": "India",
+    "overseas": false,
+    "points2025": 0,
+    "imageUrl": "https://documents.iplt20.com/ipl/IPLHeadshot2025/131.png"
+  },
+  {
+    "id": "p36",
+    "name": "Kuldeep Yadav",
+    "team": "DC",
+    "role": "Bowler",
+    "country": "India",
+    "overseas": false,
+    "points2025": 0,
+    "imageUrl": "https://documents.iplt20.com/ipl/IPLHeadshot2025/14.png"
+  },
+  {
+    "id": "p37",
+    "name": "Kyle Jamieson",
+    "team": "DC",
+    "role": "All-rounder",
+    "country": "New Zealand",
+    "overseas": true,
+    "points2025": 0,
+    "imageUrl": "https://documents.iplt20.com/ipl/IPLHeadshot2025/110.png"
+  },
+  {
+    "id": "p38",
+    "name": "Lungi Ngidi",
+    "team": "DC",
+    "role": "Bowler",
+    "country": "South Africa",
+    "overseas": true,
+    "points2025": 0,
+    "imageUrl": "https://documents.iplt20.com/ipl/IPLHeadshot2023/99.png"
+  },
+  {
+    "id": "p39",
+    "name": "Madhav Tiwari",
+    "team": "DC",
+    "role": "All-rounder",
+    "country": "India",
+    "overseas": false,
+    "points2025": 0,
+    "imageUrl": "https://documents.iplt20.com/ipl/IPLHeadshot2025/3561.png"
+  },
+  {
+    "id": "p40",
+    "name": "Mitchell Starc",
+    "team": "DC",
+    "role": "Bowler",
+    "country": "Australia",
+    "overseas": true,
+    "points2025": 0,
+    "imageUrl": "https://documents.iplt20.com/ipl/IPLHeadshot2025/31.png"
+  },
+  {
+    "id": "p41",
+    "name": "Mukesh Kumar",
+    "team": "DC",
+    "role": "Bowler",
+    "country": "India",
+    "overseas": false,
+    "points2025": 0,
+    "imageUrl": "https://documents.iplt20.com/ipl/IPLHeadshot2025/1462.png"
+  },
+  {
+    "id": "p42",
+    "name": "Nitish Rana",
+    "team": "DC",
+    "role": "Batsman",
+    "country": "India",
+    "overseas": false,
+    "points2025": 0,
+    "imageUrl": "https://documents.iplt20.com/ipl/IPLHeadshot2025/110.png"
+  },
+  {
+    "id": "p43",
+    "name": "Pathum Nissanka",
+    "team": "DC",
+    "role": "Batsman",
+    "country": "Sri Lanka",
+    "overseas": true,
+    "points2025": 0,
+    "imageUrl": "https://images.icc-cricket.com/image/upload/t_player-headshot-portrait-lg-webp/prd/assets/players/generic/colored/66368.png"
+  },
+  {
+    "id": "p44",
+    "name": "Prithvi Shaw",
+    "team": "DC",
+    "role": "Batsman",
+    "country": "India",
+    "overseas": false,
+    "points2025": 0,
+    "imageUrl": "https://documents.iplt20.com/ipl/IPLHeadshot2024/51.png"
+  },
+  {
+    "id": "p45",
+    "name": "Sahil Parakh",
+    "team": "DC",
+    "role": "Batsman",
+    "country": "India",
+    "overseas": false,
+    "points2025": 0,
+    "imageUrl": ""
+  },
+  {
+    "id": "p46",
+    "name": "Sameer Rizvi",
+    "team": "DC",
+    "role": "All-rounder",
+    "country": "India",
+    "overseas": false,
+    "points2025": 0,
+    "imageUrl": "https://documents.iplt20.com/ipl/IPLHeadshot2025/1229.png"
+  },
+  {
+    "id": "p47",
+    "name": "T Natarajan",
+    "team": "DC",
+    "role": "Bowler",
+    "country": "India",
+    "overseas": false,
+    "points2025": 0,
+    "imageUrl": "https://documents.iplt20.com/ipl/IPLHeadshot2025/224.png"
+  },
+  {
+    "id": "p48",
+    "name": "Tripurana Vijay",
+    "team": "DC",
+    "role": "All-rounder",
+    "country": "India",
+    "overseas": false,
+    "points2025": 0,
+    "imageUrl": "https://documents.iplt20.com/ipl/IPLHeadshot2025/3563.png"
+  },
+  {
+    "id": "p49",
+    "name": "Tristan Stubbs",
+    "team": "DC",
+    "role": "Batsman",
+    "country": "South Africa",
+    "overseas": true,
+    "points2025": 0,
+    "imageUrl": "https://documents.iplt20.com/ipl/IPLHeadshot2025/1017.png"
+  },
+  {
+    "id": "p50",
+    "name": "Vipraj Nigam",
+    "team": "DC",
+    "role": "All-rounder",
+    "country": "India",
+    "overseas": false,
+    "points2025": 0,
+    "imageUrl": "https://documents.iplt20.com/ipl/IPLHeadshot2025/3560.png"
+  },
+  {
+    "id": "p51",
+    "name": "Ben Duckett",
+    "team": "DC",
+    "role": "Batsman",
+    "country": "England",
+    "overseas": true,
+    "points2025": 0,
+    "imageUrl": "https://documents.iplt20.com/ipl/IPLHeadshot2025/110.png"
+  },
+  {
+    "id": "p52",
+    "name": "Anuj Rawat",
+    "team": "GT",
+    "role": "Wicketkeeper",
+    "country": "India",
+    "overseas": false,
+    "points2025": 0,
+    "imageUrl": "https://documents.iplt20.com/ipl/IPLHeadshot2025/534.png"
+  },
+  {
+    "id": "p53",
+    "name": "Arshad Khan",
+    "team": "GT",
+    "role": "Bowler",
+    "country": "India",
+    "overseas": false,
+    "points2025": 0,
+    "imageUrl": "https://documents.iplt20.com/ipl/IPLHeadshot2025/988.png"
+  },
+  {
+    "id": "p54",
+    "name": "Ashok Sharma",
+    "team": "GT",
+    "role": "Bowler",
+    "country": "India",
+    "overseas": false,
+    "points2025": 0,
+    "imageUrl": "https://images.icc-cricket.com/image/upload/t_player-headshot-portrait-lg-webp/prd/assets/players/generic/colored/91316.png"
+  },
+  {
+    "id": "p55",
+    "name": "Glenn Phillips",
+    "team": "GT",
+    "role": "All-rounder",
+    "country": "New Zealand",
+    "overseas": true,
+    "points2025": 0,
+    "imageUrl": "https://documents.iplt20.com/ipl/IPLHeadshot2025/635.png"
+  },
+  {
+    "id": "p56",
+    "name": "Gurnoor Brar",
+    "team": "GT",
+    "role": "Bowler",
+    "country": "India",
+    "overseas": false,
+    "points2025": 0,
+    "imageUrl": "https://documents.iplt20.com/ipl/IPLHeadshot2025/1231.png"
+  },
+  {
+    "id": "p57",
+    "name": "Ishant Sharma",
+    "team": "GT",
+    "role": "Bowler",
+    "country": "India",
+    "overseas": false,
+    "points2025": 0,
+    "imageUrl": "https://documents.iplt20.com/ipl/IPLHeadshot2025/50.png"
+  },
+  {
+    "id": "p58",
+    "name": "Jason Holder",
+    "team": "GT",
+    "role": "All-rounder",
+    "country": "West Indies",
+    "overseas": true,
+    "points2025": 0,
+    "imageUrl": "https://images.icc-cricket.com/image/upload/t_player-headshot-portrait-lg-webp/prd/assets/players/generic/colored/10232.png"
+  },
+  {
+    "id": "p59",
+    "name": "Jayant Yadav",
+    "team": "GT",
+    "role": "All-rounder",
+    "country": "India",
+    "overseas": false,
+    "points2025": 0,
+    "imageUrl": "https://documents.iplt20.com/ipl/IPLHeadshot2025/165.png"
+  },
+  {
+    "id": "p60",
+    "name": "Jos Buttler",
+    "team": "GT",
+    "role": "Wicketkeeper",
+    "country": "England",
+    "overseas": true,
+    "points2025": 0,
+    "imageUrl": "https://documents.iplt20.com/ipl/IPLHeadshot2025/182.png"
+  },
+  {
+    "id": "p61",
+    "name": "Kagiso Rabada",
+    "team": "GT",
+    "role": "Bowler",
+    "country": "South Africa",
+    "overseas": true,
+    "points2025": 0,
+    "imageUrl": "https://documents.iplt20.com/ipl/IPLHeadshot2025/116.png"
+  },
+  {
+    "id": "p62",
+    "name": "Kumar Kushagra",
+    "team": "GT",
+    "role": "Wicketkeeper",
+    "country": "India",
+    "overseas": false,
+    "points2025": 0,
+    "imageUrl": "https://documents.iplt20.com/ipl/IPLHeadshot2025/3101.png"
+  },
+  {
+    "id": "p63",
+    "name": "Luke Wood",
+    "team": "GT",
+    "role": "Bowler",
+    "country": "England",
+    "overseas": true,
+    "points2025": 0,
+    "imageUrl": "https://resources.ecb.co.uk/player-photos/test/800x800/1554.png"
+  },
+  {
+    "id": "p64",
+    "name": "Manav Suthar",
+    "team": "GT",
+    "role": "Bowler",
+    "country": "India",
+    "overseas": false,
+    "points2025": 0,
+    "imageUrl": "https://documents.iplt20.com/ipl/IPLHeadshot2025/2443.png"
+  },
+  {
+    "id": "p65",
+    "name": "Mohammed Siraj",
+    "team": "GT",
+    "role": "Bowler",
+    "country": "India",
+    "overseas": false,
+    "points2025": 0,
+    "imageUrl": "https://documents.iplt20.com/ipl/IPLHeadshot2025/63.png"
+  },
+  {
+    "id": "p66",
+    "name": "Nishant Sindhu",
+    "team": "GT",
+    "role": "All-rounder",
+    "country": "India",
+    "overseas": false,
+    "points2025": 0,
+    "imageUrl": "https://documents.iplt20.com/ipl/IPLHeadshot2025/791.png"
+  },
+  {
+    "id": "p67",
+    "name": "Prasidh Krishna",
+    "team": "GT",
+    "role": "Bowler",
+    "country": "India",
+    "overseas": false,
+    "points2025": 0,
+    "imageUrl": "https://documents.iplt20.com/ipl/IPLHeadshot2025/150.png"
+  },
+  {
+    "id": "p68",
+    "name": "R Sai Kishore",
+    "team": "GT",
+    "role": "Bowler",
+    "country": "India",
+    "overseas": false,
+    "points2025": 0,
+    "imageUrl": "https://documents.iplt20.com/ipl/IPLHeadshot2025/544.png"
+  },
+  {
+    "id": "p69",
+    "name": "Rahul Tewatia",
+    "team": "GT",
+    "role": "All-rounder",
+    "country": "India",
+    "overseas": false,
+    "points2025": 0,
+    "imageUrl": "https://documents.iplt20.com/ipl/IPLHeadshot2025/120.png"
+  },
+  {
+    "id": "p70",
+    "name": "Rashid Khan",
+    "team": "GT",
+    "role": "Bowler",
+    "country": "Afghanistan",
+    "overseas": true,
+    "points2025": 0,
+    "imageUrl": "https://documents.iplt20.com/ipl/IPLHeadshot2025/218.png"
+  },
+  {
+    "id": "p71",
+    "name": "Sai Sudharsan",
+    "team": "GT",
+    "role": "Batsman",
+    "country": "India",
+    "overseas": false,
+    "points2025": 0,
+    "imageUrl": "https://documents.iplt20.com/ipl/IPLHeadshot2025/976.png"
+  },
+  {
+    "id": "p72",
+    "name": "Shahrukh Khan",
+    "team": "GT",
+    "role": "Batsman",
+    "country": "India",
+    "overseas": false,
+    "points2025": 0,
+    "imageUrl": "https://documents.iplt20.com/ipl/IPLHeadshot2025/590.png"
+  },
+  {
+    "id": "p73",
+    "name": "Shubman Gill",
+    "team": "GT",
+    "role": "Batsman",
+    "country": "India",
+    "overseas": false,
+    "points2025": 0,
+    "imageUrl": "https://documents.iplt20.com/ipl/IPLHeadshot2025/62.png"
+  },
+  {
+    "id": "p74",
+    "name": "Tom Banton",
+    "team": "GT",
+    "role": "Wicketkeeper",
+    "country": "England",
+    "overseas": true,
+    "points2025": 0,
+    "imageUrl": "https://images.icc-cricket.com/image/upload/t_player-headshot-portrait-lg-webp/prd/assets/players/generic/colored/66923.png"
+  },
+  {
+    "id": "p75",
+    "name": "Washington Sundar",
+    "team": "GT",
+    "role": "All-rounder",
+    "country": "India",
+    "overseas": false,
+    "points2025": 0,
+    "imageUrl": "https://documents.iplt20.com/ipl/IPLHeadshot2025/20.png"
+  },
+  {
+    "id": "p76",
+    "name": "Kulwant Khejroliya",
+    "team": "GT",
+    "role": "Bowler",
+    "country": "India",
+    "overseas": false,
+    "points2025": 0,
+    "imageUrl": ""
+  },
+  {
+    "id": "p77",
+    "name": "Prithvi Raj Yarra",
+    "team": "GT",
+    "role": "Bowler",
+    "country": "India",
+    "overseas": false,
+    "points2025": 0,
+    "imageUrl": ""
+  },
+  {
+    "id": "p78",
+    "name": "Ajinkya Rahane",
+    "team": "KKR",
+    "role": "Batsman",
+    "country": "India",
+    "overseas": false,
+    "points2025": 0,
+    "imageUrl": "https://documents.iplt20.com/ipl/IPLHeadshot2025/44.png"
+  },
+  {
+    "id": "p79",
+    "name": "Angkrish Raghuvanshi",
+    "team": "KKR",
+    "role": "Batsman",
+    "country": "India",
+    "overseas": false,
+    "points2025": 0,
+    "imageUrl": "https://documents.iplt20.com/ipl/IPLHeadshot2025/787.png"
+  },
+  {
+    "id": "p80",
+    "name": "Anukul Roy",
+    "team": "KKR",
+    "role": "All-rounder",
+    "country": "India",
+    "overseas": false,
+    "points2025": 0,
+    "imageUrl": "https://documents.iplt20.com/ipl/IPLHeadshot2025/160.png"
+  },
+  {
+    "id": "p81",
+    "name": "Cameron Green",
+    "team": "KKR",
+    "role": "All-rounder",
+    "country": "Australia",
+    "overseas": true,
+    "points2025": 0,
+    "imageUrl": "https://images.icc-cricket.com/image/upload/t_player-headshot-portrait-lg-webp/prd/assets/players/generic/colored/66870.png"
+  },
+  {
+    "id": "p82",
+    "name": "Daksh Kamra",
+    "team": "KKR",
+    "role": "All-rounder",
+    "country": "India",
+    "overseas": false,
+    "points2025": 0,
+    "imageUrl": ""
+  },
+  {
+    "id": "p83",
+    "name": "Finn Allen",
+    "team": "KKR",
+    "role": "Batsman",
+    "country": "New Zealand",
+    "overseas": true,
+    "points2025": 0,
+    "imageUrl": "https://images.icc-cricket.com/image/upload/t_player-headshot-portrait-lg-webp/prd/assets/players/generic/colored/66046.png"
+  },
+  {
+    "id": "p84",
+    "name": "Kartik Tyagi",
+    "team": "KKR",
+    "role": "Bowler",
+    "country": "India",
+    "overseas": false,
+    "points2025": 0,
+    "imageUrl": ""
+  },
+  {
+    "id": "p85",
+    "name": "Manish Pandey",
+    "team": "KKR",
+    "role": "Batsman",
+    "country": "India",
+    "overseas": false,
+    "points2025": 0,
+    "imageUrl": "https://documents.iplt20.com/ipl/IPLHeadshot2025/16.png"
+  },
+  {
+    "id": "p86",
+    "name": "Matheesha Pathirana",
+    "team": "KKR",
+    "role": "Bowler",
+    "country": "Sri Lanka",
+    "overseas": true,
+    "points2025": 0,
+    "imageUrl": "https://static.cricketaddictor.com/images/team/matheesha-pathirana.png?q=80"
+  },
+  {
+    "id": "p87",
+    "name": "Prashant Solanki",
+    "team": "KKR",
+    "role": "Bowler",
+    "country": "India",
+    "overseas": false,
+    "points2025": 0,
+    "imageUrl": ""
+  },
+  {
+    "id": "p88",
+    "name": "Rachin Ravindra",
+    "team": "KKR",
+    "role": "All-rounder",
+    "country": "New Zealand",
+    "overseas": true,
+    "points2025": 0,
+    "imageUrl": "https://images.icc-cricket.com/image/upload/t_player-headshot-portrait-lg-webp/prd/assets/players/generic/colored/66053.png"
+  },
+  {
+    "id": "p89",
+    "name": "Rahul Tripathi",
+    "team": "KKR",
+    "role": "Batsman",
+    "country": "India",
+    "overseas": false,
+    "points2025": 0,
+    "imageUrl": "https://img.ipl.com/upload/20251103/36296154187d2cfdf956fc82eff2f45f.jpg"
+  },
+  {
+    "id": "p90",
+    "name": "Ramandeep Singh",
+    "team": "KKR",
+    "role": "All-rounder",
+    "country": "India",
+    "overseas": false,
+    "points2025": 0,
+    "imageUrl": "https://documents.iplt20.com/ipl/IPLHeadshot2025/991.png"
+  },
+  {
+    "id": "p91",
+    "name": "Rinku Singh",
+    "team": "KKR",
+    "role": "Batsman",
+    "country": "India",
+    "overseas": false,
+    "points2025": 0,
+    "imageUrl": "https://documents.iplt20.com/ipl/IPLHeadshot2025/152.png"
+  },
+  {
+    "id": "p92",
+    "name": "Rovman Powell",
+    "team": "KKR",
+    "role": "Batsman",
+    "country": "West Indies",
+    "overseas": true,
+    "points2025": 0,
+    "imageUrl": "https://documents.iplt20.com/ipl/IPLHeadshot2025/329.png"
+  },
+  {
+    "id": "p93",
+    "name": "Sarthak Ranjan",
+    "team": "KKR",
+    "role": "All-rounder",
+    "country": "India",
+    "overseas": false,
+    "points2025": 0,
+    "imageUrl": ""
+  },
+  {
+    "id": "p94",
+    "name": "Sunil Narine",
+    "team": "KKR",
+    "role": "All-rounder",
+    "country": "West Indies",
+    "overseas": true,
+    "points2025": 0,
+    "imageUrl": "https://documents.iplt20.com/ipl/IPLHeadshot2025/156.png"
+  },
+  {
+    "id": "p95",
+    "name": "Tejasvi Singh",
+    "team": "KKR",
+    "role": "Wicketkeeper",
+    "country": "India",
+    "overseas": false,
+    "points2025": 0,
+    "imageUrl": ""
+  },
+  {
+    "id": "p96",
+    "name": "Tim Seifert",
+    "team": "KKR",
+    "role": "Wicketkeeper",
+    "country": "New Zealand",
+    "overseas": true,
+    "points2025": 0,
+    "imageUrl": "https://documents.iplt20.com/ipl/IPLHeadshot2025/44.png"
+  },
+  {
+    "id": "p97",
+    "name": "Umran Malik",
+    "team": "KKR",
+    "role": "Bowler",
+    "country": "India",
+    "overseas": false,
+    "points2025": 0,
+    "imageUrl": "https://img.ipl.com/upload/20241017/540f7e7b0ac3835ea07923d3c8624d16.jpg"
+  },
+  {
+    "id": "p98",
+    "name": "Vaibhav Arora",
+    "team": "KKR",
+    "role": "Bowler",
+    "country": "India",
+    "overseas": false,
+    "points2025": 0,
+    "imageUrl": "https://documents.iplt20.com/ipl/IPLHeadshot2025/583.png"
+  },
+  {
+    "id": "p99",
+    "name": "Varun Chakaravarthy",
+    "team": "KKR",
+    "role": "Bowler",
+    "country": "India",
+    "overseas": false,
+    "points2025": 0,
+    "imageUrl": "https://documents.iplt20.com/ipl/IPLHeadshot2025/140.png"
+  },
+  {
+    "id": "p100",
+    "name": "Akash Deep",
+    "team": "KKR",
+    "role": "Bowler",
+    "country": "India",
+    "overseas": false,
+    "points2025": 0,
+    "imageUrl": "https://static.cricketaddictor.com/images/team/akash-deep.png?q=80"
+  },
+  {
+    "id": "p101",
+    "name": "Blessing Muzarabani",
+    "team": "KKR",
+    "role": "Bowler",
+    "country": "Zimbabwe",
+    "overseas": true,
+    "points2025": 0,
+    "imageUrl": ""
+  },
+  {
+    "id": "p102",
+    "name": "Harshit Rana",
+    "team": "KKR",
+    "role": "Bowler",
+    "country": "India",
+    "overseas": false,
+    "points2025": 0,
+    "imageUrl": "https://documents.iplt20.com/ipl/IPLHeadshot2025/1013.png"
+  },
+  {
+    "id": "p103",
+    "name": "Mustafizur Rahman",
+    "team": "KKR",
+    "role": "Bowler",
+    "country": "Bangladesh",
+    "overseas": true,
+    "points2025": 0,
+    "imageUrl": "https://documents.iplt20.com/ipl/IPLHeadshot2025/258.png"
+  },
+  {
+    "id": "p104",
+    "name": "Navdeep Saini",
+    "team": "KKR",
+    "role": "Bowler",
+    "country": "India",
+    "overseas": false,
+    "points2025": 0,
+    "imageUrl": ""
+  },
+  {
+    "id": "p105",
+    "name": "Saurabh Dubey",
+    "team": "KKR",
+    "role": "Bowler",
+    "country": "India",
+    "overseas": false,
+    "points2025": 0,
+    "imageUrl": ""
+  },
+  {
+    "id": "p106",
+    "name": "Abdul Samad",
+    "team": "LSG",
+    "role": "All-rounder",
+    "country": "India",
+    "overseas": false,
+    "points2025": 0,
+    "imageUrl": "https://documents.iplt20.com/ipl/IPLHeadshot2025/525.png"
+  },
+  {
+    "id": "p107",
+    "name": "Aiden Markram",
+    "team": "LSG",
+    "role": "Batsman",
+    "country": "South Africa",
+    "overseas": true,
+    "points2025": 0,
+    "imageUrl": "https://documents.iplt20.com/ipl/IPLHeadshot2025/287.png"
+  },
+  {
+    "id": "p108",
+    "name": "Akash Singh",
+    "team": "LSG",
+    "role": "Bowler",
+    "country": "India",
+    "overseas": false,
+    "points2025": 0,
+    "imageUrl": "https://documents.iplt20.com/ipl/IPLHeadshot2025/535.png"
+  },
+  {
+    "id": "p109",
+    "name": "Akshat Raghuwanshi",
+    "team": "LSG",
+    "role": "Batsman",
+    "country": "India",
+    "overseas": false,
+    "points2025": 0,
+    "imageUrl": ""
+  },
+  {
+    "id": "p110",
+    "name": "Anrich Nortje",
+    "team": "LSG",
+    "role": "Bowler",
+    "country": "South Africa",
+    "overseas": true,
+    "points2025": 0,
+    "imageUrl": "https://static.cricketaddictor.com/images/team/anrich-nortje.png?q=80"
+  },
+  {
+    "id": "p111",
+    "name": "Arjun Tendulkar",
+    "team": "LSG",
+    "role": "All-rounder",
+    "country": "India",
+    "overseas": false,
+    "points2025": 0,
+    "imageUrl": "https://static.cricketaddictor.com/images/team/arjun-tendulkar.png?q=80"
+  },
+  {
+    "id": "p112",
+    "name": "Arshin Kulkarni",
+    "team": "LSG",
+    "role": "All-rounder",
+    "country": "India",
+    "overseas": false,
+    "points2025": 0,
+    "imageUrl": "https://documents.iplt20.com/ipl/IPLHeadshot2025/2788.png"
+  },
+  {
+    "id": "p113",
+    "name": "Avesh Khan",
+    "team": "LSG",
+    "role": "Bowler",
+    "country": "India",
+    "overseas": false,
+    "points2025": 0,
+    "imageUrl": "https://documents.iplt20.com/ipl/IPLHeadshot2025/109.png"
+  },
+  {
+    "id": "p114",
+    "name": "Ayush Badoni",
+    "team": "LSG",
+    "role": "Batsman",
+    "country": "India",
+    "overseas": false,
+    "points2025": 0,
+    "imageUrl": "https://documents.iplt20.com/ipl/IPLHeadshot2025/985.png"
+  },
+  {
+    "id": "p115",
+    "name": "Digvesh Rathi",
+    "team": "LSG",
+    "role": "Bowler",
+    "country": "India",
+    "overseas": false,
+    "points2025": 0,
+    "imageUrl": "https://documents.iplt20.com/ipl/IPLHeadshot2025/3565.png"
+  },
+  {
+    "id": "p116",
+    "name": "Himmat Singh",
+    "team": "LSG",
+    "role": "Batsman",
+    "country": "India",
+    "overseas": false,
+    "points2025": 0,
+    "imageUrl": "https://documents.iplt20.com/ipl/IPLHeadshot2025/203.png"
+  },
+  {
+    "id": "p117",
+    "name": "Josh Inglis",
+    "team": "LSG",
+    "role": "Wicketkeeper",
+    "country": "Australia",
+    "overseas": true,
+    "points2025": 0,
+    "imageUrl": "https://images.icc-cricket.com/image/upload/t_player-headshot-portrait-lg-webp/prd/assets/players/generic/colored/65893.png"
+  },
+  {
+    "id": "p118",
+    "name": "M Siddharth",
+    "team": "LSG",
+    "role": "Bowler",
+    "country": "India",
+    "overseas": false,
+    "points2025": 0,
+    "imageUrl": "https://documents.iplt20.com/ipl/IPLHeadshot2025/532.png"
+  },
+  {
+    "id": "p119",
+    "name": "Matthew Breetzke",
+    "team": "LSG",
+    "role": "Batsman",
+    "country": "South Africa",
+    "overseas": true,
+    "points2025": 0,
+    "imageUrl": "https://documents.iplt20.com/ipl/IPLHeadshot2025/2805.png"
+  },
+  {
+    "id": "p120",
+    "name": "Mayank Yadav",
+    "team": "LSG",
+    "role": "Bowler",
+    "country": "India",
+    "overseas": false,
+    "points2025": 0,
+    "imageUrl": "https://static.cricketaddictor.com/images/team/mayank-yadav.png?q=80"
+  },
+  {
+    "id": "p121",
+    "name": "Mitchell Marsh",
+    "team": "LSG",
+    "role": "All-rounder",
+    "country": "Australia",
+    "overseas": true,
+    "points2025": 0,
+    "imageUrl": "https://documents.iplt20.com/ipl/IPLHeadshot2025/40.png"
+  },
+  {
+    "id": "p122",
+    "name": "Mohammed Shami",
+    "team": "LSG",
+    "role": "Bowler",
+    "country": "India",
+    "overseas": false,
+    "points2025": 0,
+    "imageUrl": "https://documents.bcci.tv/resizedimageskirti/94_compress.png"
+  },
+  {
+    "id": "p123",
+    "name": "Mohsin Khan",
+    "team": "LSG",
+    "role": "Bowler",
+    "country": "India",
+    "overseas": false,
+    "points2025": 0,
+    "imageUrl": "https://documents.iplt20.com/ipl/IPLHeadshot2024/541.png"
+  },
+  {
+    "id": "p124",
+    "name": "Mukul Choudhary",
+    "team": "LSG",
+    "role": "Wicketkeeper",
+    "country": "India",
+    "overseas": false,
+    "points2025": 0,
+    "imageUrl": ""
+  },
+  {
+    "id": "p125",
+    "name": "Naman Tiwari",
+    "team": "LSG",
+    "role": "Bowler",
+    "country": "India",
+    "overseas": false,
+    "points2025": 0,
+    "imageUrl": ""
+  },
+  {
+    "id": "p126",
+    "name": "Nicholas Pooran",
+    "team": "LSG",
+    "role": "Wicketkeeper",
+    "country": "West Indies",
+    "overseas": true,
+    "points2025": 0,
+    "imageUrl": "https://documents.iplt20.com/ipl/IPLHeadshot2025/136.png"
+  },
+  {
+    "id": "p127",
+    "name": "Prince Yadav",
+    "team": "LSG",
+    "role": "Bowler",
+    "country": "India",
+    "overseas": false,
+    "points2025": 0,
+    "imageUrl": "https://documents.iplt20.com/ipl/IPLHeadshot2025/1225.png"
+  },
+  {
+    "id": "p128",
+    "name": "Rishabh Pant",
+    "team": "LSG",
+    "role": "Wicketkeeper",
+    "country": "India",
+    "overseas": false,
+    "points2025": 0,
+    "imageUrl": "https://documents.iplt20.com/ipl/IPLHeadshot2025/18.png"
+  },
+  {
+    "id": "p129",
+    "name": "Shahbaz Ahmed",
+    "team": "LSG",
+    "role": "All-rounder",
+    "country": "India",
+    "overseas": false,
+    "points2025": 0,
+    "imageUrl": "https://documents.iplt20.com/ipl/IPLHeadshot2025/523.png"
+  },
+  {
+    "id": "p130",
+    "name": "Wanindu Hasaranga",
+    "team": "LSG",
+    "role": "All-rounder",
+    "country": "Sri Lanka",
+    "overseas": true,
+    "points2025": 0,
+    "imageUrl": "https://images.icc-cricket.com/image/upload/t_player-headshot-portrait-lg-webp/prd/assets/players/generic/colored/65027.png"
+  },
+  {
+    "id": "p131",
+    "name": "Allah Ghazanfar",
+    "team": "MI",
+    "role": "Bowler",
+    "country": "Afghanistan",
+    "overseas": true,
+    "points2025": 0,
+    "imageUrl": "https://www.mumbaiindians.com/static-assets/images/players/large/action-shots/96648.png?v=4.16&w=400"
+  },
+  {
+    "id": "p132",
+    "name": "Ashwani Kumar",
+    "team": "MI",
+    "role": "Bowler",
+    "country": "India",
+    "overseas": false,
+    "points2025": 0,
+    "imageUrl": "https://documents.iplt20.com/ipl/IPLHeadshot2025/3569.png"
+  },
+  {
+    "id": "p133",
+    "name": "Atharva Ankolekar",
+    "team": "MI",
+    "role": "All-rounder",
+    "country": "India",
+    "overseas": false,
+    "points2025": 0,
+    "imageUrl": ""
+  },
+  {
+    "id": "p134",
+    "name": "Corbin Bosch",
+    "team": "MI",
+    "role": "All-rounder",
+    "country": "South Africa",
+    "overseas": true,
+    "points2025": 0,
+    "imageUrl": "https://images.icc-cricket.com/image/upload/t_player-headshot-portrait-lg-webp/prd/assets/players/generic/colored/63605.png"
+  },
+  {
+    "id": "p135",
+    "name": "Danish Malewar",
+    "team": "MI",
+    "role": "Batsman",
+    "country": "India",
+    "overseas": false,
+    "points2025": 0,
+    "imageUrl": ""
+  },
+  {
+    "id": "p136",
+    "name": "Deepak Chahar",
+    "team": "MI",
+    "role": "Bowler",
+    "country": "India",
+    "overseas": false,
+    "points2025": 0,
+    "imageUrl": "https://documents.iplt20.com/ipl/IPLHeadshot2025/91.png"
+  },
+  {
+    "id": "p137",
+    "name": "Hardik Pandya",
+    "team": "MI",
+    "role": "All-rounder",
+    "country": "India",
+    "overseas": false,
+    "points2025": 0,
+    "imageUrl": "https://documents.iplt20.com/ipl/IPLHeadshot2025/54.png"
+  },
+  {
+    "id": "p138",
+    "name": "Jasprit Bumrah",
+    "team": "MI",
+    "role": "Bowler",
+    "country": "India",
+    "overseas": false,
+    "points2025": 0,
+    "imageUrl": "https://documents.iplt20.com/ipl/IPLHeadshot2025/9.png"
+  },
+  {
+    "id": "p139",
+    "name": "Mayank Markande",
+    "team": "MI",
+    "role": "Bowler",
+    "country": "India",
+    "overseas": false,
+    "points2025": 0,
+    "imageUrl": "https://images.icc-cricket.com/image/upload/t_player-headshot-portrait-lg-webp/prd/assets/players/generic/colored/67126.png"
+  },
+  {
+    "id": "p140",
+    "name": "Mayank Rawat",
+    "team": "MI",
+    "role": "Wicketkeeper",
+    "country": "India",
+    "overseas": false,
+    "points2025": 0,
+    "imageUrl": ""
+  },
+  {
+    "id": "p141",
+    "name": "Mitchell Santner",
+    "team": "MI",
+    "role": "All-rounder",
+    "country": "New Zealand",
+    "overseas": true,
+    "points2025": 0,
+    "imageUrl": "https://documents.iplt20.com/ipl/IPLHeadshot2025/75.png"
+  },
+  {
+    "id": "p142",
+    "name": "Mohammad Izhar",
+    "team": "MI",
+    "role": "Bowler",
+    "country": "India",
+    "overseas": false,
+    "points2025": 0,
+    "imageUrl": ""
+  },
+  {
+    "id": "p143",
+    "name": "Naman Dhir",
+    "team": "MI",
+    "role": "All-rounder",
+    "country": "India",
+    "overseas": false,
+    "points2025": 0,
+    "imageUrl": "https://documents.iplt20.com/ipl/IPLHeadshot2025/3107.png"
+  },
+  {
+    "id": "p144",
+    "name": "Quinton de Kock",
+    "team": "MI",
+    "role": "Wicketkeeper",
+    "country": "South Africa",
+    "overseas": true,
+    "points2025": 0,
+    "imageUrl": "https://images.icc-cricket.com/image/upload/t_player-headshot-portrait-lg-webp/prd/assets/players/generic/colored/28035.png"
+  },
+  {
+    "id": "p145",
+    "name": "Raghu Sharma",
+    "team": "MI",
+    "role": "Bowler",
+    "country": "India",
+    "overseas": false,
+    "points2025": 0,
+    "imageUrl": ""
+  },
+  {
+    "id": "p146",
+    "name": "Raj Bawa",
+    "team": "MI",
+    "role": "All-rounder",
+    "country": "India",
+    "overseas": false,
+    "points2025": 0,
+    "imageUrl": "https://documents.iplt20.com/ipl/IPLHeadshot2025/781.png"
+  },
+  {
+    "id": "p147",
+    "name": "Robin Minz",
+    "team": "MI",
+    "role": "Wicketkeeper",
+    "country": "India",
+    "overseas": false,
+    "points2025": 0,
+    "imageUrl": "https://documents.iplt20.com/ipl/IPLHeadshot2025/3103.png"
+  },
+  {
+    "id": "p148",
+    "name": "Rohit Sharma",
+    "team": "MI",
+    "role": "Batsman",
+    "country": "India",
+    "overseas": false,
+    "points2025": 0,
+    "imageUrl": "https://documents.iplt20.com/ipl/IPLHeadshot2025/6.png"
+  },
+  {
+    "id": "p149",
+    "name": "Ryan Rickelton",
+    "team": "MI",
+    "role": "Batsman",
+    "country": "South Africa",
+    "overseas": true,
+    "points2025": 0,
+    "imageUrl": "https://documents.iplt20.com/ipl/IPLHeadshot2025/743.png"
+  },
+  {
+    "id": "p150",
+    "name": "Shardul Thakur",
+    "team": "MI",
+    "role": "All-rounder",
+    "country": "India",
+    "overseas": false,
+    "points2025": 0,
+    "imageUrl": "https://documents.iplt20.com/ipl/IPLHeadshot2025/54.png"
+  },
+  {
+    "id": "p151",
+    "name": "Sherfane Rutherford",
+    "team": "MI",
+    "role": "Batsman",
+    "country": "West Indies",
+    "overseas": true,
+    "points2025": 0,
+    "imageUrl": "https://d13ir53smqqeyp.cloudfront.net/fc-player-images/17224.png"
+  },
+  {
+    "id": "p152",
+    "name": "Suryakumar Yadav",
+    "team": "MI",
+    "role": "Batsman",
+    "country": "India",
+    "overseas": false,
+    "points2025": 0,
+    "imageUrl": "https://documents.iplt20.com/ipl/IPLHeadshot2025/174.png"
+  },
+  {
+    "id": "p153",
+    "name": "Tilak Varma",
+    "team": "MI",
+    "role": "Batsman",
+    "country": "India",
+    "overseas": false,
+    "points2025": 0,
+    "imageUrl": "https://documents.iplt20.com/ipl/IPLHeadshot2025/993.png"
+  },
+  {
+    "id": "p154",
+    "name": "Trent Boult",
+    "team": "MI",
+    "role": "Bowler",
+    "country": "New Zealand",
+    "overseas": true,
+    "points2025": 0,
+    "imageUrl": "https://documents.iplt20.com/ipl/IPLHeadshot2025/66.png"
+  },
+  {
+    "id": "p155",
+    "name": "Will Jacks",
+    "team": "MI",
+    "role": "All-rounder",
+    "country": "England",
+    "overseas": true,
+    "points2025": 0,
+    "imageUrl": "https://images.icc-cricket.com/image/upload/t_player-headshot-portrait-lg-webp/prd/assets/players/generic/colored/66927.png"
+  },
+  {
+    "id": "p156",
+    "name": "Arshdeep Singh",
+    "team": "PBKS",
+    "role": "Bowler",
+    "country": "India",
+    "overseas": false,
+    "points2025": 0,
+    "imageUrl": "https://documents.iplt20.com/ipl/IPLHeadshot2025/125.png"
+  },
+  {
+    "id": "p157",
+    "name": "Azmatullah Omarzai",
+    "team": "PBKS",
+    "role": "All-rounder",
+    "country": "Afghanistan",
+    "overseas": true,
+    "points2025": 0,
+    "imageUrl": "https://documents.iplt20.com/ipl/IPLHeadshot2025/1354.png"
+  },
+  {
+    "id": "p158",
+    "name": "Ben Dwarshuis",
+    "team": "PBKS",
+    "role": "Bowler",
+    "country": "Australia",
+    "overseas": true,
+    "points2025": 0,
+    "imageUrl": "https://static-files.cricket-australia.pulselive.com/headshots/440/770-camedia.png"
+  },
+  {
+    "id": "p159",
+    "name": "Cooper Connolly",
+    "team": "PBKS",
+    "role": "All-rounder",
+    "country": "Australia",
+    "overseas": true,
+    "points2025": 0,
+    "imageUrl": "https://static-files.cricket-australia.pulselive.com/headshots/440/3,958-camedia.png"
+  },
+  {
+    "id": "p160",
+    "name": "Harnoor Singh",
+    "team": "PBKS",
+    "role": "Batsman",
+    "country": "India",
+    "overseas": false,
+    "points2025": 0,
+    "imageUrl": ""
+  },
+  {
+    "id": "p161",
+    "name": "Harpreet Brar",
+    "team": "PBKS",
+    "role": "All-rounder",
+    "country": "India",
+    "overseas": false,
+    "points2025": 0,
+    "imageUrl": "https://documents.iplt20.com/ipl/IPLHeadshot2025/130.png"
+  },
+  {
+    "id": "p162",
+    "name": "Lockie Ferguson",
+    "team": "PBKS",
+    "role": "Bowler",
+    "country": "New Zealand",
+    "overseas": true,
+    "points2025": 0,
+    "imageUrl": "https://images.icc-cricket.com/image/upload/t_player-headshot-portrait-lg-webp/prd/assets/players/generic/colored/63719.png"
+  },
+  {
+    "id": "p163",
+    "name": "Marco Jansen",
+    "team": "PBKS",
+    "role": "All-rounder",
+    "country": "South Africa",
+    "overseas": true,
+    "points2025": 0,
+    "imageUrl": "https://documents.iplt20.com/ipl/IPLHeadshot2025/586.png"
+  },
+  {
+    "id": "p164",
+    "name": "Marcus Stoinis",
+    "team": "PBKS",
+    "role": "All-rounder",
+    "country": "Australia",
+    "overseas": true,
+    "points2025": 0,
+    "imageUrl": "https://documents.iplt20.com/ipl/IPLHeadshot2025/23.png"
+  },
+  {
+    "id": "p165",
+    "name": "Mitch Owen",
+    "team": "PBKS",
+    "role": "All-rounder",
+    "country": "Australia",
+    "overseas": true,
+    "points2025": 0,
+    "imageUrl": ""
+  },
+  {
+    "id": "p166",
+    "name": "Musheer Khan",
+    "team": "PBKS",
+    "role": "All-rounder",
+    "country": "India",
+    "overseas": false,
+    "points2025": 0,
+    "imageUrl": "https://documents.iplt20.com/ipl/IPLHeadshot2025/2813.png"
+  },
+  {
+    "id": "p167",
+    "name": "Nehal Wadhera",
+    "team": "PBKS",
+    "role": "Batsman",
+    "country": "India",
+    "overseas": false,
+    "points2025": 0,
+    "imageUrl": "https://documents.iplt20.com/ipl/IPLHeadshot2025/1541.png"
+  },
+  {
+    "id": "p168",
+    "name": "Prabhsimran Singh",
+    "team": "PBKS",
+    "role": "Wicketkeeper",
+    "country": "India",
+    "overseas": false,
+    "points2025": 0,
+    "imageUrl": "https://documents.iplt20.com/ipl/IPLHeadshot2025/137.png"
+  },
+  {
+    "id": "p169",
+    "name": "Pravin Dubey",
+    "team": "PBKS",
+    "role": "All-rounder",
+    "country": "India",
+    "overseas": false,
+    "points2025": 0,
+    "imageUrl": "https://documents.iplt20.com/ipl/IPLHeadshot2025/548.png"
+  },
+  {
+    "id": "p170",
+    "name": "Priyansh Arya",
+    "team": "PBKS",
+    "role": "Batsman",
+    "country": "India",
+    "overseas": false,
+    "points2025": 0,
+    "imageUrl": "https://documents.iplt20.com/ipl/IPLHeadshot2025/3571.png"
+  },
+  {
+    "id": "p171",
+    "name": "Pyla Avinash",
+    "team": "PBKS",
+    "role": "Batsman",
+    "country": "India",
+    "overseas": false,
+    "points2025": 0,
+    "imageUrl": "https://documents.iplt20.com/ipl/IPLHeadshot2025/3573.png"
+  },
+  {
+    "id": "p172",
+    "name": "Shashank Singh",
+    "team": "PBKS",
+    "role": "All-rounder",
+    "country": "India",
+    "overseas": false,
+    "points2025": 0,
+    "imageUrl": "https://documents.iplt20.com/ipl/IPLHeadshot2025/191.png"
+  },
+  {
+    "id": "p173",
+    "name": "Shreyas Iyer",
+    "team": "PBKS",
+    "role": "Batsman",
+    "country": "India",
+    "overseas": false,
+    "points2025": 0,
+    "imageUrl": "https://documents.iplt20.com/ipl/IPLHeadshot2025/12.png"
+  },
+  {
+    "id": "p174",
+    "name": "Suryansh Shedge",
+    "team": "PBKS",
+    "role": "All-rounder",
+    "country": "India",
+    "overseas": false,
+    "points2025": 0,
+    "imageUrl": "https://documents.iplt20.com/ipl/IPLHeadshot2025/2146.png"
+  },
+  {
+    "id": "p175",
+    "name": "Vishal Nishad",
+    "team": "PBKS",
+    "role": "Wicketkeeper",
+    "country": "India",
+    "overseas": false,
+    "points2025": 0,
+    "imageUrl": ""
+  },
+  {
+    "id": "p176",
+    "name": "Vishnu Vinod",
+    "team": "PBKS",
+    "role": "Wicketkeeper",
+    "country": "India",
+    "overseas": false,
+    "points2025": 0,
+    "imageUrl": "https://documents.iplt20.com/ipl/IPLHeadshot2025/581.png"
+  },
+  {
+    "id": "p177",
+    "name": "Vyshak Vijaykumar",
+    "team": "PBKS",
+    "role": "Bowler",
+    "country": "India",
+    "overseas": false,
+    "points2025": 0,
+    "imageUrl": "https://documents.iplt20.com/ipl/IPLHeadshot2025/2034.png"
+  },
+  {
+    "id": "p178",
+    "name": "Xavier Bartlett",
+    "team": "PBKS",
+    "role": "Bowler",
+    "country": "Australia",
+    "overseas": true,
+    "points2025": 0,
+    "imageUrl": "https://documents.iplt20.com/ipl/IPLHeadshot2025/3572.png"
+  },
+  {
+    "id": "p179",
+    "name": "Yash Thakur",
+    "team": "PBKS",
+    "role": "Bowler",
+    "country": "India",
+    "overseas": false,
+    "points2025": 0,
+    "imageUrl": "https://documents.iplt20.com/ipl/IPLHeadshot2025/1550.png"
+  },
+  {
+    "id": "p180",
+    "name": "Yuzvendra Chahal",
+    "team": "PBKS",
+    "role": "Bowler",
+    "country": "India",
+    "overseas": false,
+    "points2025": 0,
+    "imageUrl": "https://documents.iplt20.com/ipl/IPLHeadshot2025/10.png"
+  },
+  {
+    "id": "p181",
+    "name": "Aman Rao Perala",
+    "team": "RR",
+    "role": "Batsman",
+    "country": "India",
+    "overseas": false,
+    "points2025": 0,
+    "imageUrl": ""
+  },
+  {
+    "id": "p182",
+    "name": "Brijesh Sharma",
+    "team": "RR",
+    "role": "Wicketkeeper",
+    "country": "India",
+    "overseas": false,
+    "points2025": 0,
+    "imageUrl": ""
+  },
+  {
+    "id": "p183",
+    "name": "Dhruv Jurel",
+    "team": "RR",
+    "role": "Wicketkeeper",
+    "country": "India",
+    "overseas": false,
+    "points2025": 0,
+    "imageUrl": "https://documents.iplt20.com/ipl/IPLHeadshot2025/1004.png"
+  },
+  {
+    "id": "p184",
+    "name": "Donovan Ferreira",
+    "team": "RR",
+    "role": "All-rounder",
+    "country": "South Africa",
+    "overseas": true,
+    "points2025": 0,
+    "imageUrl": "https://images.icc-cricket.com/image/upload/t_player-headshot-portrait-lg-webp/prd/assets/players/generic/colored/23487.png"
+  },
+  {
+    "id": "p185",
+    "name": "Jofra Archer",
+    "team": "RR",
+    "role": "Bowler",
+    "country": "England",
+    "overseas": true,
+    "points2025": 0,
+    "imageUrl": "https://documents.iplt20.com/ipl/IPLHeadshot2025/181.png"
+  },
+  {
+    "id": "p186",
+    "name": "Kuldeep Sen",
+    "team": "RR",
+    "role": "Bowler",
+    "country": "India",
+    "overseas": false,
+    "points2025": 0,
+    "imageUrl": "https://documents.iplt20.com/ipl/IPLHeadshot2024/1005.png"
+  },
+  {
+    "id": "p187",
+    "name": "Kwena Maphaka",
+    "team": "RR",
+    "role": "Bowler",
+    "country": "South Africa",
+    "overseas": true,
+    "points2025": 0,
+    "imageUrl": "https://documents.iplt20.com/ipl/IPLHeadshot2025/801.png"
+  },
+  {
+    "id": "p188",
+    "name": "Lhuan-dre Pretorius",
+    "team": "RR",
+    "role": "All-rounder",
+    "country": "South Africa",
+    "overseas": true,
+    "points2025": 0,
+    "imageUrl": ""
+  },
+  {
+    "id": "p189",
+    "name": "Nandre Burger",
+    "team": "RR",
+    "role": "Bowler",
+    "country": "South Africa",
+    "overseas": true,
+    "points2025": 0,
+    "imageUrl": "https://documents.iplt20.com/ipl/IPLHeadshot2024/2806.png"
+  },
+  {
+    "id": "p190",
+    "name": "Ravi Bishnoi",
+    "team": "RR",
+    "role": "Bowler",
+    "country": "India",
+    "overseas": false,
+    "points2025": 0,
+    "imageUrl": "https://images.icc-cricket.com/image/upload/t_player-headshot-portrait-lg-webp/prd/assets/players/generic/colored/71288.png"
+  },
+  {
+    "id": "p191",
+    "name": "Ravi Singh",
+    "team": "RR",
+    "role": "All-rounder",
+    "country": "India",
+    "overseas": false,
+    "points2025": 0,
+    "imageUrl": ""
+  },
+  {
+    "id": "p192",
+    "name": "Ravindra Jadeja",
+    "team": "RR",
+    "role": "All-rounder",
+    "country": "India",
+    "overseas": false,
+    "points2025": 0,
+    "imageUrl": "https://static.cricketaddictor.com/images/team/ravindra-jadeja.png?q=80"
+  },
+  {
+    "id": "p193",
+    "name": "Riyan Parag",
+    "team": "RR",
+    "role": "All-rounder",
+    "country": "India",
+    "overseas": false,
+    "points2025": 0,
+    "imageUrl": "https://documents.iplt20.com/ipl/IPLHeadshot2025/189.png"
+  },
+  {
+    "id": "p194",
+    "name": "Sam Curran",
+    "team": "RR",
+    "role": "All-rounder",
+    "country": "England",
+    "overseas": true,
+    "points2025": 0,
+    "imageUrl": "https://images.icc-cricket.com/image/upload/t_player-headshot-portrait-lg-webp/prd/assets/players/generic/colored/65584.png"
+  },
+  {
+    "id": "p195",
+    "name": "Sandeep Sharma",
+    "team": "RR",
+    "role": "Bowler",
+    "country": "India",
+    "overseas": false,
+    "points2025": 0,
+    "imageUrl": "https://documents.iplt20.com/ipl/IPLHeadshot2025/189.png"
+  },
+  {
+    "id": "p196",
+    "name": "Shimron Hetmyer",
+    "team": "RR",
+    "role": "Batsman",
+    "country": "West Indies",
+    "overseas": true,
+    "points2025": 0,
+    "imageUrl": "https://documents.iplt20.com/ipl/IPLHeadshot2025/210.png"
+  },
+  {
+    "id": "p197",
+    "name": "Shubham Dubey",
+    "team": "RR",
+    "role": "Batsman",
+    "country": "India",
+    "overseas": false,
+    "points2025": 0,
+    "imageUrl": "https://documents.iplt20.com/ipl/IPLHeadshot2025/3112.png"
+  },
+  {
+    "id": "p198",
+    "name": "Sushant Mishra",
+    "team": "RR",
+    "role": "Bowler",
+    "country": "India",
+    "overseas": false,
+    "points2025": 0,
+    "imageUrl": ""
+  },
+  {
+    "id": "p199",
+    "name": "Tushar Deshpande",
+    "team": "RR",
+    "role": "Bowler",
+    "country": "India",
+    "overseas": false,
+    "points2025": 0,
+    "imageUrl": "https://documents.iplt20.com/ipl/IPLHeadshot2025/539.png"
+  },
+  {
+    "id": "p200",
+    "name": "Vaibhav Suryavanshi",
+    "team": "RR",
+    "role": "Batsman",
+    "country": "India",
+    "overseas": false,
+    "points2025": 0,
+    "imageUrl": "https://documents.iplt20.com/ipl/IPLHeadshot2025/3498.png"
+  },
+  {
+    "id": "p201",
+    "name": "Vignesh Puthur",
+    "team": "RR",
+    "role": "Bowler",
+    "country": "India",
+    "overseas": false,
+    "points2025": 0,
+    "imageUrl": "https://www.mumbaiindians.com/static-assets/images/players/large/action-shots/83549.png?v=4.16&w=400"
+  },
+  {
+    "id": "p202",
+    "name": "Yash Raj Punia",
+    "team": "RR",
+    "role": "Bowler",
+    "country": "India",
+    "overseas": false,
+    "points2025": 0,
+    "imageUrl": ""
+  },
+  {
+    "id": "p203",
+    "name": "Yashasvi Jaiswal",
+    "team": "RR",
+    "role": "Batsman",
+    "country": "India",
+    "overseas": false,
+    "points2025": 0,
+    "imageUrl": "https://documents.iplt20.com/ipl/IPLHeadshot2025/533.png"
+  },
+  {
+    "id": "p204",
+    "name": "Yudhvir Singh Charak",
+    "team": "RR",
+    "role": "All-rounder",
+    "country": "India",
+    "overseas": false,
+    "points2025": 0,
+    "imageUrl": "https://documents.iplt20.com/ipl/IPLHeadshot2025/587.png"
+  },
+  {
+    "id": "p205",
+    "name": "Adam Milne",
+    "team": "RR",
+    "role": "Bowler",
+    "country": "New Zealand",
+    "overseas": true,
+    "points2025": 0,
+    "imageUrl": "https://documents.iplt20.com/ipl/IPLHeadshot2025/189.png"
+  },
+  {
+    "id": "p206",
+    "name": "Dasun Shanaka",
+    "team": "RR",
+    "role": "All-rounder",
+    "country": "Sri Lanka",
+    "overseas": true,
+    "points2025": 0,
+    "imageUrl": ""
+  },
+  {
+    "id": "p207",
+    "name": "Abhinandan Singh",
+    "team": "RCB",
+    "role": "Bowler",
+    "country": "India",
+    "overseas": false,
+    "points2025": 0,
+    "imageUrl": "https://documents.iplt20.com/ipl/IPLHeadshot2025/3574.png"
+  },
+  {
+    "id": "p208",
+    "name": "Bhuvneshwar Kumar",
+    "team": "RCB",
+    "role": "Bowler",
+    "country": "India",
+    "overseas": false,
+    "points2025": 0,
+    "imageUrl": "https://documents.iplt20.com/ipl/IPLHeadshot2025/15.png"
+  },
+  {
+    "id": "p209",
+    "name": "Devdutt Padikkal",
+    "team": "RCB",
+    "role": "Batsman",
+    "country": "India",
+    "overseas": false,
+    "points2025": 0,
+    "imageUrl": "https://documents.iplt20.com/ipl/IPLHeadshot2025/200.png"
+  },
+  {
+    "id": "p210",
+    "name": "Jacob Bethell",
+    "team": "RCB",
+    "role": "All-rounder",
+    "country": "England",
+    "overseas": true,
+    "points2025": 0,
+    "imageUrl": "https://documents.iplt20.com/ipl/IPLHeadshot2025/869.png"
+  },
+  {
+    "id": "p211",
+    "name": "Jacob Duffy",
+    "team": "RCB",
+    "role": "Bowler",
+    "country": "New Zealand",
+    "overseas": true,
+    "points2025": 0,
+    "imageUrl": ""
+  },
+  {
+    "id": "p212",
+    "name": "Jitesh Sharma",
+    "team": "RCB",
+    "role": "Wicketkeeper",
+    "country": "India",
+    "overseas": false,
+    "points2025": 0,
+    "imageUrl": "https://documents.iplt20.com/ipl/IPLHeadshot2025/1000.png"
+  },
+  {
+    "id": "p213",
+    "name": "Jordan Cox",
+    "team": "RCB",
+    "role": "Wicketkeeper",
+    "country": "England",
+    "overseas": true,
+    "points2025": 0,
+    "imageUrl": "https://resources.ecb.co.uk/player-photos/test/800x800/75250.png"
+  },
+  {
+    "id": "p214",
+    "name": "Josh Hazlewood",
+    "team": "RCB",
+    "role": "Bowler",
+    "country": "Australia",
+    "overseas": true,
+    "points2025": 0,
+    "imageUrl": "https://documents.iplt20.com/ipl/IPLHeadshot2025/36.png"
+  },
+  {
+    "id": "p215",
+    "name": "Kanishk Chouhan",
+    "team": "RCB",
+    "role": "Bowler",
+    "country": "India",
+    "overseas": false,
+    "points2025": 0,
+    "imageUrl": ""
+  },
+  {
+    "id": "p216",
+    "name": "Krunal Pandya",
+    "team": "RCB",
+    "role": "All-rounder",
+    "country": "India",
+    "overseas": false,
+    "points2025": 0,
+    "imageUrl": "https://documents.iplt20.com/ipl/IPLHeadshot2025/17.png"
+  },
+  {
+    "id": "p217",
+    "name": "Mangesh Yadav",
+    "team": "RCB",
+    "role": "Bowler",
+    "country": "India",
+    "overseas": false,
+    "points2025": 0,
+    "imageUrl": ""
+  },
+  {
+    "id": "p218",
+    "name": "Nuwan Thushara",
+    "team": "RCB",
+    "role": "Bowler",
+    "country": "Sri Lanka",
+    "overseas": true,
+    "points2025": 0,
+    "imageUrl": "https://documents.iplt20.com/ipl/IPLHeadshot2025/813.png"
+  },
+  {
+    "id": "p219",
+    "name": "Phil Salt",
+    "team": "RCB",
+    "role": "Wicketkeeper",
+    "country": "England",
+    "overseas": true,
+    "points2025": 0,
+    "imageUrl": "https://documents.iplt20.com/ipl/IPLHeadshot2025/1220.png"
+  },
+  {
+    "id": "p220",
+    "name": "Rajat Patidar",
+    "team": "RCB",
+    "role": "Batsman",
+    "country": "India",
+    "overseas": false,
+    "points2025": 0,
+    "imageUrl": "https://documents.iplt20.com/ipl/IPLHeadshot2025/597.png"
+  },
+  {
+    "id": "p221",
+    "name": "Rasikh Dar",
+    "team": "RCB",
+    "role": "Bowler",
+    "country": "India",
+    "overseas": false,
+    "points2025": 0,
+    "imageUrl": "https://documents.iplt20.com/ipl/IPLHeadshot2025/1932.png"
+  },
+  {
+    "id": "p222",
+    "name": "Romario Shepherd",
+    "team": "RCB",
+    "role": "All-rounder",
+    "country": "West Indies",
+    "overseas": true,
+    "points2025": 0,
+    "imageUrl": "https://documents.iplt20.com/ipl/IPLHeadshot2025/371.png"
+  },
+  {
+    "id": "p223",
+    "name": "Satvik Deswal",
+    "team": "RCB",
+    "role": "Wicketkeeper",
+    "country": "India",
+    "overseas": false,
+    "points2025": 0,
+    "imageUrl": ""
+  },
+  {
+    "id": "p224",
+    "name": "Suyash Sharma",
+    "team": "RCB",
+    "role": "Bowler",
+    "country": "India",
+    "overseas": false,
+    "points2025": 0,
+    "imageUrl": "https://documents.iplt20.com/ipl/IPLHeadshot2025/1932.png"
+  },
+  {
+    "id": "p225",
+    "name": "Swapnil Singh",
+    "team": "RCB",
+    "role": "All-rounder",
+    "country": "India",
+    "overseas": false,
+    "points2025": 0,
+    "imageUrl": "https://documents.iplt20.com/ipl/IPLHeadshot2025/1483.png"
+  },
+  {
+    "id": "p226",
+    "name": "Tim David",
+    "team": "RCB",
+    "role": "Batsman",
+    "country": "Australia",
+    "overseas": true,
+    "points2025": 0,
+    "imageUrl": "https://documents.iplt20.com/ipl/IPLHeadshot2025/636.png"
+  },
+  {
+    "id": "p227",
+    "name": "Venkatesh Iyer",
+    "team": "RCB",
+    "role": "All-rounder",
+    "country": "India",
+    "overseas": false,
+    "points2025": 0,
+    "imageUrl": "https://static.cricketaddictor.com/images/team/venkatesh-iyer.png?q=80"
+  },
+  {
+    "id": "p228",
+    "name": "Vicky Ostwal",
+    "team": "RCB",
+    "role": "Bowler",
+    "country": "India",
+    "overseas": false,
+    "points2025": 0,
+    "imageUrl": ""
+  },
+  {
+    "id": "p229",
+    "name": "Vihaan Malhotra",
+    "team": "RCB",
+    "role": "Batsman",
+    "country": "India",
+    "overseas": false,
+    "points2025": 0,
+    "imageUrl": ""
+  },
+  {
+    "id": "p230",
+    "name": "Virat Kohli",
+    "team": "RCB",
+    "role": "Batsman",
+    "country": "India",
+    "overseas": false,
+    "points2025": 0,
+    "imageUrl": "https://documents.iplt20.com/ipl/IPLHeadshot2025/2.png"
+  },
+  {
+    "id": "p231",
+    "name": "Yash Dayal",
+    "team": "RCB",
+    "role": "Bowler",
+    "country": "India",
+    "overseas": false,
+    "points2025": 0,
+    "imageUrl": "https://documents.iplt20.com/ipl/IPLHeadshot2025/978.png"
+  },
+  {
+    "id": "p232",
+    "name": "Abhishek Sharma",
+    "team": "SRH",
+    "role": "All-rounder",
+    "country": "India",
+    "overseas": false,
+    "points2025": 0,
+    "imageUrl": "https://documents.iplt20.com/ipl/IPLHeadshot2025/212.png"
+  },
+  {
+    "id": "p233",
+    "name": "Amit Kumar",
+    "team": "SRH",
+    "role": "All-rounder",
+    "country": "India",
+    "overseas": false,
+    "points2025": 0,
+    "imageUrl": ""
+  },
+  {
+    "id": "p234",
+    "name": "Aniket Verma",
+    "team": "SRH",
+    "role": "Batsman",
+    "country": "India",
+    "overseas": false,
+    "points2025": 0,
+    "imageUrl": "https://documents.iplt20.com/ipl/IPLHeadshot2025/3576.png"
+  },
+  {
+    "id": "p235",
+    "name": "Brydon Carse",
+    "team": "SRH",
+    "role": "Bowler",
+    "country": "England",
+    "overseas": true,
+    "points2025": 0,
+    "imageUrl": "https://images.icc-cricket.com/image/upload/t_player-headshot-portrait-lg-webp/prd/assets/players/generic/colored/65090.png"
+  },
+  {
+    "id": "p236",
+    "name": "Eshan Malinga",
+    "team": "SRH",
+    "role": "Bowler",
+    "country": "Sri Lanka",
+    "overseas": true,
+    "points2025": 0,
+    "imageUrl": "https://documents.iplt20.com/ipl/IPLHeadshot2025/3339.png"
+  },
+  {
+    "id": "p237",
+    "name": "Harsh Dubey",
+    "team": "SRH",
+    "role": "All-rounder",
+    "country": "India",
+    "overseas": false,
+    "points2025": 0,
+    "imageUrl": ""
+  },
+  {
+    "id": "p238",
+    "name": "Harshal Patel",
+    "team": "SRH",
+    "role": "Bowler",
+    "country": "India",
+    "overseas": false,
+    "points2025": 0,
+    "imageUrl": "https://documents.iplt20.com/ipl/IPLHeadshot2025/114.png"
+  },
+  {
+    "id": "p239",
+    "name": "Heinrich Klaasen",
+    "team": "SRH",
+    "role": "Wicketkeeper",
+    "country": "South Africa",
+    "overseas": true,
+    "points2025": 0,
+    "imageUrl": "https://documents.iplt20.com/ipl/IPLHeadshot2025/202.png"
+  },
+  {
+    "id": "p240",
+    "name": "Ishan Kishan",
+    "team": "SRH",
+    "role": "Wicketkeeper",
+    "country": "India",
+    "overseas": false,
+    "points2025": 0,
+    "imageUrl": "https://documents.iplt20.com/ipl/IPLHeadshot2025/164.png"
+  },
+  {
+    "id": "p241",
+    "name": "Jaydev Unadkat",
+    "team": "SRH",
+    "role": "Bowler",
+    "country": "India",
+    "overseas": false,
+    "points2025": 0,
+    "imageUrl": "https://documents.iplt20.com/ipl/IPLHeadshot2025/180.png"
+  },
+  {
+    "id": "p242",
+    "name": "Kamindu Mendis",
+    "team": "SRH",
+    "role": "All-rounder",
+    "country": "Sri Lanka",
+    "overseas": true,
+    "points2025": 0,
+    "imageUrl": "https://documents.iplt20.com/ipl/IPLHeadshot2025/627.png"
+  },
+  {
+    "id": "p243",
+    "name": "Krains Fuletra",
+    "team": "SRH",
+    "role": "Bowler",
+    "country": "India",
+    "overseas": false,
+    "points2025": 0,
+    "imageUrl": ""
+  },
+  {
+    "id": "p244",
+    "name": "Liam Livingstone",
+    "team": "SRH",
+    "role": "All-rounder",
+    "country": "England",
+    "overseas": true,
+    "points2025": 0,
+    "imageUrl": "https://documents.iplt20.com/ipl/IPLHeadshot2025/33.png"
+  },
+  {
+    "id": "p245",
+    "name": "Nitish Kumar Reddy",
+    "team": "SRH",
+    "role": "All-rounder",
+    "country": "India",
+    "overseas": false,
+    "points2025": 0,
+    "imageUrl": "https://documents.iplt20.com/ipl/IPLHeadshot2025/1944.png"
+  },
+  {
+    "id": "p246",
+    "name": "Onkar Tarmale",
+    "team": "SRH",
+    "role": "Bowler",
+    "country": "India",
+    "overseas": false,
+    "points2025": 0,
+    "imageUrl": ""
+  },
+  {
+    "id": "p247",
+    "name": "Pat Cummins",
+    "team": "SRH",
+    "role": "Bowler",
+    "country": "Australia",
+    "overseas": true,
+    "points2025": 0,
+    "imageUrl": "https://documents.iplt20.com/ipl/IPLHeadshot2025/33.png"
+  },
+  {
+    "id": "p248",
+    "name": "Praful Hinge",
+    "team": "SRH",
+    "role": "All-rounder",
+    "country": "India",
+    "overseas": false,
+    "points2025": 0,
+    "imageUrl": ""
+  },
+  {
+    "id": "p249",
+    "name": "Sakib Hussain",
+    "team": "SRH",
+    "role": "Bowler",
+    "country": "India",
+    "overseas": false,
+    "points2025": 0,
+    "imageUrl": "https://img.ipl.com/upload/20251220/08a01b06351be8b9709b95d7d693aca7.jpg"
+  },
+  {
+    "id": "p250",
+    "name": "Salil Arora",
+    "team": "SRH",
+    "role": "All-rounder",
+    "country": "India",
+    "overseas": false,
+    "points2025": 0,
+    "imageUrl": ""
+  },
+  {
+    "id": "p251",
+    "name": "Shivam Mavi",
+    "team": "SRH",
+    "role": "Bowler",
+    "country": "India",
+    "overseas": false,
+    "points2025": 0,
+    "imageUrl": "https://images.icc-cricket.com/image/upload/t_player-headshot-portrait-lg-webp/prd/assets/players/generic/colored/66984.png"
+  },
+  {
+    "id": "p252",
+    "name": "Shivang Kumar",
+    "team": "SRH",
+    "role": "Bowler",
+    "country": "India",
+    "overseas": false,
+    "points2025": 0,
+    "imageUrl": ""
+  },
+  {
+    "id": "p253",
+    "name": "Smaran Ravichandran",
+    "team": "SRH",
+    "role": "Batsman",
+    "country": "India",
+    "overseas": false,
+    "points2025": 0,
+    "imageUrl": ""
+  },
+  {
+    "id": "p254",
+    "name": "Travis Head",
+    "team": "SRH",
+    "role": "Batsman",
+    "country": "Australia",
+    "overseas": true,
+    "points2025": 0,
+    "imageUrl": "https://documents.iplt20.com/ipl/IPLHeadshot2025/37.png"
+  },
+  {
+    "id": "p255",
+    "name": "Zeeshan Ansari",
+    "team": "SRH",
+    "role": "Bowler",
+    "country": "India",
+    "overseas": false,
+    "points2025": 0,
+    "imageUrl": "https://documents.iplt20.com/ipl/IPLHeadshot2025/3575.png"
+  },
+  {
+    "id": "p256",
+    "name": "David Payne",
+    "team": "SRH",
+    "role": "Bowler",
+    "country": "England",
+    "overseas": true,
+    "points2025": 0,
+    "imageUrl": ""
+  },
+  {
+    "id": "p257",
+    "name": "Jack Edwards",
+    "team": "SRH",
+    "role": "All-rounder",
+    "country": "Australia",
+    "overseas": true,
+    "points2025": 0,
+    "imageUrl": "https://static-files.cricket-australia.pulselive.com/headshots/440/1,692-camedia.png"
+  }
+]

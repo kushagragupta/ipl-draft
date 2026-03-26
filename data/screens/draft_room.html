@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>DRAFT ARENA | Live Draft Room</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700;900&amp;family=Manrope:wght@300;400;500;600;700;800&amp;family=Lexend:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-surface-variant": "#aaabb0",
+              "on-secondary-fixed": "#00326f",
+              "on-primary-fixed": "#453900",
+              "secondary-fixed": "#bed2ff",
+              "secondary-dim": "#6d9df7",
+              "on-secondary-fixed-variant": "#084ea3",
+              "on-primary-container": "#5b4b00",
+              "surface-container-lowest": "#000000",
+              "surface-tint": "#ffe792",
+              "tertiary-container": "#f6322d",
+              "on-tertiary-container": "#000000",
+              "outline-variant": "#46484d",
+              "on-primary-fixed-variant": "#665500",
+              "on-primary": "#655400",
+              "inverse-primary": "#705e00",
+              "secondary": "#72a2fd",
+              "primary-container": "#ffd709",
+              "background": "#0c0e12",
+              "surface-variant": "#23262c",
+              "on-tertiary-fixed": "#3a0001",
+              "error": "#ff7351",
+              "surface-container-high": "#1d2025",
+              "on-secondary": "#002453",
+              "surface-dim": "#0c0e12",
+              "secondary-container": "#004ba0",
+              "on-background": "#f6f6fc",
+              "surface-container-highest": "#23262c",
+              "tertiary-fixed": "#ff9286",
+              "secondary-fixed-dim": "#a8c4ff",
+              "surface": "#0c0e12",
+              "on-surface": "#f6f6fc",
+              "on-error-container": "#ffd2c8",
+              "tertiary-dim": "#e32322",
+              "inverse-on-surface": "#53555a",
+              "surface-container": "#171a1f",
+              "on-error": "#450900",
+              "error-container": "#b92902",
+              "primary-fixed-dim": "#efc900",
+              "tertiary-fixed-dim": "#ff7b6e",
+              "surface-container-low": "#111318",
+              "primary-dim": "#efc900",
+              "primary": "#ffe792",
+              "outline": "#74757a",
+              "error-dim": "#d53d18",
+              "surface-bright": "#292c32",
+              "on-tertiary": "#4a0002",
+              "inverse-surface": "#f9f9ff",
+              "on-secondary-container": "#cddbff",
+              "on-tertiary-fixed-variant": "#7a0006",
+              "primary-fixed": "#ffd709",
+              "tertiary": "#ff7163"
+            },
+            fontFamily: {
+              "headline": ["Space Grotesk"],
+              "body": ["Manrope"],
+              "label": ["Lexend"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      .no-scrollbar::-webkit-scrollbar { display: none; }
+      .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body selection:bg-primary selection:text-on-primary">
+<!-- TopNavBar Shell -->
+<header class="fixed top-0 w-full z-50 flex justify-between items-center px-6 h-20 bg-[#0c0e12] shadow-[0_8px_32px_rgba(0,0,0,0.5)]">
+<div class="flex items-center gap-8">
+<span class="text-2xl font-black text-[#ffe792] italic font-headline uppercase tracking-tight">DRAFT ARENA</span>
+<nav class="hidden md:flex gap-6 items-center">
+<a class="font-headline font-bold uppercase tracking-tight text-[#ffe792] border-b-4 border-[#ffe792] pb-1 transition-all duration-300" href="#">Draft Room</a>
+<a class="font-headline font-bold uppercase tracking-tight text-gray-400 hover:text-white transition-colors" href="#">Squads</a>
+<a class="font-headline font-bold uppercase tracking-tight text-gray-400 hover:text-white transition-colors" href="#">Leaderboard</a>
+<a class="font-headline font-bold uppercase tracking-tight text-gray-400 hover:text-white transition-colors" href="#">My Team</a>
+</nav>
+</div>
+<div class="flex items-center gap-4">
+<div class="relative hidden sm:block">
+<input class="bg-surface-container-high border-none rounded-lg px-4 py-2 w-64 text-sm focus:ring-2 focus:ring-primary" placeholder="Search Players..." type="text"/>
+<span class="material-symbols-outlined absolute right-3 top-2 text-on-surface-variant">search</span>
+</div>
+<button class="p-2 text-gray-400 hover:text-white transition-all duration-300 scale-95 active:scale-90">
+<span class="material-symbols-outlined">notifications</span>
+</button>
+<div class="w-10 h-10 rounded-full overflow-hidden border-2 border-primary-container">
+<img alt="User Avatar" class="w-full h-full object-cover" data-alt="close-up portrait of a smiling young man with modern haircut, professional studio lighting, warm background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCAVhHfVZzfsdWqWLnwSfBGeYX5NoS8buTtqYHlypPaE-m5oNOj7T_9fSbXHqRvxRGKaD1gY9TDa42mInTK2wlEzdJsSG2xrbY6ruqHmAhoor9dAmPGQlLN-iHqwX-Kq0hB4EbAdPlAI3si_IzbTL8CGnXHJdae205T27p9E78r0qFElXgjRUlFZhxcfgKCH2_TmlWcS4ai1OT95ymd3FpkF4KMOuzAE2JKsy5GA3Nxv6Un-6toFusZu7pLYsEk82mGWuFzZj5X-1M"/>
+</div>
+</div>
+</header>
+<!-- SideNavBar Shell -->
+<aside class="hidden lg:flex flex-col py-8 h-screen w-64 fixed left-0 top-0 bg-[#111318] shadow-2xl z-40 mt-20">
+<div class="px-6 mb-8">
+<div class="flex items-center gap-3 mb-4">
+<div class="w-12 h-12 bg-surface-container-highest rounded-xl flex items-center justify-center border-l-4 border-primary shadow-lg">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">sports_cricket</span>
+</div>
+<div>
+<h3 class="font-headline font-bold text-white text-sm">Mumbai Mavericks</h3>
+<p class="text-[10px] text-on-surface-variant font-label uppercase">Pick #4 | 1,240 pts</p>
+</div>
+</div>
+<button class="w-full bg-primary text-on-primary-fixed font-headline font-black py-3 rounded-lg shadow-[0_0_20px_rgba(255,231,146,0.3)] hover:scale-[1.02] transition-transform active:scale-95 text-xs uppercase tracking-widest">
+                View Live Draft
+            </button>
+</div>
+<nav class="flex-1 space-y-1">
+<a class="flex items-center gap-4 px-6 py-4 bg-[#23262c] text-[#ffe792] border-l-4 border-[#ffe792] font-semibold hover:translate-x-1 transition-transform" href="#">
+<span class="material-symbols-outlined">gavel</span>
+<span class="font-body">Draft Room</span>
+</a>
+<a class="flex items-center gap-4 px-6 py-4 text-gray-500 hover:bg-[#1d2025] font-semibold hover:translate-x-1 transition-transform" href="#">
+<span class="material-symbols-outlined">groups</span>
+<span class="font-body">Squads</span>
+</a>
+<a class="flex items-center gap-4 px-6 py-4 text-gray-500 hover:bg-[#1d2025] font-semibold hover:translate-x-1 transition-transform" href="#">
+<span class="material-symbols-outlined">leaderboard</span>
+<span class="font-body">Leaderboard</span>
+</a>
+<a class="flex items-center gap-4 px-6 py-4 text-gray-500 hover:bg-[#1d2025] font-semibold hover:translate-x-1 transition-transform" href="#">
+<span class="material-symbols-outlined">person</span>
+<span class="font-body">My Team</span>
+</a>
+</nav>
+<div class="px-6 mt-auto space-y-1">
+<a class="flex items-center gap-4 py-3 text-gray-500 hover:text-white transition-colors" href="#">
+<span class="material-symbols-outlined text-sm">settings</span>
+<span class="text-sm font-label uppercase">Settings</span>
+</a>
+<a class="flex items-center gap-4 py-3 text-gray-500 hover:text-white transition-colors" href="#">
+<span class="material-symbols-outlined text-sm">help</span>
+<span class="text-sm font-label uppercase">Support</span>
+</a>
+</div>
+</aside>
+<!-- Main Content Area -->
+<main class="lg:ml-64 mt-20 p-6 pb-32">
+<!-- Draft Header / Status Bar -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-6 mb-8">
+<div class="lg:col-span-8 bg-surface-container-low rounded-xl p-6 flex items-center justify-between border-l-4 border-tertiary shadow-xl relative overflow-hidden">
+<div class="absolute right-0 top-0 opacity-10 pointer-events-none">
+<span class="material-symbols-outlined text-[120px]" style="font-variation-settings: 'FILL' 1;">timer</span>
+</div>
+<div class="flex items-center gap-6">
+<div class="relative">
+<div class="w-20 h-20 rounded-full border-4 border-primary p-1 bg-surface-container-high">
+<img alt="Active Picker" class="w-full h-full rounded-full object-cover" data-alt="Close up avatar of a competitive gamer wearing high-end headphones, focused expression, cool blue and purple cinematic lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDoq_rnNreDB7flpDy5ruWvTs-vmyF5O49PXxfnTnKYAk0VTHjzBExL0ohbtUm0AHIrKIlhKqhZSb_F_gqr_vYqSkHmXu2aq0YRAYtjx6F4PZ-h5kysLGql3fNpEy2--pY2Wkmuy7nvP4im4BvoaWHXiuLG335j2FjzMKE3Kx-IOnepi5z4wziEZBfVbxSZTLiJnv-SaBcpxXeaG-uAM4cJahz3GP6thVYAx-sgSu5YvdLU9oxJLg3h3NabH-egm1fULeY2BEOY4AE"/>
+</div>
+<div class="absolute -bottom-1 -right-1 bg-primary text-on-primary-fixed px-2 py-0.5 rounded text-[10px] font-black font-label">ON CLOCK</div>
+</div>
+<div>
+<p class="text-on-surface-variant font-label text-[10px] uppercase tracking-[0.2em] mb-1">Current Pick</p>
+<h2 class="font-headline text-3xl font-black text-white italic leading-tight">RAJESH 'THE KING' V.</h2>
+<p class="text-primary text-sm font-bold tracking-wider">MUMBAI MAVERICKS <span class="text-on-surface-variant px-2">|</span> ROUND 4, PICK 34</p>
+</div>
+</div>
+<div class="text-right flex flex-col items-end">
+<div class="font-headline text-5xl font-black text-white tabular-nums tracking-tighter">00:42</div>
+<div class="w-48 h-1.5 bg-surface-container-highest rounded-full mt-2 overflow-hidden">
+<div class="h-full bg-tertiary w-3/4 rounded-full"></div>
+</div>
+</div>
+</div>
+<!-- Quick Stats Bento -->
+<div class="lg:col-span-4 bg-surface-container-high rounded-xl p-6 flex flex-col justify-center border-l-4 border-secondary shadow-xl">
+<div class="flex justify-between items-center mb-4">
+<span class="font-label text-xs uppercase text-on-surface-variant font-bold">Your Budget Left</span>
+<span class="text-secondary font-headline font-bold text-xl">₹12.4 Cr</span>
+</div>
+<div class="grid grid-cols-3 gap-2 text-center">
+<div class="bg-surface-container-highest rounded-lg p-2">
+<p class="text-[10px] font-label text-on-surface-variant mb-1 uppercase">Batsmen</p>
+<p class="font-headline font-bold">4/6</p>
+</div>
+<div class="bg-surface-container-highest rounded-lg p-2">
+<p class="text-[10px] font-label text-on-surface-variant mb-1 uppercase">Bowlers</p>
+<p class="font-headline font-bold">3/5</p>
+</div>
+<div class="bg-surface-container-highest rounded-lg p-2">
+<p class="text-[10px] font-label text-on-surface-variant mb-1 uppercase">O/S</p>
+<p class="font-headline font-bold">2/4</p>
+</div>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+<!-- Player Pool Section -->
+<div class="lg:col-span-8">
+<div class="flex items-end justify-between mb-6">
+<div>
+<h3 class="font-headline text-2xl font-black text-white uppercase tracking-tighter italic">Available Talents</h3>
+<p class="text-on-surface-variant text-sm">624 Players remain in the pool</p>
+</div>
+<div class="flex gap-2">
+<button class="bg-surface-container-highest px-4 py-2 rounded text-xs font-label font-bold uppercase hover:bg-surface-bright transition-colors text-primary">All</button>
+<button class="bg-surface-container-low border border-outline-variant/30 px-4 py-2 rounded text-xs font-label font-bold uppercase hover:bg-surface-container-high transition-colors text-on-surface-variant">BAT</button>
+<button class="bg-surface-container-low border border-outline-variant/30 px-4 py-2 rounded text-xs font-label font-bold uppercase hover:bg-surface-container-high transition-colors text-on-surface-variant">BOWL</button>
+<button class="bg-surface-container-low border border-outline-variant/30 px-4 py-2 rounded text-xs font-label font-bold uppercase hover:bg-surface-container-high transition-colors text-on-surface-variant">AR</button>
+</div>
+</div>
+<!-- Player Cards Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<!-- Player Card 1 -->
+<div class="bg-surface-container-low rounded-xl p-4 flex gap-4 items-start relative overflow-hidden group hover:bg-surface-container-high transition-all duration-300">
+<div class="absolute top-0 left-0 w-1 h-full bg-secondary"></div>
+<div class="relative w-24 h-24 shrink-0 -mt-2 -ml-2">
+<div class="absolute inset-0 bg-secondary/10 rounded-full blur-xl group-hover:bg-secondary/20 transition-all"></div>
+<img alt="Virat Kohli" class="w-full h-full object-cover relative z-10 scale-110" data-alt="professional portrait of an elite Indian cricketer, intense gaze, athletic build, cinematic dark stadium background, spotlight effect" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBZV7MMbusQ_EDyiru462PHW4ERrlzA-ukh3Jsds3owYJ5ZHYoFn6ArYKJ3tpTL9hqhGRxDBQmKpIJCc_CJt9yZGED7JnFrNczbVnqL_LTep1HMWo_hvNLkQkHdrfwVd0zNXIsaLSursJkfka0adaw2yf-LuoX5ae49gQ3bZfs1hYpksw1Nb7X0rbn7q5V01qBYp8pwd22_lM6gStxvx103rXPOk8vmB2Y0vBC_EQteXTxCPcV9OZJjMgj8UzXBEY83XPZL69K-Rjs"/>
+</div>
+<div class="flex-1">
+<div class="flex justify-between items-start mb-1">
+<span class="bg-tertiary-container text-on-tertiary-container px-2 py-0.5 rounded-full text-[8px] font-black font-label uppercase">Top 20</span>
+<span class="text-primary font-headline font-bold text-lg">₹2.0 Cr</span>
+</div>
+<h4 class="font-headline font-black text-white uppercase italic text-lg leading-tight mb-1">V. KOHLI</h4>
+<div class="flex gap-4 mb-3">
+<div class="text-center">
+<p class="text-[8px] font-label text-on-surface-variant uppercase">Runs</p>
+<p class="text-xs font-bold font-headline">641</p>
+</div>
+<div class="text-center">
+<p class="text-[8px] font-label text-on-surface-variant uppercase">SR</p>
+<p class="text-xs font-bold font-headline">139.8</p>
+</div>
+<div class="text-center">
+<p class="text-[8px] font-label text-on-surface-variant uppercase">Avg</p>
+<p class="text-xs font-bold font-headline">53.4</p>
+</div>
+</div>
+<button class="w-full py-2 bg-surface-container-highest border border-primary/20 text-primary rounded font-label font-bold text-[10px] uppercase tracking-widest hover:bg-primary hover:text-on-primary-fixed transition-all">Add to Queue</button>
+</div>
+</div>
+<!-- Player Card 2 -->
+<div class="bg-surface-container-low rounded-xl p-4 flex gap-4 items-start relative overflow-hidden group hover:bg-surface-container-high transition-all duration-300">
+<div class="absolute top-0 left-0 w-1 h-full bg-tertiary"></div>
+<div class="relative w-24 h-24 shrink-0 -mt-2 -ml-2">
+<div class="absolute inset-0 bg-tertiary/10 rounded-full blur-xl"></div>
+<img alt="Rashid Khan" class="w-full h-full object-cover relative z-10 scale-110" data-alt="professional portrait of a world-class spin bowler, sharp features, focused eyes, deep blue background with arena light flare" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDdWLogMcJ432Fyh6hqGwp91dcuWc3HEYi1ixw0A9MLY0sm-jR_d4BMQfLxtoKkDQCV64SEJ3kc3OiP308yaRrQ3698kRyo0yM1fTS_kECUPagbrLjEBYnIgpKz5LL6hxQetUFUH1byNTovGvJxS7LK2s4iO36Ui0N5dIyEEQvo4GraGTRRp59XcFRx3gKTVVPiI95tRTFWihxRMdRqgJ_WaxsNqTJNb0fatF2b2tPf-N351U99wyhApXaCMA4VavVbkocqup9bF-A"/>
+</div>
+<div class="flex-1">
+<div class="flex justify-between items-start mb-1">
+<span class="bg-secondary-container text-on-secondary-container px-2 py-0.5 rounded-full text-[8px] font-black font-label uppercase">Overseas</span>
+<span class="text-primary font-headline font-bold text-lg">₹1.5 Cr</span>
+</div>
+<h4 class="font-headline font-black text-white uppercase italic text-lg leading-tight mb-1">RASHID KHAN</h4>
+<div class="flex gap-4 mb-3">
+<div class="text-center">
+<p class="text-[8px] font-label text-on-surface-variant uppercase">Wkts</p>
+<p class="text-xs font-bold font-headline">27</p>
+</div>
+<div class="text-center">
+<p class="text-[8px] font-label text-on-surface-variant uppercase">Eco</p>
+<p class="text-xs font-bold font-headline">7.4</p>
+</div>
+<div class="text-center">
+<p class="text-[8px] font-label text-on-surface-variant uppercase">SR</p>
+<p class="text-xs font-bold font-headline">15.2</p>
+</div>
+</div>
+<button class="w-full py-2 bg-surface-container-highest border border-primary/20 text-primary rounded font-label font-bold text-[10px] uppercase tracking-widest hover:bg-primary hover:text-on-primary-fixed transition-all">Add to Queue</button>
+</div>
+</div>
+<!-- Player Card 3 -->
+<div class="bg-surface-container-low rounded-xl p-4 flex gap-4 items-start relative overflow-hidden group hover:bg-surface-container-high transition-all duration-300">
+<div class="absolute top-0 left-0 w-1 h-full bg-primary"></div>
+<div class="relative w-24 h-24 shrink-0 -mt-2 -ml-2">
+<div class="absolute inset-0 bg-primary/10 rounded-full blur-xl"></div>
+<img alt="Shubman Gill" class="w-full h-full object-cover relative z-10 scale-110" data-alt="young athletic athlete with a determined expression, dynamic lighting suggesting a stadium at night, sharp shadows, teal and orange highlights" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDAliTkjKCiCHJhGp_MoPcwHGOaetKuOy-Yt6ujKMnVUST1twQzXUvKAMTwOOeC0fzsHfWmRF-kxM0h2brb33GzTtjPseMieevliPJRxG5hTzv_HoI9bq7lAlGcXS9lbr7n61go8g_IKJnZl7x5Fe2fIVlSNUz2hKLqJCFM8Tv4mgbwmWeYZuBeb-0jV3XXciDrJdz4li7zY2Rja7URUREjY--iGZW3KvoJIz_Ol6Rx3h053OdGABnC5QpqPWMMsCnQA5wieL88y2g"/>
+</div>
+<div class="flex-1">
+<div class="flex justify-between items-start mb-1">
+<span class="bg-tertiary-container text-on-tertiary-container px-2 py-0.5 rounded-full text-[8px] font-black font-label uppercase">Top 20</span>
+<span class="text-primary font-headline font-bold text-lg">₹1.8 Cr</span>
+</div>
+<h4 class="font-headline font-black text-white uppercase italic text-lg leading-tight mb-1">S. GILL</h4>
+<div class="flex gap-4 mb-3">
+<div class="text-center">
+<p class="text-[8px] font-label text-on-surface-variant uppercase">Runs</p>
+<p class="text-xs font-bold font-headline">890</p>
+</div>
+<div class="text-center">
+<p class="text-[8px] font-label text-on-surface-variant uppercase">SR</p>
+<p class="text-xs font-bold font-headline">157.8</p>
+</div>
+<div class="text-center">
+<p class="text-[8px] font-label text-on-surface-variant uppercase">Avg</p>
+<p class="text-xs font-bold font-headline">59.3</p>
+</div>
+</div>
+<button class="w-full py-2 bg-surface-container-highest border border-primary/20 text-primary rounded font-label font-bold text-[10px] uppercase tracking-widest hover:bg-primary hover:text-on-primary-fixed transition-all">Add to Queue</button>
+</div>
+</div>
+<!-- Player Card 4 -->
+<div class="bg-surface-container-low rounded-xl p-4 flex gap-4 items-start relative overflow-hidden group hover:bg-surface-container-high transition-all duration-300">
+<div class="absolute top-0 left-0 w-1 h-full bg-secondary-dim"></div>
+<div class="relative w-24 h-24 shrink-0 -mt-2 -ml-2">
+<div class="absolute inset-0 bg-secondary/10 rounded-full blur-xl"></div>
+<img alt="Nortje" class="w-full h-full object-cover relative z-10 scale-110" data-alt="close up action shot of a professional cricketer during a match, sweat on face, determined expression, blurred stadium lights in background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDTXhSd4wOOVQTfuGQ8dAerlXMbK-E2xj85xhPeBprsFCGlB_69Jqn4fEa_RRLDMlCPD9eUnsx381oqz54QZOrAtNtg9mTv3c_HWdH7phqdMmLSxbm7ZWWoY74B2iKrTrVnnMKtx5UNdG8K-vXCmLubBLCxYZVONTuWy-RzX0frBRwYboEzQFUhaV6vKo2j92Uoo_53LpHB9JEgIesQoksLNp4SFXgSyl02mP7rhR_AzUD0IPuJPOa64EDG-toArAXsDV_J27DjXdc"/>
+</div>
+<div class="flex-1">
+<div class="flex justify-between items-start mb-1">
+<span class="bg-secondary-container text-on-secondary-container px-2 py-0.5 rounded-full text-[8px] font-black font-label uppercase">Overseas</span>
+<span class="text-primary font-headline font-bold text-lg">₹1.0 Cr</span>
+</div>
+<h4 class="font-headline font-black text-white uppercase italic text-lg leading-tight mb-1">A. NORTJE</h4>
+<div class="flex gap-4 mb-3">
+<div class="text-center">
+<p class="text-[8px] font-label text-on-surface-variant uppercase">Wkts</p>
+<p class="text-xs font-bold font-headline">18</p>
+</div>
+<div class="text-center">
+<p class="text-[8px] font-label text-on-surface-variant uppercase">Eco</p>
+<p class="text-xs font-bold font-headline">8.1</p>
+</div>
+<div class="text-center">
+<p class="text-[8px] font-label text-on-surface-variant uppercase">SR</p>
+<p class="text-xs font-bold font-headline">16.4</p>
+</div>
+</div>
+<button class="w-full py-2 bg-surface-container-highest border border-primary/20 text-primary rounded font-label font-bold text-[10px] uppercase tracking-widest hover:bg-primary hover:text-on-primary-fixed transition-all">Add to Queue</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Draft Board Section -->
+<div class="lg:col-span-4 flex flex-col h-[calc(100vh-280px)]">
+<div class="mb-6 flex items-center justify-between">
+<h3 class="font-headline text-xl font-black text-white uppercase tracking-tighter italic">Live Board</h3>
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 bg-tertiary rounded-full animate-pulse"></span>
+<span class="text-[10px] font-label font-bold uppercase text-on-surface-variant tracking-wider">LIVE FEED</span>
+</div>
+</div>
+<div class="bg-surface-container-low rounded-xl flex-1 overflow-hidden flex flex-col shadow-2xl border border-outline-variant/10">
+<div class="bg-surface-container-highest p-4 border-b border-outline-variant/20">
+<div class="flex gap-4 text-center">
+<div class="flex-1">
+<p class="text-[8px] font-label text-on-surface-variant uppercase mb-1">Current Round</p>
+<p class="font-headline font-bold text-lg">04</p>
+</div>
+<div class="w-px bg-outline-variant/30"></div>
+<div class="flex-1">
+<p class="text-[8px] font-label text-on-surface-variant uppercase mb-1">Total Picks</p>
+<p class="font-headline font-bold text-lg">34/120</p>
+</div>
+</div>
+</div>
+<div class="flex-1 overflow-y-auto p-4 space-y-4 no-scrollbar">
+<!-- Board Item Active -->
+<div class="flex items-center gap-4 bg-primary/10 border-l-4 border-primary p-3 rounded-lg shadow-inner">
+<div class="font-headline font-black text-primary text-xl w-8">34</div>
+<div class="w-10 h-10 rounded-full border border-primary/30 overflow-hidden shrink-0">
+<img alt="Team Avatar" class="w-full h-full object-cover" data-alt="close up portrait of a smiling young man, cool blue cinematic lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBEZq4MxvoucueVAZfC-4NRM1zRwyO2mq9huil8kJ6OEaCmlvA5V4MjyB-Q46pXnLS6ZMEBarXE2lrxPdSyF6-K8noX7lb1Crj2Hn09cwHkHfsOMTImzrJEuyyKKjtvYtKxU9EGgJrEYzu1SEJENOlFTzaRLGNiEe8XNn2spnpjqhIzF2fAlICFVjM8b6Dze4UClcdsw03-gOxMoTOF-77tN1sZ-zMLnKI7iqFZIkXss0ljiMZdJtamw9yqn8zJlhz-hMd0mBLNOao"/>
+</div>
+<div class="flex-1">
+<p class="text-[8px] font-label text-primary font-bold uppercase tracking-widest">Mumbai Mavericks</p>
+<p class="text-xs font-headline font-bold text-white tracking-wide">WAITING FOR PICK...</p>
+</div>
+<div class="bg-primary/20 p-2 rounded shrink-0">
+<span class="material-symbols-outlined text-primary text-sm animate-spin">sync</span>
+</div>
+</div>
+<!-- Board Item 1 -->
+<div class="flex items-center gap-4 bg-surface-container-high/50 p-3 rounded-lg opacity-80 border-l-4 border-secondary">
+<div class="font-headline font-bold text-on-surface-variant text-xl w-8">33</div>
+<div class="w-10 h-10 rounded-full border border-outline-variant/30 overflow-hidden shrink-0">
+<img alt="User 2" class="w-full h-full object-cover" data-alt="young man with beard and cap, looking focused, high contrast sports lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC0ivQI3ngTs0yYbso3Aqp7zVEMV0h-VF_yNHpTl8hYK7GbA-bYZLdeqorfdsqAGlJylFESyVyRei268GgibCARw3th_ahdzNjp8stun3eomyVnyGqsQcuKn-PYRq-TtRW0Ex0Dn3inKkYO6svfueQw2vAovDvbh9vhDe6WOzp8qYe0DdMxAFJQk9nzvpOGry_9PDes4u8c7mABQcvfMpESggXfgPYuoeXadd0xZcgrLrfVyp2zcP90jRiJ6BeyPecFRdpMYzIjCNQ"/>
+</div>
+<div class="flex-1">
+<p class="text-[8px] font-label text-on-surface-variant font-bold uppercase tracking-widest">Chennai Kings</p>
+<p class="text-xs font-headline font-bold text-white tracking-wide uppercase">M. SHAMI</p>
+</div>
+<div class="text-right">
+<p class="text-[10px] font-headline font-bold text-primary">₹6.25 Cr</p>
+</div>
+</div>
+<!-- Board Item 2 -->
+<div class="flex items-center gap-4 bg-surface-container-high/50 p-3 rounded-lg opacity-80 border-l-4 border-tertiary">
+<div class="font-headline font-bold text-on-surface-variant text-xl w-8">32</div>
+<div class="w-10 h-10 rounded-full border border-outline-variant/30 overflow-hidden shrink-0">
+<img alt="User 3" class="w-full h-full object-cover" data-alt="professional person with glasses, clean lighting, blurred tech background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCvQzXdR8CHxZx-V2SmC9-VtbbMQdbjUZ8ykvDJBxN4txVAO_GKZWUjBB85TrXsjc7pJa20ubu_vtU-pQ2Q3iZQlnp4_gWWPN7aTM_aNqquxfHKnsU79Fgs2OmUcK5ZHfZEfWN5tWGPUp4MwN3bte7SkoEKfIusMYEyEQdUsOJ3Zt3GUZzyp3a3uEnwjUYBFxpj2Rl5DRd39q2bGK2j-aB4CkjANpgR7xIO2xvyGMJqJJchoHXh_9t21K6jAboEKJ0aYNnEW2t7jFA"/>
+</div>
+<div class="flex-1">
+<p class="text-[8px] font-label text-on-surface-variant font-bold uppercase tracking-widest">Delhi Capitals</p>
+<p class="text-xs font-headline font-bold text-white tracking-wide uppercase">D. WARNER</p>
+</div>
+<div class="text-right">
+<p class="text-[10px] font-headline font-bold text-primary">₹8.0 Cr</p>
+</div>
+</div>
+<!-- Board Item 3 -->
+<div class="flex items-center gap-4 bg-surface-container-high/50 p-3 rounded-lg opacity-80 border-l-4 border-secondary-dim">
+<div class="font-headline font-bold text-on-surface-variant text-xl w-8">31</div>
+<div class="w-10 h-10 rounded-full border border-outline-variant/30 overflow-hidden shrink-0">
+<img alt="User 4" class="w-full h-full object-cover" data-alt="confident woman athlete, urban sports background, sunset light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuByO81v7iiowASKrZLEOP_mvlkFXP3Eq5FuZYTyafHPI2kHfreOmcKDZ5eRoRdUIN9OyS1wfDYtaNw2uWmGdlb2z7oYL62aeIf10ydI6ng1CVFSRiegpJpuEetUz7j1CGmTv4eAYA4pU9md8YDCillcLsJA9RctqdNheBwpiO254mx5ekMdgwyowzY2LBY2PmgvSapr2ba9fJjw6J9bQomWc2yHH1BLMSkUxBRJ1f8gN_P4_PPnpdFtJI9Tk836TxhgWJHdfnckWmE"/>
+</div>
+<div class="flex-1">
+<p class="text-[8px] font-label text-on-surface-variant font-bold uppercase tracking-widest">Punjab Panthers</p>
+<p class="text-xs font-headline font-bold text-white tracking-wide uppercase">L. LIVINGSTONE</p>
+</div>
+<div class="text-right">
+<p class="text-[10px] font-headline font-bold text-primary">₹11.5 Cr</p>
+</div>
+</div>
+</div>
+<button class="bg-surface-container-highest p-3 text-center text-on-surface-variant font-label text-[10px] font-bold uppercase tracking-widest hover:text-white transition-colors">
+                        View Full Draft History
+                    </button>
+</div>
+</div>
+</div>
+</main>
+<!-- BottomNavBar Shell -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 pb-6 pt-3 lg:hidden bg-[#0c0e12]/95 backdrop-blur-xl border-t border-[#46484d]/20 shadow-[0_-10px_40px_rgba(0,0,0,0.8)]">
+<a class="flex flex-col items-center justify-center text-[#ffe792] bg-[#ffe792]/10 rounded-xl py-1 px-3 tap:scale-110 transition-transform" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">gavel</span>
+<span class="font-['Lexend'] text-[10px] uppercase font-bold">Draft</span>
+</a>
+<a class="flex flex-col items-center justify-center text-gray-500 active:bg-[#1d2025]" href="#">
+<span class="material-symbols-outlined">sports_cricket</span>
+<span class="font-['Lexend'] text-[10px] uppercase font-bold">Squads</span>
+</a>
+<a class="flex flex-col items-center justify-center text-gray-500 active:bg-[#1d2025]" href="#">
+<span class="material-symbols-outlined">equalizer</span>
+<span class="font-['Lexend'] text-[10px] uppercase font-bold">Board</span>
+</a>
+<a class="flex flex-col items-center justify-center text-gray-500 active:bg-[#1d2025]" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">shield</span>
+<span class="font-['Lexend'] text-[10px] uppercase font-bold">Team</span>
+</a>
+</nav>
+<!-- FAB for Quick Draft (Only contextually relevant) -->
+<button class="fixed bottom-24 right-6 lg:bottom-10 lg:right-10 w-16 h-16 bg-primary text-on-primary-fixed rounded-full shadow-[0_0_30px_rgba(255,231,146,0.5)] flex items-center justify-center group hover:scale-110 active:scale-95 transition-all z-50">
+<span class="material-symbols-outlined text-3xl" style="font-variation-settings: 'FILL' 1;">bolt</span>
+<div class="absolute right-full mr-4 bg-surface-container-highest px-4 py-2 rounded-lg text-xs font-black font-headline text-white whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity border border-primary/20">
+            AUTO-DRAFT NEXT
+        </div>
+</button>
+</body></html>

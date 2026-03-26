@@ -1,0 +1,497 @@
+{
+  "users": [
+    {
+      "id": "u4",
+      "name": "Baweja STARS"
+    },
+    {
+      "id": "u3",
+      "name": "Patidar BOIZ"
+    },
+    {
+      "id": "u6",
+      "name": "BACCHA GANG"
+    },
+    {
+      "id": "u1",
+      "name": "Preshit Easy Company"
+    },
+    {
+      "id": "u5",
+      "name": "MOTI BANG BROS"
+    },
+    {
+      "id": "u2",
+      "name": "Jha2 Mafaka"
+    }
+  ],
+  "currentTurnIndex": 5,
+  "drafted": {
+    "p137": "u4",
+    "p230": "u3",
+    "p203": "u6",
+    "p126": "u1",
+    "p91": "u5",
+    "p200": "u2",
+    "p19": "u2",
+    "p138": "u5",
+    "p196": "u1",
+    "p34": "u6",
+    "p232": "u3",
+    "p94": "u4",
+    "p73": "u4",
+    "p60": "u3",
+    "p152": "u6",
+    "p254": "u1",
+    "p71": "u5",
+    "p173": "u2",
+    "p216": "u2",
+    "p240": "u5",
+    "p21": "u1",
+    "p81": "u6",
+    "p144": "u3",
+    "p107": "u4",
+    "p163": "u4",
+    "p192": "u3",
+    "p156": "u6",
+    "p36": "u1",
+    "p168": "u5",
+    "p239": "u2",
+    "p121": "u2",
+    "p65": "u5",
+    "p5": "u1",
+    "p18": "u6",
+    "p170": "u3",
+    "p128": "u4",
+    "p180": "u4",
+    "p220": "u3",
+    "p193": "u6",
+    "p148": "u1",
+    "p183": "u5",
+    "p68": "u2",
+    "p20": "u2",
+    "p8": "u5",
+    "p153": "u1",
+    "p14": "u6",
+    "p157": "u3",
+    "p4": "u4",
+    "p42": "u4",
+    "p38": "u3",
+    "p219": "u6",
+    "p75": "u1",
+    "p190": "u5",
+    "p155": "u2",
+    "p67": "u2",
+    "p15": "u5",
+    "p99": "u1",
+    "p154": "u6",
+    "p208": "u3",
+    "p238": "u4",
+    "p78": "u4",
+    "p113": "u3",
+    "p31": "u6",
+    "p115": "u1",
+    "p209": "u5",
+    "p88": "u2"
+  },
+  "pickHistory": [
+    {
+      "playerId": "p88",
+      "userId": "u2",
+      "round": 11,
+      "pickNumber": 66
+    },
+    {
+      "playerId": "p209",
+      "userId": "u5",
+      "round": 11,
+      "pickNumber": 65
+    },
+    {
+      "playerId": "p115",
+      "userId": "u1",
+      "round": 11,
+      "pickNumber": 64
+    },
+    {
+      "playerId": "p31",
+      "userId": "u6",
+      "round": 11,
+      "pickNumber": 63
+    },
+    {
+      "playerId": "p113",
+      "userId": "u3",
+      "round": 11,
+      "pickNumber": 62
+    },
+    {
+      "playerId": "p78",
+      "userId": "u4",
+      "round": 11,
+      "pickNumber": 61
+    },
+    {
+      "playerId": "p238",
+      "userId": "u4",
+      "round": 10,
+      "pickNumber": 60
+    },
+    {
+      "playerId": "p208",
+      "userId": "u3",
+      "round": 10,
+      "pickNumber": 59
+    },
+    {
+      "playerId": "p154",
+      "userId": "u6",
+      "round": 10,
+      "pickNumber": 58
+    },
+    {
+      "playerId": "p99",
+      "userId": "u1",
+      "round": 10,
+      "pickNumber": 57
+    },
+    {
+      "playerId": "p15",
+      "userId": "u5",
+      "round": 10,
+      "pickNumber": 56
+    },
+    {
+      "playerId": "p67",
+      "userId": "u2",
+      "round": 10,
+      "pickNumber": 55
+    },
+    {
+      "playerId": "p155",
+      "userId": "u2",
+      "round": 9,
+      "pickNumber": 54
+    },
+    {
+      "playerId": "p190",
+      "userId": "u5",
+      "round": 9,
+      "pickNumber": 53
+    },
+    {
+      "playerId": "p75",
+      "userId": "u1",
+      "round": 9,
+      "pickNumber": 52
+    },
+    {
+      "playerId": "p219",
+      "userId": "u6",
+      "round": 9,
+      "pickNumber": 51
+    },
+    {
+      "playerId": "p38",
+      "userId": "u3",
+      "round": 9,
+      "pickNumber": 50
+    },
+    {
+      "playerId": "p42",
+      "userId": "u4",
+      "round": 9,
+      "pickNumber": 49
+    },
+    {
+      "playerId": "p4",
+      "userId": "u4",
+      "round": 8,
+      "pickNumber": 48
+    },
+    {
+      "playerId": "p157",
+      "userId": "u3",
+      "round": 8,
+      "pickNumber": 47
+    },
+    {
+      "playerId": "p14",
+      "userId": "u6",
+      "round": 8,
+      "pickNumber": 46
+    },
+    {
+      "playerId": "p153",
+      "userId": "u1",
+      "round": 8,
+      "pickNumber": 45
+    },
+    {
+      "playerId": "p8",
+      "userId": "u5",
+      "round": 8,
+      "pickNumber": 44
+    },
+    {
+      "playerId": "p20",
+      "userId": "u2",
+      "round": 8,
+      "pickNumber": 43
+    },
+    {
+      "playerId": "p68",
+      "userId": "u2",
+      "round": 7,
+      "pickNumber": 42
+    },
+    {
+      "playerId": "p183",
+      "userId": "u5",
+      "round": 7,
+      "pickNumber": 41
+    },
+    {
+      "playerId": "p148",
+      "userId": "u1",
+      "round": 7,
+      "pickNumber": 40
+    },
+    {
+      "playerId": "p193",
+      "userId": "u6",
+      "round": 7,
+      "pickNumber": 39
+    },
+    {
+      "playerId": "p220",
+      "userId": "u3",
+      "round": 7,
+      "pickNumber": 38
+    },
+    {
+      "playerId": "p180",
+      "userId": "u4",
+      "round": 7,
+      "pickNumber": 37
+    },
+    {
+      "playerId": "p128",
+      "userId": "u4",
+      "round": 6,
+      "pickNumber": 36
+    },
+    {
+      "playerId": "p170",
+      "userId": "u3",
+      "round": 6,
+      "pickNumber": 35
+    },
+    {
+      "playerId": "p18",
+      "userId": "u6",
+      "round": 6,
+      "pickNumber": 34
+    },
+    {
+      "playerId": "p5",
+      "userId": "u1",
+      "round": 6,
+      "pickNumber": 33
+    },
+    {
+      "playerId": "p65",
+      "userId": "u5",
+      "round": 6,
+      "pickNumber": 32
+    },
+    {
+      "playerId": "p121",
+      "userId": "u2",
+      "round": 6,
+      "pickNumber": 31
+    },
+    {
+      "playerId": "p239",
+      "userId": "u2",
+      "round": 5,
+      "pickNumber": 30
+    },
+    {
+      "playerId": "p168",
+      "userId": "u5",
+      "round": 5,
+      "pickNumber": 29
+    },
+    {
+      "playerId": "p36",
+      "userId": "u1",
+      "round": 5,
+      "pickNumber": 28
+    },
+    {
+      "playerId": "p156",
+      "userId": "u6",
+      "round": 5,
+      "pickNumber": 27
+    },
+    {
+      "playerId": "p192",
+      "userId": "u3",
+      "round": 5,
+      "pickNumber": 26
+    },
+    {
+      "playerId": "p163",
+      "userId": "u4",
+      "round": 5,
+      "pickNumber": 25
+    },
+    {
+      "playerId": "p107",
+      "userId": "u4",
+      "round": 4,
+      "pickNumber": 24
+    },
+    {
+      "playerId": "p144",
+      "userId": "u3",
+      "round": 4,
+      "pickNumber": 23
+    },
+    {
+      "playerId": "p81",
+      "userId": "u6",
+      "round": 4,
+      "pickNumber": 22
+    },
+    {
+      "playerId": "p21",
+      "userId": "u1",
+      "round": 4,
+      "pickNumber": 21
+    },
+    {
+      "playerId": "p240",
+      "userId": "u5",
+      "round": 4,
+      "pickNumber": 20
+    },
+    {
+      "playerId": "p216",
+      "userId": "u2",
+      "round": 4,
+      "pickNumber": 19
+    },
+    {
+      "playerId": "p173",
+      "userId": "u2",
+      "round": 3,
+      "pickNumber": 18
+    },
+    {
+      "playerId": "p71",
+      "userId": "u5",
+      "round": 3,
+      "pickNumber": 17
+    },
+    {
+      "playerId": "p254",
+      "userId": "u1",
+      "round": 3,
+      "pickNumber": 16
+    },
+    {
+      "playerId": "p152",
+      "userId": "u6",
+      "round": 3,
+      "pickNumber": 15
+    },
+    {
+      "playerId": "p60",
+      "userId": "u3",
+      "round": 3,
+      "pickNumber": 14
+    },
+    {
+      "playerId": "p73",
+      "userId": "u4",
+      "round": 3,
+      "pickNumber": 13
+    },
+    {
+      "playerId": "p94",
+      "userId": "u4",
+      "round": 2,
+      "pickNumber": 12
+    },
+    {
+      "playerId": "p232",
+      "userId": "u3",
+      "round": 2,
+      "pickNumber": 11
+    },
+    {
+      "playerId": "p34",
+      "userId": "u6",
+      "round": 2,
+      "pickNumber": 10
+    },
+    {
+      "playerId": "p196",
+      "userId": "u1",
+      "round": 2,
+      "pickNumber": 9
+    },
+    {
+      "playerId": "p138",
+      "userId": "u5",
+      "round": 2,
+      "pickNumber": 8
+    },
+    {
+      "playerId": "p19",
+      "userId": "u2",
+      "round": 2,
+      "pickNumber": 7
+    },
+    {
+      "playerId": "p200",
+      "userId": "u2",
+      "round": 1,
+      "pickNumber": 6
+    },
+    {
+      "playerId": "p91",
+      "userId": "u5",
+      "round": 1,
+      "pickNumber": 5
+    },
+    {
+      "playerId": "p126",
+      "userId": "u1",
+      "round": 1,
+      "pickNumber": 4
+    },
+    {
+      "playerId": "p203",
+      "userId": "u6",
+      "round": 1,
+      "pickNumber": 3
+    },
+    {
+      "playerId": "p230",
+      "userId": "u3",
+      "round": 1,
+      "pickNumber": 2
+    },
+    {
+      "playerId": "p137",
+      "userId": "u4",
+      "round": 1,
+      "pickNumber": 1
+    }
+  ],
+  "round": 11,
+  "status": "COMPLETED"
+}

@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>DRAFT ARENA | IPL Fantasy Lobby</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Manrope:wght@300;400;500;600;700;800&amp;family=Lexend:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "on-surface-variant": "#aaabb0",
+                        "on-secondary-fixed": "#00326f",
+                        "on-primary-fixed": "#453900",
+                        "secondary-fixed": "#bed2ff",
+                        "secondary-dim": "#6d9df7",
+                        "on-secondary-fixed-variant": "#084ea3",
+                        "on-primary-container": "#5b4b00",
+                        "surface-container-lowest": "#000000",
+                        "surface-tint": "#ffe792",
+                        "tertiary-container": "#f6322d",
+                        "on-tertiary-container": "#000000",
+                        "outline-variant": "#46484d",
+                        "on-primary-fixed-variant": "#665500",
+                        "on-primary": "#655400",
+                        "inverse-primary": "#705e00",
+                        "secondary": "#72a2fd",
+                        "primary-container": "#ffd709",
+                        "background": "#0c0e12",
+                        "surface-variant": "#23262c",
+                        "on-tertiary-fixed": "#3a0001",
+                        "error": "#ff7351",
+                        "surface-container-high": "#1d2025",
+                        "on-secondary": "#002453",
+                        "surface-dim": "#0c0e12",
+                        "secondary-container": "#004ba0",
+                        "on-background": "#f6f6fc",
+                        "surface-container-highest": "#23262c",
+                        "tertiary-fixed": "#ff9286",
+                        "secondary-fixed-dim": "#a8c4ff",
+                        "surface": "#0c0e12",
+                        "on-surface": "#f6f6fc",
+                        "on-error-container": "#ffd2c8",
+                        "tertiary-dim": "#e32322",
+                        "inverse-on-surface": "#53555a",
+                        "surface-container": "#171a1f",
+                        "on-error": "#450900",
+                        "error-container": "#b92902",
+                        "primary-fixed-dim": "#efc900",
+                        "tertiary-fixed-dim": "#ff7b6e",
+                        "surface-container-low": "#111318",
+                        "primary-dim": "#efc900",
+                        "primary": "#ffe792",
+                        "outline": "#74757a",
+                        "error-dim": "#d53d18",
+                        "surface-bright": "#292c32",
+                        "on-tertiary": "#4a0002",
+                        "inverse-surface": "#f9f9ff",
+                        "on-secondary-container": "#cddbff",
+                        "on-tertiary-fixed-variant": "#7a0006",
+                        "primary-fixed": "#ffd709",
+                        "tertiary": "#ff7163"
+                    },
+                    fontFamily: {
+                        "headline": ["Space Grotesk"],
+                        "body": ["Manrope"],
+                        "label": ["Lexend"]
+                    },
+                    borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .hide-scrollbar::-webkit-scrollbar { display: none; }
+        .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+        .glass-effect {
+            backdrop-filter: blur(16px);
+            background: rgba(35, 38, 44, 0.7);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body selection:bg-primary selection:text-on-primary-fixed">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 flex justify-between items-center px-6 h-20 bg-[#0c0e12] shadow-[0_8px_32px_rgba(0,0,0,0.5)]">
+<div class="flex items-center gap-8">
+<span class="text-2xl font-black text-[#ffe792] italic font-headline tracking-tight uppercase">DRAFT ARENA</span>
+<div class="hidden md:flex gap-6 items-center">
+<a class="font-headline font-bold uppercase tracking-tight text-[#ffe792] border-b-4 border-[#ffe792] pb-1" href="#">Draft Room</a>
+<a class="font-headline font-bold uppercase tracking-tight text-gray-400 hover:text-white transition-colors" href="#">Squads</a>
+<a class="font-headline font-bold uppercase tracking-tight text-gray-400 hover:text-white transition-colors" href="#">Leaderboard</a>
+<a class="font-headline font-bold uppercase tracking-tight text-gray-400 hover:text-white transition-colors" href="#">My Team</a>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<button class="p-2 text-on-surface-variant hover:bg-[#1d2025] rounded-full transition-all">
+<span class="material-symbols-outlined" data-icon="notifications">notifications</span>
+</button>
+<div class="flex items-center gap-3 pl-4 border-l border-outline-variant/30">
+<div class="text-right hidden sm:block">
+<p class="text-xs font-label uppercase text-on-surface-variant leading-none">Manager</p>
+<p class="font-headline font-bold text-sm tracking-tight">K. SHARMA</p>
+</div>
+<img alt="User Avatar" class="w-10 h-10 rounded-full border-2 border-primary-container object-cover" data-alt="Close up portrait of a young Indian man with a stylish haircut and beard, smiling confidently against a soft blurred urban background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAP_0JgrI43EdUE22n9WiYuCavNzCGDBTD8geW2VZm34Y-AaTDlg_Ps1hs5OPfcia_xDzP5glM90yMIfOCnRh6ZV_dv-wJksnB6j9WiSOFjdhP78cJEZ_vr3K9WIrfgzWOya-Ct1wYIzZL7pp1H10gl2xvbw1cs2I7ZIVnPzAcGa4sDtHrtt2plsM2rzPL6UEdSbg8E-0IrB66JGFysRo8O8faY7pcODpDKoXFiFIXHvBjS3BqaFAP5JOenmI1N51-th_74m21fpuA"/>
+</div>
+</div>
+</nav>
+<!-- SideNavBar (Desktop Only) -->
+<aside class="hidden lg:flex flex-col py-8 h-screen w-64 fixed left-0 top-0 bg-[#111318] shadow-2xl z-40 pt-24">
+<div class="px-6 mb-8">
+<div class="flex items-center gap-3 mb-4">
+<div class="w-12 h-12 rounded-lg bg-surface-container-highest flex items-center justify-center border-l-4 border-tertiary">
+<span class="material-symbols-outlined text-tertiary text-3xl" data-icon="sports_cricket">sports_cricket</span>
+</div>
+<div>
+<h3 class="font-headline font-bold text-white text-lg leading-tight uppercase">Mumbai Mavericks</h3>
+<p class="text-xs text-on-surface-variant font-label uppercase">Pick #4 | 1,240 pts</p>
+</div>
+</div>
+<button class="w-full py-3 bg-primary text-on-primary-fixed font-headline font-black uppercase tracking-widest text-sm rounded-md shadow-[0_0_20px_rgba(255,231,146,0.3)] hover:shadow-[0_0_30px_rgba(255,231,146,0.5)] transition-all">
+                View Live Draft
+            </button>
+</div>
+<nav class="flex-1 space-y-1">
+<a class="flex items-center gap-4 px-6 py-4 bg-[#23262c] text-[#ffe792] border-l-4 border-[#ffe792] font-['Manrope'] font-semibold hover:translate-x-1 transition-transform" href="#">
+<span class="material-symbols-outlined" data-icon="gavel">gavel</span>
+<span>Draft Room</span>
+</a>
+<a class="flex items-center gap-4 px-6 py-4 text-gray-500 hover:bg-[#1d2025] font-['Manrope'] font-semibold hover:translate-x-1 transition-transform" href="#">
+<span class="material-symbols-outlined" data-icon="groups">groups</span>
+<span>Squads</span>
+</a>
+<a class="flex items-center gap-4 px-6 py-4 text-gray-500 hover:bg-[#1d2025] font-['Manrope'] font-semibold hover:translate-x-1 transition-transform" href="#">
+<span class="material-symbols-outlined" data-icon="leaderboard">leaderboard</span>
+<span>Leaderboard</span>
+</a>
+<a class="flex items-center gap-4 px-6 py-4 text-gray-500 hover:bg-[#1d2025] font-['Manrope'] font-semibold hover:translate-x-1 transition-transform" href="#">
+<span class="material-symbols-outlined" data-icon="person">person</span>
+<span>My Team</span>
+</a>
+</nav>
+<div class="mt-auto px-6 border-t border-outline-variant/10 pt-6">
+<a class="flex items-center gap-4 py-3 text-gray-500 hover:text-white transition-colors" href="#">
+<span class="material-symbols-outlined" data-icon="settings">settings</span>
+<span class="text-sm font-semibold">Settings</span>
+</a>
+<a class="flex items-center gap-4 py-3 text-gray-500 hover:text-white transition-colors" href="#">
+<span class="material-symbols-outlined" data-icon="help">help</span>
+<span class="text-sm font-semibold">Support</span>
+</a>
+</div>
+</aside>
+<!-- Main Content Canvas -->
+<main class="lg:pl-64 pt-24 pb-24 lg:pb-8 px-4 md:px-8 bg-background min-h-screen">
+<!-- NBA-Style Draft Board Header -->
+<section class="mb-10 relative">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-6">
+<div class="flex-1">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-tertiary-container text-on-tertiary-container mb-4">
+<span class="material-symbols-outlined text-sm" data-icon="fiber_manual_record" style="font-variation-settings: 'FILL' 1;">fiber_manual_record</span>
+<span class="font-label text-[10px] font-bold uppercase tracking-wider">Live Round 2 of 15</span>
+</div>
+<h1 class="font-headline text-5xl md:text-7xl font-black uppercase tracking-tighter text-white italic leading-none mb-2">
+                        Draft <span class="text-primary">Center</span>
+</h1>
+<p class="text-on-surface-variant font-body text-lg max-w-xl">The 2024 Premier League Mega Auction is underway. Build your legacy.</p>
+</div>
+<!-- Countdown Timer Module -->
+<div class="bg-surface-container-high p-6 rounded-xl border-l-4 border-primary shadow-2xl min-w-[280px]">
+<p class="text-xs font-label uppercase text-on-surface-variant mb-2">Next Pick Countdown</p>
+<div class="flex items-baseline gap-2">
+<span class="text-5xl font-headline font-black text-primary tracking-tighter">00:42</span>
+<span class="text-lg font-headline font-bold text-on-surface-variant uppercase tracking-tighter">SEC</span>
+</div>
+<div class="mt-4 flex items-center gap-3">
+<div class="w-8 h-8 rounded-full bg-secondary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-sm text-secondary" data-icon="timer">timer</span>
+</div>
+<p class="text-sm font-semibold">Delhi Dynamos on the clock</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Draft Ticker (NBA Style) -->
+<div class="w-full bg-surface-container-lowest py-6 mb-12 -mx-4 md:-mx-8 px-4 md:px-8 overflow-hidden">
+<div class="flex items-center gap-8 overflow-x-auto hide-scrollbar whitespace-nowrap">
+<!-- Current Pick -->
+<div class="flex items-center gap-4 bg-primary px-6 py-3 rounded-md shadow-[0_0_30px_rgba(255,231,146,0.2)]">
+<span class="font-headline font-black text-on-primary-fixed text-2xl italic">#14</span>
+<div class="h-10 w-[2px] bg-on-primary-fixed/20"></div>
+<div>
+<p class="text-[10px] font-label font-black uppercase text-on-primary-fixed leading-none">On the Clock</p>
+<p class="text-lg font-headline font-black uppercase text-on-primary-fixed">Delhi Dynamos</p>
+</div>
+</div>
+<!-- Recent Picks -->
+<div class="flex items-center gap-12 text-on-surface-variant font-headline font-bold uppercase">
+<div class="flex items-center gap-4 opacity-80">
+<span class="text-xl italic">#13</span>
+<div>
+<p class="text-[10px] font-label font-black leading-none text-secondary">CSK Titans</p>
+<p class="text-sm text-white">R. Khan (ALL)</p>
+</div>
+</div>
+<div class="flex items-center gap-4 opacity-60">
+<span class="text-xl italic">#12</span>
+<div>
+<p class="text-[10px] font-label font-black leading-none text-tertiary">Punjab Kings</p>
+<p class="text-sm text-white">V. Kohli (BAT)</p>
+</div>
+</div>
+<div class="flex items-center gap-4 opacity-40">
+<span class="text-xl italic">#11</span>
+<div>
+<p class="text-[10px] font-label font-black leading-none text-primary">Mumbai Mavs</p>
+<p class="text-sm text-white">S. Yadav (BAT)</p>
+</div>
+</div>
+<div class="flex items-center gap-4 opacity-20">
+<span class="text-xl italic">#10</span>
+<div>
+<p class="text-[10px] font-label font-black leading-none text-secondary">KKR Knights</p>
+<p class="text-sm text-white">J. Bumrah (BOWL)</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+<!-- Friends/Manager Standings (Bento Grid Style) -->
+<div class="lg:col-span-8 space-y-8">
+<div class="flex items-center justify-between">
+<h2 class="font-headline font-black text-2xl uppercase tracking-tight italic">The War Room <span class="text-on-surface-variant font-light not-italic text-lg ml-2">/ Managers</span></h2>
+<div class="flex gap-2">
+<button class="px-4 py-2 bg-surface-container-high rounded-md text-sm font-semibold hover:bg-surface-container-highest transition-colors">List View</button>
+<button class="px-4 py-2 bg-primary/10 text-primary border border-primary/20 rounded-md text-sm font-semibold">Grid View</button>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<!-- Manager Card 1 (Active Picker) -->
+<div class="relative bg-surface-container-low p-6 rounded-xl border border-primary/30 group hover:border-primary transition-all overflow-hidden">
+<div class="absolute top-0 right-0 w-32 h-32 bg-primary/5 rounded-full -mr-16 -mt-16 blur-3xl"></div>
+<div class="flex justify-between items-start mb-6">
+<div class="flex items-center gap-4">
+<div class="relative">
+<img alt="Manager Avatar" class="w-16 h-16 rounded-lg object-cover" data-alt="Close up portrait of a middle-aged South Asian man with glasses and a friendly expression" src="https://lh3.googleusercontent.com/aida-public/AB6AXuALdu186x2zs53DCw577U3qOv2GQXgIW06u1BzDsUlxd4Q3XXcHOc2Kgtf_q_ugKd_lrYXOmdi7QP7kGJ6yGqxUeXrIsTxAK6ZjMhCKXDseOgH8Tk2YOphKDVdTF4_4oWhfUUSORliW4hEV9Al_MqQYtpK7RbUm0Mnr1l37bDhxY8gXepdaJSS8O0uDsloECT4gKHe3ty5QE07udCKpikyU-RnYgID9xpUGx2QnZ1vuxLE10oo3SS33lz0r3C4sbfnGbYTHJuCK7pM"/>
+<div class="absolute -bottom-2 -right-2 bg-primary text-on-primary-fixed font-headline font-black px-2 py-0.5 text-xs rounded border-2 border-surface-container-low italic">#1</div>
+</div>
+<div>
+<h4 class="font-headline font-black text-white text-xl uppercase italic">Delhi Dynamos</h4>
+<p class="text-xs font-label text-on-surface-variant uppercase">Rohan Deshmukh</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-primary animate-pulse" data-icon="pending" style="font-variation-settings: 'FILL' 1;">pending</span>
+</div>
+<div class="flex gap-4">
+<div class="flex-1 bg-surface-container-high p-3 rounded-lg">
+<p class="text-[10px] font-label text-on-surface-variant uppercase">Remaining Purse</p>
+<p class="font-headline font-bold text-lg">₹42.5 Cr</p>
+</div>
+<div class="flex-1 bg-surface-container-high p-3 rounded-lg">
+<p class="text-[10px] font-label text-on-surface-variant uppercase">Squad Count</p>
+<p class="font-headline font-bold text-lg">6/18</p>
+</div>
+</div>
+<div class="mt-4 pt-4 border-t border-outline-variant/10">
+<div class="flex items-center justify-between text-sm">
+<span class="text-on-surface-variant">Last Pick</span>
+<span class="font-bold text-white">M. Shami (BOWL)</span>
+</div>
+</div>
+</div>
+<!-- Manager Card 2 -->
+<div class="bg-surface-container-low p-6 rounded-xl border border-outline-variant/20 group hover:border-secondary/40 transition-all">
+<div class="flex justify-between items-start mb-6">
+<div class="flex items-center gap-4">
+<div class="relative">
+<img alt="Manager Avatar" class="w-16 h-16 rounded-lg object-cover grayscale group-hover:grayscale-0 transition-all" data-alt="Portrait of a young Indian woman with long dark hair, smiling warmly in an office setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBq132Sv817fa7c3pdYBKmRZK_jR_VAq89E5sfkVaxiqaMgL_YQQlD7SuMqxFqfAoGH3cES-HqKmm1gv_HUDXz9-RL0UF25x41HJRbSRZfWepKz3a_8hExaraGUrUlRmDETSy3Tly_ecAzufs-yo3AXAaM2Rmp9fnkaK-4KxDGbr-ORNlMdBsPFFM5y2w8u9pXsUnQBZ6tUmF80wK3RHleJjh8tkqnezDO7_MXFVpI-GC6mNckwQIJLS1Dub8VzNnsCPTq6kFExggQ"/>
+<div class="absolute -bottom-2 -right-2 bg-secondary text-on-secondary-fixed font-headline font-black px-2 py-0.5 text-xs rounded border-2 border-surface-container-low italic">#2</div>
+</div>
+<div>
+<h4 class="font-headline font-black text-white text-xl uppercase italic opacity-70 group-hover:opacity-100 transition-opacity">CSK Titans</h4>
+<p class="text-xs font-label text-on-surface-variant uppercase">Ananya Iyer</p>
+</div>
+</div>
+</div>
+<div class="flex gap-4">
+<div class="flex-1 bg-surface-container-high p-3 rounded-lg">
+<p class="text-[10px] font-label text-on-surface-variant uppercase">Remaining Purse</p>
+<p class="font-headline font-bold text-lg">₹31.0 Cr</p>
+</div>
+<div class="flex-1 bg-surface-container-high p-3 rounded-lg">
+<p class="text-[10px] font-label text-on-surface-variant uppercase">Squad Count</p>
+<p class="font-headline font-bold text-lg">8/18</p>
+</div>
+</div>
+<div class="mt-4 pt-4 border-t border-outline-variant/10">
+<div class="flex items-center justify-between text-sm">
+<span class="text-on-surface-variant">Last Pick</span>
+<span class="font-bold text-white">Rashid Khan (ALL)</span>
+</div>
+</div>
+</div>
+<!-- Manager Card 3 -->
+<div class="bg-surface-container-low p-6 rounded-xl border border-outline-variant/20 group hover:border-tertiary/40 transition-all">
+<div class="flex justify-between items-start mb-6">
+<div class="flex items-center gap-4">
+<div class="relative">
+<img alt="Manager Avatar" class="w-16 h-16 rounded-lg object-cover grayscale group-hover:grayscale-0 transition-all" data-alt="Studio portrait of a young man with sharp features and modern hair, dramatic lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAaSXfLGSu0ELykopz1cKk9EsmbTc3KiSSYqTWGKgHBSgE43TSmcDeZLA2plwiYNQEhKRMU3Gi4haonajhajZYDBLOJGQoKXG8lXT51SFIHd1CEKeHcEuyTfQ9Y-H3VhRyJdd93jNwDEBcYGTdBJby0cfORDVABi4m8cFt-tEwLIuDoQpkecoeBdc2sa8B7qDkBaxjxX_8xfJU39TYm_pYnZzV8cG1cFjtHgyhCAxPUIBTZzb_PIH5zLp0aeDO5U2D0x9h2jQDgWkY"/>
+<div class="absolute -bottom-2 -right-2 bg-tertiary text-on-tertiary-container font-headline font-black px-2 py-0.5 text-xs rounded border-2 border-surface-container-low italic">#3</div>
+</div>
+<div>
+<h4 class="font-headline font-black text-white text-xl uppercase italic opacity-70 group-hover:opacity-100 transition-opacity">Punjab Kings</h4>
+<p class="text-xs font-label text-on-surface-variant uppercase">Siddharth V.</p>
+</div>
+</div>
+</div>
+<div class="flex gap-4">
+<div class="flex-1 bg-surface-container-high p-3 rounded-lg">
+<p class="text-[10px] font-label text-on-surface-variant uppercase">Remaining Purse</p>
+<p class="font-headline font-bold text-lg">₹12.0 Cr</p>
+</div>
+<div class="flex-1 bg-surface-container-high p-3 rounded-lg">
+<p class="text-[10px] font-label text-on-surface-variant uppercase">Squad Count</p>
+<p class="font-headline font-bold text-lg">11/18</p>
+</div>
+</div>
+<div class="mt-4 pt-4 border-t border-outline-variant/10">
+<div class="flex items-center justify-between text-sm">
+<span class="text-on-surface-variant">Last Pick</span>
+<span class="font-bold text-white">Virat Kohli (BAT)</span>
+</div>
+</div>
+</div>
+<!-- Manager Card 4 (Me) -->
+<div class="bg-[#23262c] p-6 rounded-xl border-l-4 border-primary group transition-all">
+<div class="flex justify-between items-start mb-6">
+<div class="flex items-center gap-4">
+<div class="relative">
+<img alt="Manager Avatar" class="w-16 h-16 rounded-lg object-cover" data-alt="Close up portrait of a young Indian man with a stylish haircut and beard, smiling confidently" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDOVSBz-mLCzfmCIsryNwE__6hR6tFelN_i2s9OgecqHntanoKvHnV8lqeOBcY2LBlPfnqWrzPztnwrmupqdpfi2N2UBxbqljaD9_j_tadzXlqaFX2OOemxB68-z44PZMVuHm3UJXZEe4mIo2Sp2y2q7VFyK7esEZ3wloSWazONLiIO719hhwHXYv03XpSgOuEfXDo4EwhXkWG_DegtD6U_EZ02s1wt-BFKFTWj7H2uLMroorhQmS0KkqcI42eak6on0QKQ7B4XyDY"/>
+<div class="absolute -bottom-2 -right-2 bg-primary text-on-primary-fixed font-headline font-black px-2 py-0.5 text-xs rounded border-2 border-surface-container-highest italic">#4</div>
+</div>
+<div>
+<h4 class="font-headline font-black text-primary text-xl uppercase italic">Mumbai Mavs</h4>
+<p class="text-xs font-label text-white uppercase">You (K. Sharma)</p>
+</div>
+</div>
+<span class="text-xs font-label uppercase bg-primary/10 text-primary px-2 py-1 rounded">Next Pick</span>
+</div>
+<div class="flex gap-4">
+<div class="flex-1 bg-surface-container-high p-3 rounded-lg">
+<p class="text-[10px] font-label text-on-surface-variant uppercase">Remaining Purse</p>
+<p class="font-headline font-bold text-lg text-primary">₹58.5 Cr</p>
+</div>
+<div class="flex-1 bg-surface-container-high p-3 rounded-lg">
+<p class="text-[10px] font-label text-on-surface-variant uppercase">Squad Count</p>
+<p class="font-headline font-bold text-lg">4/18</p>
+</div>
+</div>
+<div class="mt-4 pt-4 border-t border-outline-variant/10">
+<div class="flex items-center justify-between text-sm">
+<span class="text-on-surface-variant">Last Pick</span>
+<span class="font-bold text-white">S. Yadav (BAT)</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Draft Queue / Suggested Players -->
+<div class="bg-surface-container-low p-8 rounded-xl relative overflow-hidden">
+<div class="absolute top-0 right-0 w-64 h-full bg-gradient-to-l from-primary/5 to-transparent pointer-events-none"></div>
+<div class="flex items-center justify-between mb-8">
+<h3 class="font-headline font-black text-xl uppercase italic tracking-tight">Available Top Talent</h3>
+<a class="text-primary font-label text-xs uppercase font-bold hover:underline" href="#">View All Market</a>
+</div>
+<div class="flex flex-col gap-4">
+<!-- Player Card 1 -->
+<div class="flex items-center gap-6 p-4 bg-surface-container-high rounded-lg group hover:bg-surface-container-highest transition-colors cursor-pointer relative">
+<div class="absolute left-0 top-0 bottom-0 w-1 bg-secondary rounded-l-lg opacity-0 group-hover:opacity-100 transition-opacity"></div>
+<div class="w-14 h-14 rounded-full bg-surface-variant flex-shrink-0 relative overflow-hidden">
+<img alt="Player headshot" class="w-full h-full object-cover" data-alt="Professional sports headshot of an athletic male cricket player wearing a blue jersey, neutral gray background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAxhqEmgbPHFG5-rFFUZcbk8LezH9hhr6TakIBctoXCC3tOrMmpdh41eODq9DopVcJ9ByIDMw4-LH6Gnik5hdY906k7JRud7k_ASmUAjTGmTv5-OO7lq-fB1NHw-ZSeAc8eLM5O5q4kq2eMosh5pjPtkfi77K2ggVPV1m9APJdw5bE0alXcwCxlXqWvUZM-UnWFLFP3YAmkI-zAVLRfuNBeU3X9rLE8rBToxUk2gOuDhli8orWwiy9KT1qKiwQSg0t18CkB-SXsR8k"/>
+</div>
+<div class="flex-1">
+<p class="text-[10px] font-label font-black text-secondary uppercase leading-none mb-1">ALL-ROUNDER</p>
+<h5 class="font-headline font-bold text-lg text-white">Hardik Pandya</h5>
+</div>
+<div class="hidden md:block text-center">
+<p class="text-[10px] font-label text-on-surface-variant uppercase">Base Price</p>
+<p class="font-headline font-bold">₹2.0 Cr</p>
+</div>
+<div class="flex gap-2">
+<span class="px-2 py-1 rounded bg-secondary-container text-[10px] font-label font-bold text-on-secondary-container uppercase">Top 20</span>
+<span class="px-2 py-1 rounded bg-surface-variant text-[10px] font-label font-bold text-on-surface-variant uppercase">Ind</span>
+</div>
+<button class="bg-primary text-on-primary-fixed p-2 rounded hover:scale-105 active:scale-95 transition-all">
+<span class="material-symbols-outlined" data-icon="add">add</span>
+</button>
+</div>
+<!-- Player Card 2 -->
+<div class="flex items-center gap-6 p-4 bg-surface-container-high rounded-lg group hover:bg-surface-container-highest transition-colors cursor-pointer relative">
+<div class="absolute left-0 top-0 bottom-0 w-1 bg-tertiary rounded-l-lg opacity-0 group-hover:opacity-100 transition-opacity"></div>
+<div class="w-14 h-14 rounded-full bg-surface-variant flex-shrink-0 relative overflow-hidden">
+<img alt="Player headshot" class="w-full h-full object-cover" data-alt="Professional portrait of a male cricket player in a red jersey, determined expression, sharp studio lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDqyHdzw8xGySx6gwga1ZuPO_JJq1dfX2ZvV1l65YrET_wyHfkYdywmBRR1rTxEzilYAg_zY7a82qESK7rHHEkriYKKDquXQXXjLO1-RmbkUjDcLu1E7mAZN2yfLUWV2nY_W4hPHX1Jb5QKCUS6fE8rVYCe6dOm2988JXKmKWUwyKgVXLrR3V_k9W80oGU_tZ6D_TBnvJqe6yd_bhXui8ByCa5C8lQFBSBmUgL4lD6kH8Qt9iFIz1UBsAqFcmaRe5naEVb087nXj6A"/>
+</div>
+<div class="flex-1">
+<p class="text-[10px] font-label font-black text-tertiary uppercase leading-none mb-1">BATSMAN</p>
+<h5 class="font-headline font-bold text-lg text-white">Glenn Maxwell</h5>
+</div>
+<div class="hidden md:block text-center">
+<p class="text-[10px] font-label text-on-surface-variant uppercase">Base Price</p>
+<p class="font-headline font-bold">₹2.0 Cr</p>
+</div>
+<div class="flex gap-2">
+<span class="px-2 py-1 rounded bg-tertiary-container text-[10px] font-label font-bold text-on-tertiary-container uppercase">Overseas</span>
+</div>
+<button class="bg-primary text-on-primary-fixed p-2 rounded hover:scale-105 active:scale-95 transition-all">
+<span class="material-symbols-outlined" data-icon="add">add</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Sidebar: Draft History & Stats -->
+<div class="lg:col-span-4 space-y-6">
+<!-- Live Stats Card -->
+<div class="bg-gradient-to-br from-secondary-container/20 to-surface-container-low p-6 rounded-xl border border-secondary/20 shadow-xl">
+<h3 class="font-headline font-black text-xl uppercase italic tracking-tight mb-6 flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary" data-icon="insights">insights</span>
+                        Market Pulse
+                    </h3>
+<div class="space-y-4">
+<div>
+<div class="flex justify-between text-xs font-label uppercase text-on-surface-variant mb-1">
+<span>Batsmen Picked</span>
+<span class="text-white">42 / 80</span>
+</div>
+<div class="h-2 w-full bg-surface-container-highest rounded-full overflow-hidden">
+<div class="h-full bg-secondary w-[52%]"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between text-xs font-label uppercase text-on-surface-variant mb-1">
+<span>Bowlers Picked</span>
+<span class="text-white">28 / 80</span>
+</div>
+<div class="h-2 w-full bg-surface-container-highest rounded-full overflow-hidden">
+<div class="h-full bg-tertiary w-[35%]"></div>
+</div>
+</div>
+</div>
+<div class="mt-8 grid grid-cols-2 gap-4">
+<div class="text-center">
+<p class="text-4xl font-headline font-black text-white italic leading-none">₹242 Cr</p>
+<p class="text-[10px] font-label uppercase text-on-surface-variant mt-2">Total Spent</p>
+</div>
+<div class="text-center">
+<p class="text-4xl font-headline font-black text-primary italic leading-none">12</p>
+<p class="text-[10px] font-label uppercase text-on-surface-variant mt-2">Rounds Left</p>
+</div>
+</div>
+</div>
+<!-- Live Chat / Draft Log -->
+<div class="bg-surface-container-low rounded-xl border border-outline-variant/10 flex flex-col h-[500px]">
+<div class="p-4 border-b border-outline-variant/10 flex items-center justify-between">
+<h3 class="font-headline font-bold text-sm uppercase tracking-widest text-on-surface-variant">Draft Log</h3>
+<span class="material-symbols-outlined text-on-surface-variant text-lg" data-icon="history">history</span>
+</div>
+<div class="flex-1 overflow-y-auto p-4 space-y-4 hide-scrollbar">
+<div class="flex gap-3">
+<div class="w-8 h-8 rounded-full bg-secondary-container flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-xs text-secondary" data-icon="sports_cricket" style="font-variation-settings: 'FILL' 1;">sports_cricket</span>
+</div>
+<div>
+<p class="text-xs font-bold text-white mb-1 uppercase tracking-tight">CSK Titans <span class="text-[10px] text-on-surface-variant ml-2">2m ago</span></p>
+<p class="text-sm bg-surface-container-high p-3 rounded-lg rounded-tl-none border border-outline-variant/5">Picked Rashid Khan for ₹16.0 Cr. 🔥</p>
+</div>
+</div>
+<div class="flex gap-3">
+<div class="w-8 h-8 rounded-full bg-tertiary-container flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-xs text-tertiary" data-icon="sports_cricket" style="font-variation-settings: 'FILL' 1;">sports_cricket</span>
+</div>
+<div>
+<p class="text-xs font-bold text-white mb-1 uppercase tracking-tight">Punjab Kings <span class="text-[10px] text-on-surface-variant ml-2">5m ago</span></p>
+<p class="text-sm bg-surface-container-high p-3 rounded-lg rounded-tl-none border border-outline-variant/5">Stole Virat Kohli for ₹14.5 Cr. Is he the G.O.A.T?</p>
+</div>
+</div>
+<div class="flex gap-3 justify-end">
+<div class="text-right">
+<p class="text-xs font-bold text-primary mb-1 uppercase tracking-tight">You <span class="text-[10px] text-on-surface-variant ml-2">8m ago</span></p>
+<p class="text-sm bg-primary/10 p-3 rounded-lg rounded-tr-none border border-primary/20">Secured SKY! Mumbai roots intact.</p>
+</div>
+</div>
+</div>
+<div class="p-4 bg-surface-container-highest">
+<div class="relative">
+<input class="w-full bg-surface-container-low border-none rounded-md text-sm py-3 px-4 focus:ring-1 focus:ring-primary" placeholder="Roast a manager..." type="text"/>
+<button class="absolute right-2 top-1.5 p-1.5 text-primary">
+<span class="material-symbols-outlined" data-icon="send">send</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- BottomNavBar (Mobile Only) -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 pb-6 pt-3 lg:hidden bg-[#0c0e12]/95 backdrop-blur-xl border-t border-[#46484d]/20 shadow-[0_-10px_40px_rgba(0,0,0,0.8)]">
+<a class="flex flex-col items-center justify-center text-[#ffe792] bg-[#ffe792]/10 rounded-xl py-1 px-3" href="#">
+<span class="material-symbols-outlined text-2xl" data-icon="gavel" style="font-variation-settings: 'FILL' 1;">gavel</span>
+<span class="font-['Lexend'] text-[10px] uppercase font-bold mt-1">Draft</span>
+</a>
+<a class="flex flex-col items-center justify-center text-gray-500" href="#">
+<span class="material-symbols-outlined text-2xl" data-icon="sports_cricket">sports_cricket</span>
+<span class="font-['Lexend'] text-[10px] uppercase font-bold mt-1">Squads</span>
+</a>
+<a class="flex flex-col items-center justify-center text-gray-500" href="#">
+<span class="material-symbols-outlined text-2xl" data-icon="equalizer">equalizer</span>
+<span class="font-['Lexend'] text-[10px] uppercase font-bold mt-1">Board</span>
+</a>
+<a class="flex flex-col items-center justify-center text-gray-500" href="#">
+<span class="material-symbols-outlined text-2xl" data-icon="shield">shield</span>
+<span class="font-['Lexend'] text-[10px] uppercase font-bold mt-1">Team</span>
+</a>
+</nav>
+</body></html>
