@@ -129,51 +129,52 @@ export default function TeamsDirectory() {
                   <span className="text-on-surface-variant font-label text-xs uppercase">{rolePlayers.length} Players</span>
                 </div>
                 
-                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   {rolePlayers.map((p) => {
                     const isOverseas = p.overseas;
-                    const cardBg = isOverseas ? 'bg-error-container/10 border-error/30' : 'bg-surface-container-low border-outline-variant/10';
+                    const cardBg = isOverseas 
+                      ? 'bg-error-container/10 border-error/20 hover:border-error/40 hover:bg-error-container/20' 
+                      : 'bg-surface-container-low border-outline-variant/10 hover:border-primary/40 hover:bg-surface-container-highest';
                     const iconColor = isOverseas ? 'text-error' : 'text-primary';
-                    const stripeColor = isOverseas ? 'bg-error' : 'bg-primary';
 
                     return (
                       <div 
                         key={p.id}
                         draggable
                         onDragStart={(e) => handleDragStart(e, p.id)}
-                        className={`relative group overflow-visible pt-8 px-6 pb-6 mt-8 rounded-md border transition-all hover:-translate-y-1 hover:shadow-2xl cursor-grab active:cursor-grabbing ${cardBg}`}
+                        className={`relative flex items-center gap-3 md:gap-4 py-3 px-3 md:py-4 md:px-4 min-h-[85px] md:min-h-[100px] rounded-xl border transition-all group lg:cursor-grab lg:active:cursor-grabbing ${cardBg}`}
                       >
-                        <div className="absolute top-0 left-0 w-1 h-full bg-surface-variant opacity-20"></div>
-                        <div className={`absolute top-0 left-0 w-1 h-full ${stripeColor} opacity-80 group-hover:opacity-100 transition-opacity`}></div>
-                        
-                        <div className="absolute -top-10 right-4 w-20 h-20 md:w-24 md:h-24 z-10 bg-surface-variant rounded-full flex items-center justify-center border-4 border-surface-container-low shadow-xl overflow-hidden pointer-events-none">
+                        <div className="w-12 h-12 md:w-14 md:h-14 lg:w-16 lg:h-16 rounded-full overflow-hidden shrink-0 border-2 border-surface-container-lowest bg-surface-variant group-hover:border-primary/50 transition-colors lg:pointer-events-none">
                           {p.imageUrl ? (
                             <img src={p.imageUrl} alt={p.name} className="w-full h-full object-cover" />
                           ) : (
-                            <span className="material-symbols-outlined text-4xl text-on-surface-variant font-icon">person</span>
+                            <div className="w-full h-full flex items-center justify-center"><span className="material-symbols-outlined text-on-surface-variant text-xl md:text-2xl font-icon">person</span></div>
                           )}
                         </div>
-                        
-                        <div className="flex justify-between items-start mb-4 relative z-20">
-                          <span className={`material-symbols-outlined ${iconColor} font-icon`}>drag_indicator</span>
-                        </div>
-                        
-                        <div className="relative z-20">
-                          <span className={`font-label text-[10px] font-extrabold ${iconColor} uppercase tracking-[0.2em] leading-none`}>{p.role} • {p.country || "Ind"}</span>
-                          <h3 className="font-headline text-2xl font-black mt-1 uppercase leading-tight text-white mb-2">{p.name}</h3>
-                          
-                          {isOverseas && (
-                            <div className="flex flex-wrap gap-2 mt-1">
-                              <span className="px-2 py-0.5 rounded-full bg-error/20 text-error text-[9px] font-label font-bold uppercase border border-error/20">Overseas</span>
-                            </div>
-                          )}
-                          
-                          <div className={`mt-4 flex justify-between items-end border-t border-outline-variant/20 pt-4`}>
-                            <div>
-                              <span className="text-[10px] font-label uppercase text-on-surface-variant">Fantasy Points</span>
-                              <p className="text-xl font-headline font-bold text-white leading-none mt-1">{p.points2025}</p>
-                            </div>
+                        <div className="min-w-0 flex-1 py-0.5 md:py-1 lg:pointer-events-none">
+                          <h4 className="font-headline font-bold text-white text-[13px] md:text-sm lg:text-base leading-tight uppercase pr-2">{p.name}</h4>
+                          <div className="flex items-center gap-1 md:gap-1.5 mt-1 md:mt-1.5 flex-wrap">
+                            <span className="text-[8px] md:text-[9px] font-label font-black text-on-surface-variant uppercase tracking-wider">{p.role}</span>
+                            <span className="w-1 h-1 rounded-full bg-outline-variant"></span>
+                            <span className="text-[8px] md:text-[9px] font-label font-bold text-on-surface-variant uppercase tracking-widest">{p.team}</span>
+                            {(p.country && p.country !== 'India') && (
+                              <>
+                                <span className="w-1 h-1 rounded-full bg-outline-variant hidden sm:block"></span>
+                                <span className="text-[8px] md:text-[9px] font-label font-black text-error uppercase tracking-wider">{p.country}</span>
+                              </>
+                            )}
                           </div>
+                        </div>
+                        
+                        {/* Individual Points on Right Edge */}
+                        <div className="shrink-0 flex flex-col items-end justify-center pl-2 md:pl-3 border-l border-outline-variant/10 lg:pointer-events-none">
+                          <span className="text-base md:text-xl font-headline font-black text-white leading-none">{p.points2025 || 0}</span>
+                          <span className="text-[8px] font-label text-on-surface-variant uppercase tracking-widest mt-1">PTS</span>
+                        </div>
+                        
+                        {/* Drag indicator icon on hover (Desktop only) */}
+                        <div className="hidden lg:flex absolute top-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity">
+                           <span className={`material-symbols-outlined text-[14px] ${iconColor} font-icon`}>drag_indicator</span>
                         </div>
                       </div>
                     );
@@ -184,8 +185,8 @@ export default function TeamsDirectory() {
           })}
         </div>
 
-        {/* Right Area: Potential XI sidebar */}
-        <div className="lg:col-span-4">
+        {/* Right Area: Potential XI sidebar (Hidden on Mobile) */}
+        <div className="hidden lg:block lg:col-span-4">
           <div className="sticky top-28 bg-surface-container-lowest p-6 rounded-2xl border border-outline-variant/20 shadow-2xl">
             <div className="mb-6 pb-4 border-b border-outline-variant/10">
               <h2 className="font-headline text-2xl font-black italic tracking-tighter uppercase text-white flex items-center justify-between">

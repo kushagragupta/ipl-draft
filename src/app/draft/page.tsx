@@ -15,6 +15,7 @@ export default function DraftRoom() {
   const [searchTerm, setSearchTerm] = useState('');
   const [teamFilter, setTeamFilter] = useState('All');
   const [roleFilter, setRoleFilter] = useState('All');
+  const [mobileDrawerTeamId, setMobileDrawerTeamId] = useState<string | null>(null);
   
   const fetchData = async () => {
     try {
@@ -234,8 +235,8 @@ export default function DraftRoom() {
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
-        {/* Left Area: Managers & Squads Vertically */}
-        <div className="lg:col-span-8 order-2 lg:order-1 space-y-8">
+        {/* DESKTOP Left Area: Managers & Squads Vertically */}
+        <div className="hidden lg:block lg:col-span-8 order-2 lg:order-1 space-y-8">
            <div className="flex items-center justify-between">
               <h2 className="font-headline font-black text-3xl uppercase tracking-tight italic text-white">
                  League Squads
@@ -291,8 +292,8 @@ export default function DraftRoom() {
         </div>
 
         {/* Right Area: Player List with Filters */}
-        <div className="lg:col-span-4 lg:col-start-9 order-1 lg:order-2 sticky top-[100px]">
-          <div className="bg-surface-container-low p-5 rounded-xl border border-outline-variant/10 flex flex-col h-[650px] shadow-2xl">
+        <div className="lg:col-span-4 lg:col-start-9 order-1 lg:order-2 sticky top-[100px] z-10">
+          <div className="bg-surface-container-low p-4 lg:p-5 rounded-xl border border-outline-variant/10 flex flex-col h-[65vh] lg:h-[650px] shadow-2xl">
              <div className="mb-4 space-y-3 shrink-0">
                 <div className="flex items-baseline justify-between">
                   <h3 className="font-headline font-black text-xl text-white uppercase italic">Player Pool</h3>
@@ -368,6 +369,88 @@ export default function DraftRoom() {
           </div>
         </div>
       </div>
+      
+      {/* ---------------- MOBILE SPECIFIC FOOTER & DRAWER ---------------- */}
+      
+      {/* Mobile Managers Bottom Bar */}
+      <div className="lg:hidden fixed bottom-0 left-0 w-full bg-surface-container-highest border-t border-outline-variant/20 p-3 z-40 pb-5 md:pb-6 flex overflow-x-auto gap-3 hide-scrollbar shadow-[0_-10px_40px_rgba(0,0,0,0.5)]">
+        {state.users.map((m, idx) => {
+          const isActive = state.currentTurnIndex === idx;
+          return (
+            <button 
+              key={m.id} 
+              onClick={() => setMobileDrawerTeamId(m.id)}
+              className={`flex-shrink-0 px-4 py-2.5 rounded-lg font-headline font-bold uppercase tracking-wider text-[11px] border transition-colors ${isActive ? 'bg-primary/20 text-primary border-primary shadow-[0_0_15px_rgba(var(--primary-rgb),0.3)] animate-pulse' : 'bg-surface-container-low text-on-surface-variant border-outline-variant/20 hover:text-white'}`}
+            >
+              {m.name}
+            </button>
+          )
+        })}
+      </div>
+
+      {/* Mobile Drawer (Bottom Sheet) */}
+      {mobileDrawerTeamId && (
+        <div className="lg:hidden fixed inset-0 z-50 flex flex-col justify-end pointer-events-none">
+          {/* Backdrop */}
+          <div className="absolute inset-0 bg-black/60 backdrop-blur-sm pointer-events-auto transition-opacity" onClick={() => setMobileDrawerTeamId(null)}></div>
+          
+          {/* Sheet */}
+          <div className="relative bg-[#111318] w-full h-[75vh] rounded-t-3xl border-t border-outline-variant/20 flex flex-col shadow-[0_-20px_50px_rgba(0,0,0,0.5)] pointer-events-auto animate-in slide-in-from-bottom-20 duration-300">
+            <div className="flex items-center justify-between p-5 border-b border-outline-variant/10 bg-surface-container-low shrink-0 rounded-t-3xl">
+               {(() => {
+                 const m = state.users.find(u => u.id === mobileDrawerTeamId)!;
+                 const isActive = state.currentTurnIndex === state.users.findIndex(u => u.id === mobileDrawerTeamId);
+                 const draftedCount = state.pickHistory.filter(pick => pick.userId === m.id).length;
+                 return (
+                   <>
+                     <div>
+                       <h3 className={`font-headline text-2xl md:text-3xl italic uppercase font-black flex items-center gap-2 ${isActive ? 'text-primary' : 'text-white'}`}>
+                         {m.name}
+                       </h3>
+                       <p className="text-[10px] md:text-xs font-label text-on-surface-variant uppercase font-bold mt-1 tracking-wider">{draftedCount}/11 Players</p>
+                     </div>
+                     <button onClick={() => setMobileDrawerTeamId(null)} className="w-10 h-10 rounded-full bg-surface-variant border border-outline-variant/20 text-on-surface hover:bg-white/10 transition flex items-center justify-center">
+                       <span className="material-symbols-outlined text-[20px]">expand_more</span>
+                     </button>
+                   </>
+                 )
+               })()}
+            </div>
+            
+            <div className="overflow-y-auto p-4 space-y-2 flex-1 relative hide-scrollbar pb-10">
+               {(() => {
+                 const m = state.users.find(u => u.id === mobileDrawerTeamId)!;
+                 const managerDrafts = state.pickHistory.filter(pick => pick.userId === m.id).sort((a,b) => a.pickNumber - b.pickNumber);
+                 const draftedPlayers = managerDrafts.map(pick => players.find(p => p.id === pick.playerId)!);
+                 const slots = [...draftedPlayers, ...Array(11 - draftedPlayers.length).fill(null)];
+                 return slots.map((p, i) => (
+                   <div key={i} className={`flex items-center p-2 rounded-lg border-2 transition-all h-[56px] ${p ? (p.overseas ? 'border-error/30 bg-error-container/10' : 'border-outline-variant/20 bg-surface-container-high') : 'border-dashed border-outline-variant/10 bg-transparent'}`}>
+                      {p ? (
+                         <div className="w-full flex justify-between items-center pl-2">
+                            <div className="flex flex-col flex-1 min-w-0 pr-2">
+                               <span className="font-headline font-bold text-white uppercase text-[13px] md:text-[14px] leading-none tracking-tight truncate max-w-[200px] md:max-w-xs">{p.name}</span>
+                               <span className="font-label text-[9px] md:text-[10px] text-on-surface-variant uppercase mt-1.5 truncate tracking-widest">
+                                  {p.role} • {p.overseas ? 'OS' : 'IND'} • {p.team}
+                               </span>
+                            </div>
+                            {p.imageUrl ? (
+                              <img src={p.imageUrl} className="w-10 h-10 rounded-full object-cover bg-surface-variant shrink-0 border border-outline-variant/20" />
+                            ) : (
+                              <div className="w-10 h-10 rounded-full bg-surface-variant flex items-center justify-center shrink-0 border border-outline-variant/20">
+                                 <span className="material-symbols-outlined text-[18px] text-on-surface-variant opacity-70">person</span>
+                              </div>
+                            )}
+                         </div>
+                      ) : (
+                         <span className="text-[10px] font-label uppercase text-on-surface-variant/40 italic font-bold pl-2 tracking-widest">Empty Slot {i+1}</span>
+                      )}
+                   </div>
+                 ));
+               })()}
+            </div>
+          </div>
+        </div>
+      )}
     </>
   );
 }
