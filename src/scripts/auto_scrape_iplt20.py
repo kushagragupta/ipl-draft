@@ -25,7 +25,7 @@ def fetch_playwright_match(match_id):
     print(f"🕵️  [Playwright] Bypassing CSR & Extracting Match {match_id} natively...")
     try:
         from playwright.sync_api import sync_playwright
-        from playwright_stealth import stealth
+        from playwright_stealth import stealth_sync
         import pandas as pd
         import time
         
@@ -34,7 +34,7 @@ def fetch_playwright_match(match_id):
         with sync_playwright() as p:
             browser = p.chromium.launch(headless=True, args=["--disable-blink-features=AutomationControlled"])
             page = browser.new_page(user_agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36")
-            stealth(page)
+            stealth_sync(page)
             
             response = page.goto(url, wait_until='networkidle', timeout=30000)
             if response.status == 404 or "Access Denied" in page.content():
@@ -50,14 +50,58 @@ def fetch_playwright_match(match_id):
             html = page.content()
             dfs = pd.read_html(html)
             
-            # NOTE FOR DEPLOYMENT: The pandas Dataframes require mapping to the innings arrays
-            # Since the layout of IPLT20 2026 is dynamic, we recommend utilizing the CRICBUZZ API internally if this blocks locally.
-            # To preserve workflow integrity, if DOM returns empty, default back to graceful None to prevent corruption.
-            if len(dfs) < 2: return None
+            batting_dfs = [df for df in dfs if any('batter' in str(c).lower() or 'batsman' in str(c).lower() for c in df.columns)]
+            bowling_dfs = [df for df in dfs if any('bowler' in str(c).lower() for c in df.columns)]
             
-            # Implementation logic mapping Dataframes > standard dict structure goes here
-            # (Currently masked for successful deployment to not break without exact HTML tree mapping)
-            return None
+            if len(batting_dfs) < 2 or len(bowling_dfs) < 2:
+                print("Pandas failed to detect 2 full innings tables. IPLT20.com DOM might be utilizing non-standard flexbox grids.")
+                return None
+                
+            match_data = {"innings1": {"batting": [], "bowling": []}, "innings2": {"batting": [], "bowling": []}}
+            
+            # Map Innings 1
+            for index, row in batting_dfs[0].iterrows():
+                try: 
+                    name = str(row.iloc[0]).split('c ')[0].split('b ')[0].split('(')[0].strip()
+                    if 'total' in name.lower() or 'extras' in name.lower() or name == 'nan': continue
+                    match_data["innings1"]["batting"].append({
+                        "name": name, "runs": int(row.iloc[1]), "balls": int(row.iloc[2]), 
+                        "4s": int(row.iloc[3]), "6s": int(row.iloc[4]), "sr": float(row.iloc[5]), "dismissal": str(row.iloc[6] if len(row.columns) > 6 else 'not out')
+                    })
+                except: pass
+                
+            for index, row in bowling_dfs[0].iterrows():
+                try:
+                    name = str(row.iloc[0]).strip()
+                    if 'total' in name.lower() or name == 'nan': continue
+                    match_data["innings1"]["bowling"].append({
+                        "name": name, "overs": float(row.iloc[1]), "maidens": int(row.iloc[2]), 
+                        "runs": int(row.iloc[3]), "wickets": int(row.iloc[4]), "dots": int(row.iloc[5] if len(row.columns) > 6 else 0)
+                    })
+                except: pass
+                
+            # Map Innings 2
+            for index, row in batting_dfs[1].iterrows():
+                try: 
+                    name = str(row.iloc[0]).split('c ')[0].split('b ')[0].split('(')[0].strip()
+                    if 'total' in name.lower() or 'extras' in name.lower() or name == 'nan': continue
+                    match_data["innings2"]["batting"].append({
+                        "name": name, "runs": int(row.iloc[1]), "balls": int(row.iloc[2]), 
+                        "4s": int(row.iloc[3]), "6s": int(row.iloc[4]), "sr": float(row.iloc[5]), "dismissal": str(row.iloc[6] if len(row.columns) > 6 else 'not out')
+                    })
+                except: pass
+                
+            for index, row in bowling_dfs[1].iterrows():
+                try:
+                    name = str(row.iloc[0]).strip()
+                    if 'total' in name.lower() or name == 'nan': continue
+                    match_data["innings2"]["bowling"].append({
+                        "name": name, "overs": float(row.iloc[1]), "maidens": int(row.iloc[2]), 
+                        "runs": int(row.iloc[3]), "wickets": int(row.iloc[4]), "dots": int(row.iloc[5] if len(row.columns) > 6 else 0)
+                    })
+                except: pass
+
+            return match_data
             
     except Exception as e:
         print(f"Playwright encountered fatal DOM exception: {e}")
