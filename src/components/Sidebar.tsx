@@ -44,6 +44,10 @@ export default function Sidebar() {
           <span className="material-symbols-outlined font-icon">shield</span>
           <span>Teams</span>
         </Link>
+        <Link href="/rules" className={getLinkClasses('/rules')}>
+          <span className="material-symbols-outlined font-icon">description</span>
+          <span>Rules</span>
+        </Link>
       </nav>
       <div className="mt-auto px-6 border-t border-outline-variant/10 pt-6">
         <button className="flex items-center gap-4 py-3 text-gray-500 hover:text-white transition-colors">

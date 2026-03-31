@@ -12,6 +12,7 @@ export default function Topbar() {
     { name: 'Draft Room', path: '/draft', icon: 'gavel' },
     { name: 'Squads', path: '/squads', icon: 'groups' },
     { name: 'Teams', path: '/teams', icon: 'shield' },
+    { name: 'Rules', path: '/rules', icon: 'description' },
   ];
 
   return (
