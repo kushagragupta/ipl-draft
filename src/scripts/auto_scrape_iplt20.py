@@ -25,7 +25,7 @@ def fetch_playwright_match(match_id):
     print(f"🕵️  [Playwright] Bypassing CSR & Extracting Match {match_id} natively...")
     try:
         from playwright.sync_api import sync_playwright
-        from playwright_stealth import stealth_sync
+        from playwright_stealth import Stealth
         import pandas as pd
         import time
         
@@ -34,7 +34,7 @@ def fetch_playwright_match(match_id):
         with sync_playwright() as p:
             browser = p.chromium.launch(headless=True, args=["--disable-blink-features=AutomationControlled"])
             page = browser.new_page(user_agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36")
-            stealth_sync(page)
+            Stealth().use_sync(page)
             
             response = page.goto(url, wait_until='networkidle', timeout=30000)
             if response.status == 404 or "Access Denied" in page.content():
