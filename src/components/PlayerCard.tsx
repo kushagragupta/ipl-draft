@@ -7,7 +7,7 @@ interface Player {
   role: string;
   overseas: boolean;
   top20: boolean;
-  points2025: number;
+  total_points_2026: number;
 }
 
 interface PlayerCardProps {
@@ -67,7 +67,7 @@ export default function PlayerCard({ player, onPick, disabled, isDrafted }: Play
 
         <div className="flex items-center justify-between border-t border-surface-variant pt-2 mt-2">
           <span className="text-xs text-on-surface-variant font-body">2025 Points</span>
-          <span className="text-primary font-display text-xl">{player.points2025}</span>
+          <span className="text-primary font-display text-xl">{player.total_points_2026}</span>
         </div>
 
         {/* Hover Action */}

@@ -1,15 +1,24 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, Suspense } from 'react';
+import { useSearchParams } from 'next/navigation';
 
 interface User { id: string; name: string; }
 interface State { users: User[]; drafted: Record<string, string>; }
-interface Player { id: string; name: string; team: string; role: string; country: string; overseas: boolean; points2025: number; imageUrl?: string; }
+interface Player { id: string; name: string; team: string; role: string; country: string; overseas: boolean; total_points_2026: number; imageUrl?: string; }
 
-export default function SquadsDirectory() {
+function SquadsContent() {
+  const searchParams = useSearchParams();
+  const teamParam = searchParams.get('team');
+  
   const [state, setState] = useState<State | null>(null);
   const [players, setPlayers] = useState<Player[]>([]);
-  const [filter, setFilter] = useState('All');
+  const [filter, setFilter] = useState(teamParam || 'All');
+
+  // Immediately sync if URL query changes dynamically
+  useEffect(() => {
+      if (teamParam) setFilter(teamParam);
+  }, [teamParam]);
 
   useEffect(() => {
     async function fetchData() {
@@ -34,7 +43,7 @@ export default function SquadsDirectory() {
   const squads = state.users.map(u => {
     const draftedIds = Object.keys(state.drafted).filter(pid => state.drafted[pid] === u.id);
     const draftedPlayers = draftedIds.map(pid => players.find(p => p.id === pid)!);
-    const totalPoints = draftedPlayers.reduce((sum, p) => sum + (p?.points2025 || 0), 0);
+    const totalPoints = draftedPlayers.reduce((sum, p) => sum + (p?.total_points_2026 || 0), 0);
     return { user: u, players: draftedPlayers, totalPoints };
   });
 
@@ -132,7 +141,7 @@ export default function SquadsDirectory() {
                       
                       {/* Individual Points on Right Edge */}
                       <div className="shrink-0 flex flex-col items-end justify-center pl-2 md:pl-3 border-l border-outline-variant/10">
-                        <span className="text-base md:text-xl font-headline font-black text-white leading-none">{p.points2025 || 0}</span>
+                        <span className="text-base md:text-xl font-headline font-black text-white leading-none">{p.total_points_2026 || 0}</span>
                         <span className="text-[8px] font-label text-on-surface-variant uppercase tracking-widest mt-1">PTS</span>
                       </div>
                     </div>
@@ -145,4 +154,12 @@ export default function SquadsDirectory() {
       </div>
     </>
   );
+}
+
+export default function SquadsDirectory() {
+    return (
+        <Suspense fallback={<div className="p-8 font-display text-white text-2xl">Loading URL Parameters...</div>}>
+            <SquadsContent />
+        </Suspense>
+    )
 }

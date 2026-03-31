@@ -28,6 +28,10 @@ export default function Sidebar() {
         </button>
       </div>
       <nav className="flex-1 space-y-1">
+        <Link href="/leaderboard" className={getLinkClasses('/leaderboard')}>
+          <span className="material-symbols-outlined font-icon">leaderboard</span>
+          <span>Leaderboard</span>
+        </Link>
         <Link href="/draft" className={getLinkClasses('/draft')}>
           <span className="material-symbols-outlined font-icon">gavel</span>
           <span>Draft Room</span>

@@ -7,7 +7,7 @@ import SquadView from './SquadView';
 interface User { id: string; name: string; }
 interface Pick { playerId: string; userId: string; round: number; pickNumber: number; }
 interface State { users: User[]; currentTurnIndex: number; drafted: Record<string, string>; pickHistory: Pick[]; round: number; }
-interface Player { id: string; name: string; team: string; role: string; overseas: boolean; top20: boolean; points2025: number; }
+interface Player { id: string; name: string; team: string; role: string; overseas: boolean; top20: boolean; total_points_2026: number; }
 
 export default function DraftBoard() {
   const [state, setState] = useState<State | null>(null);

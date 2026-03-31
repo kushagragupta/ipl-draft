@@ -8,6 +8,7 @@ export default function Topbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const navLinks = [
+    { name: 'Leaderboard', path: '/leaderboard', icon: 'leaderboard' },
     { name: 'Draft Room', path: '/draft', icon: 'gavel' },
     { name: 'Squads', path: '/squads', icon: 'groups' },
     { name: 'Teams', path: '/teams', icon: 'shield' },

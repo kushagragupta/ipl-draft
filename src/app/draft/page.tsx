@@ -5,7 +5,7 @@ import { useState, useEffect } from 'react';
 interface User { id: string; name: string; }
 interface Pick { playerId: string; userId: string; round: number; pickNumber: number; }
 interface State { users: User[]; currentTurnIndex: number; drafted: Record<string, string>; pickHistory: Pick[]; round: number; status: string; }
-interface Player { id: string; name: string; team: string; role: string; country: string; overseas: boolean; points2025: number; imageUrl?: string; }
+interface Player { id: string; name: string; team: string; role: string; country: string; overseas: boolean; total_points_2026: number; imageUrl?: string; }
 
 export default function DraftRoom() {
   const [state, setState] = useState<State | null>(null);

@@ -9,7 +9,7 @@ interface Player {
   role: string; // "Batsman", "Bowler", "All-rounder", "Wicketkeeper"
   country: string;
   overseas: boolean;
-  points2025: number;
+  total_points_2026: number;
   imageUrl?: string;
 }
 
@@ -168,7 +168,7 @@ export default function TeamsDirectory() {
                         
                         {/* Individual Points on Right Edge */}
                         <div className="shrink-0 flex flex-col items-end justify-center pl-2 md:pl-3 border-l border-outline-variant/10 lg:pointer-events-none">
-                          <span className="text-base md:text-xl font-headline font-black text-white leading-none">{p.points2025 || 0}</span>
+                          <span className="text-base md:text-xl font-headline font-black text-white leading-none">{p.total_points_2026 || 0}</span>
                           <span className="text-[8px] font-label text-on-surface-variant uppercase tracking-widest mt-1">PTS</span>
                         </div>
                         

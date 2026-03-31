@@ -7,7 +7,7 @@ export default function SquadView({ state, players }: { state: any, players: any
       .filter(pid => state.drafted[pid] === u.id)
       .map(pid => players.find(p => p.id === pid));
     
-    const totalPoints = draftedPlayers.reduce((sum, p) => sum + (p?.points2025 || 0), 0);
+    const totalPoints = draftedPlayers.reduce((sum, p) => sum + (p?.total_points_2026 || 0), 0);
     return { ...u, players: draftedPlayers, totalPoints };
   });
 
@@ -34,7 +34,7 @@ export default function SquadView({ state, players }: { state: any, players: any
                 sq.players.map((p: any) => (
                   <div key={p.id} className="text-xs flex justify-between font-body text-on-surface-variant">
                     <span>{p.name} <span className="opacity-50">({p.team})</span></span>
-                    <span>{p.points2025}</span>
+                    <span>{p.total_points_2026}</span>
                   </div>
                 ))
               )}
